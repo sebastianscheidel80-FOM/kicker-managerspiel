@@ -1,0 +1,218 @@
+KICKERSPIEL SAISON 2025-2026 (Regressionstest 34. Spieltag)
+
+*****************************************************************
+
+GESAMTSTAND NACH DEM 34. SPIELTAG
+
+PUNKTE
+
+1. Wolfgang, 26,0 Punkte
+2. Andreas, 25,5 Punkte
+3. Martin, 19,5 Punkte
+4. Sebastian, 14,0 Punkte
+5. Daniel, 10,5 Punkte
+6. Thomas, 9,5 Punkte
+
+SPIELTAGSSIEGE
+
+1. Wolfgang, 1,0
+2. Andreas, 0,0
+   Daniel, 0,0
+   Martin, 0,0
+   Sebastian, 0,0
+   Thomas, 0,0
+
+*****************************************************************
+
+ERGEBNIS 34. SPIELTAG
+
+1. Wolfgang, 26,0 Punkte
+2. Andreas, 25,5 Punkte
+3. Martin, 19,5 Punkte
+4. Sebastian, 14,0 Punkte
+5. Daniel, 10,5 Punkte
+6. Thomas, 9,5 Punkte
+
+ELF DES TAGES
+
+1. Wolfgang, 6,0 Punkte (3)
+2. Andreas, 5,0 Punkte (1)
+3. Daniel, 2,5 Punkte (0)
+   Martin, 2,5 Punkte (0)
+   Sebastian, 2,5 Punkte (0)
+   Thomas, 2,5 Punkte (0)
+
+GEGENTORE
+
+1. Andreas, 5,0 Punkte (5)
+   Martin, 5,0 Punkte (5)
+   Wolfgang, 5,0 Punkte (5)
+4. Thomas, 3,0 Punkte (6)
+5. Sebastian, 2,0 Punkte (7)
+6. Daniel, 1,0 Punkte (13)
+
+NOTE
+
+1. Wolfgang, 6,0 Punkte (3,14)
+2. Andreas, 4,5 Punkte (3,27)
+   Martin, 4,5 Punkte (3,27)
+4. Sebastian, 3,0 Punkte (3,55)
+5. Daniel, 2,0 Punkte (3,82)
+6. Thomas, 1,0 Punkte (4,09)
+
+VORLAGEN
+
+1. Wolfgang, 6,0 Punkte (11)
+2. Andreas, 5,0 Punkte (5)
+3. Daniel, 3,5 Punkte (2)
+   Martin, 3,5 Punkte (2)
+5. Sebastian, 1,5 Punkte (0)
+   Thomas, 1,5 Punkte (0)
+
+TORE
+
+1. Andreas, 6,0 Punkte (6)
+2. Sebastian, 5,0 Punkte (5)
+3. Martin, 4,0 Punkte (3)
+4. Wolfgang, 3,0 Punkte (2)
+5. Daniel, 1,5 Punkte (0)
+   Thomas, 1,5 Punkte (0)
+
+
+MANAGER: WOLFGANG
+Ø-Note 3,14 · Gegentore 5 · Tore 2 · Vorlagen 11 · Elf des Tages 3  →  26,0 Punkte (Platz 1)
+--------------------------------------------------------------
+Pos Spieler             Elf Note  GegT  Vorl  Tore  Herkunft
+--- ------------------- --- ----  ----  ----  ----  --------
+TOR Neuer                   3,0   1                 
+ABW Ginter              ja  1,5   1     1     1     
+ABW Svensson                3,5   0                 
+ABW Chabot                  2,5   2                 
+MIT S. El Mala              3,0               1     
+MIT Eriksen             ja  1,5         3           
+MIT Führich                 3,5         1           
+MIT Stiller                 4,0                     
+MIT Manzambi            ja  2,0         1           
+STU Beier                   4,5                     
+STU Fabio Silva             5,5*                    Strafnote, nicht eingesetzt
+    gewichtet           3   3,14  5     11    2     TW-GegT ×2 · MIT-Vorl ×2 · STU-Tore ×2
+    Rangpunkte          6,0 6,0   5,0   6,0   3,0   Summe 26,0
+Protokoll:
+  STU Fabio Silva: nicht eingesetzt, kein Ersatz-STU mit Note → Strafnote 5,5.
+  Warnung: Nur 0 Ersatzspieler statt 4
+
+
+MANAGER: ANDREAS
+Ø-Note 3,27 · Gegentore 5 · Tore 6 · Vorlagen 5 · Elf des Tages 1  →  25,5 Punkte (Platz 2)
+--------------------------------------------------------------
+Pos Spieler             Elf Note  GegT  Vorl  Tore  Herkunft
+--- ------------------- --- ----  ----  ----  ----  --------
+TOR Urbig                   3,0   1                 
+ABW Tapsoba                 2,5   1                 
+ABW Laimer                  3,5   1                 
+ABW Guerreiro               5,5*  1                 Strafnote, nicht eingesetzt
+MIT Aleix Garcia            3,0         1           
+MIT M. Tillman              3,5                     
+MIT Schmid                  4,0                     
+MIT Nusa                    4,0                     
+MIT Kimmich                 2,0         1           
+STU Kane                ja  1,0               3     
+STU Undav                   4,0         1           
+    gewichtet           1   3,27  5     5     6     TW-GegT ×2 · MIT-Vorl ×2 · STU-Tore ×2
+    Rangpunkte          5,0 4,5   5,0   5,0   6,0   Summe 25,5
+Protokoll:
+  ABW Guerreiro: nicht eingesetzt, kein Ersatz-ABW mit Note → Strafnote 5,5.
+  Warnung: Nur 0 Ersatzspieler statt 4
+
+
+MANAGER: MARTIN
+Ø-Note 3,27 · Gegentore 5 · Tore 3 · Vorlagen 2 · Elf des Tages 0  →  19,5 Punkte (Platz 3)
+--------------------------------------------------------------
+Pos Spieler             Elf Note  GegT  Vorl  Tore  Herkunft
+--- ------------------- --- ----  ----  ----  ----  --------
+TOR Kobel                   2,5   0                 
+ABW Tah                     3,0   1                 
+ABW Anton                   2,5   0                 
+ABW Orban                   5,0   4                 
+MIT Olise                   3,5                     
+MIT Maza                    4,0                     
+MIT Burger                  4,0                     
+MIT Goretzka                2,0         1           
+MIT Beste                   2,5               1     
+STU Lemperle                4,5                     
+STU Pejcinovic              2,5               1     
+    gewichtet           0   3,27  5     2     3     TW-GegT ×2 · MIT-Vorl ×2 · STU-Tore ×2
+    Rangpunkte          2,5 4,5   5,0   3,5   4,0   Summe 19,5
+Protokoll:
+  Warnung: Nur 0 Ersatzspieler statt 4
+
+
+MANAGER: SEBASTIAN
+Ø-Note 3,55 · Gegentore 7 · Tore 5 · Vorlagen 0 · Elf des Tages 0  →  14,0 Punkte (Platz 4)
+--------------------------------------------------------------
+Pos Spieler             Elf Note  GegT  Vorl  Tore  Herkunft
+--- ------------------- --- ----  ----  ----  ----  --------
+TOR Grabara                 3,0   1                 
+ABW Stanisic                3,0   1                 
+ABW Mittelstädt             4,0   2                 
+ABW R. Koch                 4,0   2                 
+MIT Baumgartner             4,0                     
+MIT Grifo                   3,0                     
+MIT Amiri                   2,0               1     
+MIT El Khannouss            5,5*                    Strafnote, nicht eingesetzt
+MIT Suzuki                  5,5*                    Strafnote, nicht eingesetzt
+STU Tabakovic               2,5               1     
+STU Guirassy                2,5               1     
+    gewichtet           0   3,55  7     0     5     TW-GegT ×2 · MIT-Vorl ×2 · STU-Tore ×2
+    Rangpunkte          2,5 3,0   2,0   1,5   5,0   Summe 14,0
+Protokoll:
+  MIT El Khannouss: nicht eingesetzt, kein Ersatz-MIT mit Note → Strafnote 5,5.
+  MIT Suzuki: nicht eingesetzt, kein Ersatz-MIT mit Note → Strafnote 5,5.
+  Warnung: Nur 0 Ersatzspieler statt 4
+
+
+MANAGER: DANIEL
+Ø-Note 3,82 · Gegentore 13 · Tore 0 · Vorlagen 2 · Elf des Tages 0  →  10,5 Punkte (Platz 5)
+--------------------------------------------------------------
+Pos Spieler             Elf Note  GegT  Vorl  Tore  Herkunft
+--- ------------------- --- ----  ----  ----  ----  --------
+TOR Gulacsi                 4,0   4                 
+ABW Upamecano               3,0   1                 
+ABW Ryerson                 3,0   0     1           
+ABW Lukeba                  4,0   4                 
+MIT Musiala                 4,0                     
+MIT Nebel                   3,5                     
+MIT Kramaric                5,0                     
+MIT Seiwald                 4,0                     
+MIT Lokonga                 4,0                     
+STU Luis Diaz               2,0         1           
+STU Bülter                  5,5*                    Strafnote, nicht eingesetzt
+    gewichtet           0   3,82  13    2     0     TW-GegT ×2 · MIT-Vorl ×2 · STU-Tore ×2
+    Rangpunkte          2,5 2,0   1,0   3,5   1,5   Summe 10,5
+Protokoll:
+  STU Bülter: nicht eingesetzt, kein Ersatz-STU mit Note → Strafnote 5,5.
+  Warnung: Nur 0 Ersatzspieler statt 4
+
+
+MANAGER: THOMAS
+Ø-Note 4,09 · Gegentore 6 · Tore 0 · Vorlagen 0 · Elf des Tages 0  →  9,5 Punkte (Platz 6)
+--------------------------------------------------------------
+Pos Spieler             Elf Note  GegT  Vorl  Tore  Herkunft
+--- ------------------- --- ----  ----  ----  ----  --------
+TOR Flekken                 3,0   1                 
+ABW Doekhi                  3,0   0                 
+ABW Trimmel                 2,5   0                 
+ABW R. Baku                 3,5   4                 
+MIT Kaminski                5,0                     
+MIT Stage                   4,0                     
+MIT Chaibi                  4,5                     
+MIT Poku                    5,5*                    Strafnote, nicht eingesetzt
+MIT Claude-Maurice          5,5*                    Strafnote, nicht eingesetzt
+STU Schick                  5,0                     
+STU Ansah                   3,5                     
+    gewichtet           0   4,09  6     0     0     TW-GegT ×2 · MIT-Vorl ×2 · STU-Tore ×2
+    Rangpunkte          2,5 1,0   3,0   1,5   1,5   Summe 9,5
+Protokoll:
+  MIT Poku: nicht eingesetzt, kein Ersatz-MIT mit Note → Strafnote 5,5.
+  MIT Claude-Maurice: nicht eingesetzt, kein Ersatz-MIT mit Note → Strafnote 5,5.
+  Warnung: Nur 0 Ersatzspieler statt 4

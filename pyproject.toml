@@ -1,0 +1,20 @@
+[project]
+name = "kickerspiel"
+version = "0.1.0"
+description = "Auswertungstool für das private Kicker-Managerspiel 2026/27"
+requires-python = ">=3.10"
+dependencies = ["openpyxl>=3.1"]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = [".", "tests"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["kickerspiel"]
