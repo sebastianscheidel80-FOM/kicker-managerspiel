@@ -1,7 +1,7 @@
 # Regeldatei – Privates Kicker-Managerspiel, Saison 2026/27
 
 > Diese Datei enthält die vollständigen Regeln unserer privaten Managerspiel-Runde sowie Sebastians Strategie-Präferenzen. Sie wird zu Beginn jeder KI-Sitzung in den Kontext geladen. Alle Empfehlungen, Recherchen und Bewertungen müssen sich an diesen Regeln orientieren.
-> Status: **v1.2 – vollständig, von Sebastian freigegeben (09.09.2026); Wertungsdetails für das Auswertungstool ergänzt.**
+> Status: **v1.3 – vollständig, von Sebastian bestätigt (10.09.2026); Tiebreaker, Nachholspiele und Elfmeter-Vorlage geklärt.**
 
 ---
 
@@ -59,15 +59,15 @@ Pro Spieltag werden **5 Kategorien** getrennt gewertet. In jeder Kategorie werde
 | **Durchschnittsnote** | Ø der kicker-Noten der 11 gewerteten Spieler, inkl. Strafnoten 5,5. Niedrigster Schnitt gewinnt. Gleichstand nur bei exakt gleichem Schnitt; Anzeige mit zwei Nachkommastellen. | alle gleich |
 | **Gegentore** | Jeder gewertete **Abwehrspieler** erhält alle Gegentore seines realen Vereins angerechnet, unabhängig von seiner Einsatzzeit. **Torwart: doppelt.** Wenigste Gegentore gewinnt. | TW ×2 · ABW ×1 · MF/ST zählen nicht |
 | **Tore** | Tore der gewerteten Spieler. **Stürmer: doppelt.** Meiste Tore gewinnt. Elfmetertore zählen normal. Eigentore: kein Tor für den Schützen, kein Abzug. | ST ×2 · TW/ABW/MF ×1 |
-| **Vorlagen** | Vorlagen der gewerteten Spieler nach kicker-Zählung (Spielschema). **Mittelfeldspieler: doppelt.** Meiste Vorlagen gewinnt. Beim Elfmeter erhält der Gefoulte die Vorlage; beim Eigentor erhält der Vorlagengeber der torerzielenden Mannschaft die Vorlage. | MF ×2 · TW/ABW/ST ×1 |
+| **Vorlagen** | Vorlagen der gewerteten Spieler nach kicker-Zählung (Spielschema). **Mittelfeldspieler: doppelt.** Meiste Vorlagen gewinnt. Es zählt die Vorlage, die kicker im Spielschema ausweist – auch beim Elfmeter (weist kicker keinen Vorlagengeber aus, gibt es keine Vorlage); beim Eigentor erhält der Vorlagengeber der torerzielenden Mannschaft die Vorlage. | MF ×2 · TW/ABW/ST ×1 |
 | **Elf des Tages** | Anzahl gewerteter eigener Spieler in der kicker-Elf des Tages. Meiste gewinnt. | alle gleich |
 
 - Keine Abzüge für gelbe/rote Karten.
 
 ### 4.3 Spieltagssieg und Saisontabelle
 - **Spieltagssieg:** Der Manager mit den meisten Punkten eines Spieltags erhält einen Spieltagssieg; bei Gleichstand wird der Sieg geteilt (zwei Manager je ½, drei je ⅓). Spieltagssiege werden als Statistik in der Saisontabelle geführt.
-- **Saisontabelle:** Summe aller Spieltagspunkte ab dem 2. Spieltag. Offen: ob Spieltagssiege bei Punktgleichstand als Tiebreaker dienen.
-- **Nachholspiele (offen):** Vorschlag des Tools: Spieler eines verlegten Spiels gelten am ursprünglichen Spieltag als „keine Note“ (normale Nachrückregel); nach dem Nachholspiel wird der betroffene Spieltag mit den dann vorliegenden Noten neu berechnet.
+- **Saisontabelle:** Summe aller Spieltagspunkte ab dem 2. Spieltag. Bei Punktgleichstand entscheidet die Zahl der Spieltagssiege (geteilte Siege zählen anteilig); ist auch die gleich, teilen sich die Manager den Platz.
+- **Nachholspiele:** Fällt ein Spiel aus, wird der Spieltag zunächst **vorläufig** gewertet (Spieler des verlegten Spiels gelten als „keine Note“, normale Nachrückregel, Report trägt den Vermerk „vorläufig“). Nach dem Nachholspiel wird der Spieltag mit den dann vorliegenden Noten **neu berechnet**; die vorläufige Wertung wird ersetzt, die Saisontabelle baut sich automatisch neu auf.
 
 ## 5. Transfers während der Saison
 
@@ -134,3 +134,4 @@ Pro Spieltag werden **5 Kategorien** getrennt gewertet. In jeder Kategorie werde
 | 1.0 | 02.09.2026 | Alle offenen Fragen geklärt: Exklusivität, Auktionstermin 05.09., Wertung ab 2. Spieltag, Abgabefrist Freitag, Bankreihenfolge, Winter-Auktion ohne Erstattung, Risikoneigung 7/10, Standardschützen als Kaufargument |
 | 1.1 | 02.09.2026 | Namen der 6 Manager, Abschnitt 6a Mitspieler-Profile (Andi: Kane-Käufer 2025/26 für 10 Mio.) |
 | 1.2 | 09.09.2026 | Wertungsdetails für das Auswertungstool: Nachrücker in Aufstellungsreihenfolge, Strafgegentor nur bei 0 Minuten, Vereinsgegentore unabhängig von Einsatzzeit, nicht zuordenbare Spieler (Nachrücker, sonst 5,5 + höchste Gegentore des Spieltags + 1), letzte gültige Aufstellung bei fehlender Abgabe, Elfmeter- und Eigentor-Regeln für Tore/Vorlagen, Gleichstandsbeispiele, Abschnitt 4.3 Spieltagssiege (Tiebreaker offen) und Nachholspiele (offen), Spielerbasis, Abschnitt 9 Auswertungstool, fiktive Teamnamen aller sechs Manager |
+| 1.3 | 10.09.2026 | Saisontabelle: Spieltagssiege als Tiebreaker bei Punktgleichstand; Nachholspiele: vorläufige Wertung, Neuberechnung nach dem Nachholspiel; Vorlagen beim Elfmeter nur, wenn kicker sie ausweist; Abgabezeit-Prüfung bleibt vorerst bei Sebastian |

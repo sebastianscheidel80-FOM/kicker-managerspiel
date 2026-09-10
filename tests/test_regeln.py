@@ -344,3 +344,17 @@ def test_regelwerk_vorsaison_ohne_strafgegentor():
     erg = werte_spieltag(aufst, d, index, Regelwerk(strafgegentor=0))
     p = platz(erg, "A", "A_abw1")
     assert p.strafnote and p.strafgegentore == 0 and p.gegentore_gew == 2
+
+
+def test_saisontabelle_tiebreaker_spieltagssiege():
+    index, aufst = zwei_manager()
+    # Spieltag 2: A gewinnt klar; Spieltag 3: B gewinnt mit gleichem Vorsprung → Punkte gleich, Siege 1:1 → gleicher Platz
+    d1 = daten(index, spieltag=2, gegentore={"V_A": 0, "V_B": 2})
+    d2 = daten(index, spieltag=3, gegentore={"V_A": 2, "V_B": 0})
+    s = saisontabelle([werte_spieltag(aufst, d1, index), werte_spieltag(aufst, d2, index)])
+    assert s.zeile("A").punkte == s.zeile("B").punkte and s.zeile("A").platz == s.zeile("B").platz == 1
+    # Spieltag 4 unentschieden (geteilter Sieg), Spieltag 5: A gewinnt, Spieltag 6: B gewinnt mit doppeltem Vorsprung → B mehr Punkte
+    d3 = daten(index, spieltag=4)
+    s = saisontabelle([werte_spieltag(aufst, d1, index), werte_spieltag(aufst, d2, index), werte_spieltag(aufst, d3, index)])
+    assert s.zeile("A").spieltagssiege == s.zeile("B").spieltagssiege == F(1.5)
+    assert s.zeile("A").platz == s.zeile("B").platz == 1

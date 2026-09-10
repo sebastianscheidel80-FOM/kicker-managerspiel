@@ -1,4 +1,4 @@
-"""Regel-Engine des Kicker-Managerspiels (REGELN_1.md v1.2).
+"""Regel-Engine des Kicker-Managerspiels (REGELN_1.md v1.3).
 
 Reine Logik: kennt keine Dateien, keine Oberfläche, keine kicker-Seite.
 Eingabe sind Spieler (Spielerbasis), Aufstellungen und Spieltagsdaten,
@@ -509,8 +509,10 @@ def saisontabelle(ergebnisse: Iterable[SpieltagErgebnis], manager: Optional[Sequ
                     b.vorlagen_gew += p.vorlagen_gew
                     b.gegentore_gew += p.gegentore_gew
                     b.edt += 1 if p.edt else 0
-    _, plaetze = rangpunkte({m: z.punkte for m, z in zeilen.items()}, niedriger_besser=False)
-    for m, z in zeilen.items():
-        z.platz = plaetze[m]
-    sortiert = sorted(zeilen.values(), key=lambda z: (z.platz, z.manager))
+    # Platz: Punkte, bei Gleichstand Spieltagssiege (REGELN_1.md 4.3); danach gleicher Platz
+    reihung = sorted(zeilen.values(), key=lambda z: (-z.punkte, -z.spieltagssiege, z.manager))
+    for i, z in enumerate(reihung):
+        vorher = reihung[i - 1] if i else None
+        z.platz = vorher.platz if vorher and (vorher.punkte, vorher.spieltagssiege) == (z.punkte, z.spieltagssiege) else i + 1
+    sortiert = reihung
     return Saison(sortiert, [e.spieltag for e in ergebnisse], beitraege)

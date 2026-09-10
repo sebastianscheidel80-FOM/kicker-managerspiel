@@ -240,8 +240,6 @@ def _tore_parsen(spiel: Spiel, zeilen: list[str]) -> None:
                 sp.vorlagen += 1
             else:
                 spiel.warnungen.append(f"Vorlagengeber {tor.vorlage!r} ({tor.verein}) nicht in der Aufstellung gefunden")
-        if "elfmeter" in tor.art.lower() and not tor.vorlage:
-            spiel.warnungen.append(f"Elfmeter {tor.minute} ({tor.schuetze}) ohne Vorlagengeber – Gefoulten laut Regel manuell als Vorlage eintragen")
 
 
 def _finde_spieler(spiel: Spiel, verein: str, name: str) -> Optional[KickerSpieler]:
