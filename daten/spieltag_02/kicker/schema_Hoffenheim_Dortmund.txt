@@ -1,0 +1,118 @@
+Bundesliga 2026/27, 2. Spieltag
+Hoffenheim
+16. Platz
+2
+:
+3
+1
+:
+0
+Dortmund
+3. Platz
+INFO
+SCHEMA
+TORE
+Avdullahu
+Rechtsschuss, Coufal
+45'
+1
+:
+0
+Lemperle
+Rechtsschuss, Daghim
+54'
+2
+:
+0
+2
+:
+1
+61'
+Guirassy
+Rechtsschuss, Anton
+2
+:
+2
+66'
+Fabio Silva
+Linksschuss, Guirassy
+2
+:
+3
+87'
+Hajdari (Eigentor)
+Rechtsschuss, Nwaneri
+AUFSTELLUNG
+ Hoffenheim
+Baumann3,0
+Coufal3,0
+Kabak2,5  
+Hajdari5,0  
+M. Rots3,0
+Avdullahu2,0 
+Burger3,0  
+Wimmer4,0 
+Daghim2,5
+Lemperle1,5  
+Hlozek3,0 
+ Dortmund
+Kobel3,0
+Gadou5,5 
+Anton2,5
+Mane3,5 
+Ryerson3,5
+Bellingham4,0
+F. Nmecha5,0 
+Svensson3,5
+Karetsas4,0 
+Beier4,5 
+Guirassy1,5  
+TRAINER
+ Hoffenheim
+Ilzer
+ Dortmund
+Kovac
+WECHSEL
+ Hoffenheim
+Kramaric 
+73'
+Hlozek3,0
+Conté
+73'
+Wimmer4,0
+Hranac
+79'
+Kabak2,5 
+De Cat
+79'
+Burger3,0 
+Moerstedt
+84'
+Lemperle1,5 
+ Dortmund
+Nwaneri3,0
+32'
+Mane3,5
+J. Veerman3,5
+46'
+F. Nmecha5,0
+Fabio Silva2,0 
+62'
+Karetsas4,0
+Reggiani4,0 
+62'
+Gadou5,5
+Sabitzer
+87'
+Guirassy1,5 
+RESERVEBANK
+ Hoffenheim
+L. Philipp (Tor), Bernardo, Gendrey, Lenz
+ Dortmund
+A. Meyer (Tor), Kaua Prates, Chukwuemeka, Albert
+KARTEN
+ Hoffenheim
+Petkovic (1. Gelbe Karte)
+Kabak (2. Gelbe Karte)
+40'
+KICKER ABO

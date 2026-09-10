@@ -1,0 +1,127 @@
+Bundesliga 2026/27, 2. Spieltag
+M’gladbach
+17. Platz
+3
+:
+4
+2
+:
+1
+Elversberg
+4. Platz
+INFO
+SCHEMA
+TORE
+Bolin
+Kopfball, Nguefack
+11'
+1
+:
+0
+1
+:
+1
+29'
+Mokwa
+Rechtsschuss, Pinckert
+Bolin
+Rechtsschuss, Honorat
+44'
+2
+:
+1
+Scally
+Linksschuss, Honorat
+56'
+3
+:
+1
+3
+:
+2
+66'
+Krattenmacher
+Linksschuss, L. Petkov
+3
+:
+3
+80'
+Keidel
+Rechtsschuss
+3
+:
+4
+90'
++2
+Krattenmacher
+Rechtsschuss, Futkeu
+AUFSTELLUNG
+ M’gladbach
+Nicolas4,0
+Scally4,0  
+Itakura5,5
+Diks4,5 
+Ullrich5,0 
+Sander4,5
+Nguefack5,0 
+Honorat2,5 
+Bolin2,0   
+Mohya4,0 
+Kleindienst4,0 
+ Elversberg
+Kristof3,0
+Gyamerah3,5 
+Pinckert3,5
+Rohr4,0
+La. Günther4,5 
+Keidel2,5 
+Poreba3,5
+L. Petkov2,5
+Onyeka3,0 
+Campbell3,5 
+Mokwa2,0  
+TRAINER
+ M’gladbach
+Polanski
+ Elversberg
+Wagner 
+WECHSEL
+ M’gladbach
+Hack
+69'
+Mohya4,0
+Kühn
+69'
+Honorat2,5
+Lidberg
+77'
+Kleindienst4,0
+Leszczynski
+77'
+Scally4,0 
+Herold
+81'
+Ullrich5,0
+ Elversberg
+Krattenmacher1,0  
+65'
+Campbell3,5
+Futkeu
+75'
+Onyeka3,0
+Mickelson
+75'
+La. Günther4,5
+Sirch
+88'
+Gyamerah3,5
+Condé 
+88'
+Mokwa2,0 
+RESERVEBANK
+ M’gladbach
+Batz (Tor), Chiarodia, Stöger, Machino
+ Elversberg
+Boss (Tor), Le Joncour, Darvich, Schnellbacher
+KARTEN
+KICKER ABO

@@ -1,0 +1,115 @@
+Bundesliga 2026/27, 2. Spieltag
+HSV
+18. Platz
+0
+:
+5
+0
+:
+2
+Mainz
+5. Platz
+INFO
+SCHEMA
+TORE
+0
+:
+1
+19'
+Becker
+Rechtsschuss, Kai. Sano
+0
+:
+2
+41'
+Mwene
+Linksschuss, Becker
+0
+:
+3
+48'
+P. Tietz
+Rechtsschuss, Becker
+0
+:
+4
+83'
+P. Tietz
+Linksschuss, J.-S. Lee
+0
+:
+5
+90'
++1
+Königsdörffer
+Linksschuss, Mwene
+AUFSTELLUNG
+ HSV
+Heuer Fernandes3,5
+Capaldo5,5
+Bornauw6,0
+Torunarigha6,0 
+El Ouahdi5,0 
+Nadir5,5 
+Remberg6,0
+Wolfe5,0 
+Adeline5,5 
+Grönbaek5,0
+Moffi5,5 
+ Mainz
+Schwolow3,0
+Posch3,0 
+Gruber3,0
+Potulski3,0
+Caci2,5  
+Mwene2,5  
+Kai. Sano2,0 
+Amiri2,0
+J.-S. Lee2,0 
+Becker1,0   
+P. Tietz1,0  
+TRAINER
+ HSV
+Polzin
+ Mainz
+Fischer
+WECHSEL
+ HSV
+Nandja5,0
+46'
+Torunarigha6,0
+Daka5,5
+46'
+Adeline5,5
+Fabio Vieira5,0
+46'
+Nadir5,5
+Stange5,0
+64'
+Moffi5,5
+Lemke
+84'
+Wolfe5,0
+ Mainz
+Königsdörffer 
+68'
+Becker1,0  
+da Costa
+81'
+Caci2,5 
+Maloney
+88'
+Kai. Sano2,0
+Ruoppi
+88'
+J.-S. Lee2,0
+Nakuzola
+88'
+Posch3,0
+RESERVEBANK
+ HSV
+Tangvik (Tor), Amoako, Jatta, Poulsen
+ Mainz
+Kinzig (Tor), Bell, Kawasaki, Hollerbach
+KARTEN
+KICKER ABO

@@ -1,0 +1,106 @@
+Bundesliga 2026/27, 2. Spieltag
+Bremen
+10. Platz
+3
+:
+1
+1
+:
+0
+Leipzig
+8. Platz
+INFO
+SCHEMA
+TORE
+Dinkci
+Rechtsschuss, Chuki
+4'
+1
+:
+0
+Füllkrug
+Kopfball, Grüll
+68'
+2
+:
+0
+Grüll
+Rechtsschuss
+80'
+3
+:
+0
+3
+:
+1
+90'
++6
+R. Baku
+Kopfball, Maksimovic
+AUFSTELLUNG
+ Bremen
+Hein2,5
+Arthur3,5 
+Pieper2,5
+Friedl2,5
+Deman2,0
+Reis3,0
+Regeer2,5 
+Chuki2,5  
+Dinkci2,5  
+Grüll1,5 
+Füllkrug2,0  
+ Leipzig
+Vandevoordt2,5
+R. Baku3,5 
+Orban4,5
+Esteve4,0
+Raum4,0
+Seiwald5,0
+El Aynaoui5,0 
+Banzuzi5,0
+Bakayoko5,0 
+Nkunku4,5 
+Nusa4,0 
+TRAINER
+ Bremen
+Thioune
+ Leipzig
+Demichelis
+WECHSEL
+ Bremen
+Schmetgens
+67'
+Arthur3,5
+Erevbenagie
+67'
+Dinkci2,5 
+Itten
+74'
+Füllkrug2,0 
+Stalmach
+83'
+Regeer2,5
+Musah
+83'
+Chuki2,5 
+ Leipzig
+Gomis4,0
+63'
+Bakayoko5,0
+Guiu
+75'
+El Aynaoui5,0
+Konaté
+84'
+Nusa4,0
+Maksimovic
+84'
+Nkunku4,5
+RESERVEBANK
+ Bremen
+A. Schlager (Tor), M. Ndiaye, Stark, Wojcik
+ Leipzig
+Nyland (Tor), Finkgräfe, Henrichs, Klostermann, Koné
+KARTEN
+KICKER ABO

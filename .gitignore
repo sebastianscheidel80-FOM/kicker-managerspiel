@@ -216,3 +216,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Kicker-Managerspiel: Mailadressen der Runde bleiben lokal
+daten/*/eml/
+daten/privat/

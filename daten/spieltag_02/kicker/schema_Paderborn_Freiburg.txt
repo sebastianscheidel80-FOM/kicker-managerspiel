@@ -1,0 +1,87 @@
+Bundesliga 2026/27, 2. Spieltag
+Paderborn
+12. Platz
+0
+:
+1
+0
+:
+1
+Freiburg
+2. Platz
+INFO
+SCHEMA
+TORE
+0
+:
+1
+26'
+M. Eggestein
+Rechtsschuss, Engelhardt
+AUFSTELLUNG
+ Paderborn
+Noll2,5
+ter Horst4,0  
+Scheller3,0 
+Hansen3,5 
+Curda4,0 
+Castaneda3,0
+Obermair3,5
+Ulrich3,5 
+Vidovic4,5
+Pieringer3,5 
+Philippe4,5 
+ Freiburg
+Backhaus2,5
+Treu3,0
+Ginter2,5
+Lienhart3,5 
+Makengo3,0
+M. Eggestein2,5 
+Engelhardt4,0  
+Beste4,0 
+Y. Suzuki4,5  
+Scherhant2,5 
+Matanovic3,0
+TRAINER
+ Paderborn
+Kettemann
+ Freiburg
+Schuster
+WECHSEL
+ Paderborn
+S. Tigges3,0
+46'
+Philippe4,5
+Batista Meier
+74'
+Ulrich3,5
+Sticker
+82'
+ter Horst4,0 
+Marino
+82'
+Pieringer3,5
+Mohr
+89'
+Hansen3,5
+ Freiburg
+Kübler
+74'
+Beste4,0
+Grifo
+74'
+Scherhant2,5
+Yilmaz
+82'
+Engelhardt4,0 
+Goto
+82'
+Y. Suzuki4,5 
+RESERVEBANK
+ Paderborn
+Schubert (Tor), Lippmann, Baack, Duric
+ Freiburg
+F. Müller (Tor), Günter, Ogbus, Rosenfelder, Irié
+KARTEN
+KICKER ABO

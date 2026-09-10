@@ -16,15 +16,20 @@ zwischen Programm und Regeldatei gilt die Regeldatei; das Programm wird angepass
 | `kickerspiel/model.py` | Datenklassen: Spieler, Aufstellung, Spieltagsdaten |
 | `kickerspiel/engine.py` | Regel-Engine – reine Logik, kennt keine Dateien |
 | `kickerspiel/report.py` | Textreport im Format der Runde |
-| `tests/` | Sieben Regel-Testfälle aus dem Briefing, Randfälle, Regressionstest 34. Spieltag 2025/26 |
+| `kickerspiel/spielerbasis.py` | Spielerbasis lesen, Namen zuordnen (exakt/tolerant) |
+| `kickerspiel/mail_parser.py` | `.eml` → Aufstellung (vier bekannte Mailformate) |
+| `kickerspiel/kicker_parser.py` | kicker-Schema-Text und Elf des Tages → Spieltagsdaten |
+| `kickerspiel/dateien.py` | Excel-Dateien je Spieltag schreiben und lesen |
+| `kickerspiel/cli.py` | Kommandozeile `python -m kickerspiel …` |
+| `tests/` | Sieben Regel-Testfälle, Randfälle, Regressionstest 34. Spieltag 2025/26, Parser-Tests |
 | `beispiele/` | Beispielreports zum Lesen (Regressionstest, Sonderfälle) |
 | `daten/spielerbasis/` | Spielerbasis der Saison (Auktionsergebnis mit kicker-Namen, Verein, Position) |
-| `daten/spieltag_XX/` | Je Spieltag: Aufstellungs-Mails (.eml), kicker-Daten, Auswertung, Report |
+| `daten/spieltag_XX/` | Je Spieltag: `eml/` (lokal), `kicker/` (Seitentexte), Aufstellungen, kicker-Daten, Auswertung, Report |
 | `docs/` | Architektur und Entscheidungen |
 | `.github/workflows/tests.yml` | Tests laufen automatisch bei jedem Push |
 
-Noch nicht enthalten (Etappe 2): Mail-Parser (`.eml` → Aufstellung), kicker-Abruf
-(Schema-Seiten → Spieltagsdaten), Excel-Ausgabe, Kommandozeile.
+Noch nicht enthalten: Report mit Teamnamen-Grafik/Siegerfoto, automatischer Abruf der kicker-Seiten
+(der Seitentext wird über den Browser gelesen und als Datei abgelegt).
 
 ## Einrichtung
 
@@ -62,16 +67,27 @@ pytest
 Alle Zwischenwerte werden als exakte Brüche gerechnet; Gleichstände entstehen nur
 bei wirklich gleichen Werten, nie durch Rundung.
 
-## Montags-Ablauf (Zielbild, ab Etappe 2)
+## Montags-Ablauf
 
-1. Sechs Aufstellungs-Mails als `.eml` in `daten/spieltag_XX/` ablegen.
-2. `kicker aufstellungen XX` – Mails einlesen, Namen gegen die Spielerbasis
-   abgleichen, Kontrolldatei `aufstellungen_stXX.xlsx` prüfen.
-3. `kicker kickerdaten XX` – kicker-Schema-Seiten und Elf des Tages einlesen
-   (Browser), Kontrolldatei `kickerdaten_stXX.xlsx` prüfen.
-4. `kicker auswerten XX` – Report und Excel-Auswertung erzeugen, Saisontabelle
-   aktualisieren.
-5. Alles einchecken: `git add . && git commit -m "Spieltag XX ausgewertet" && git push`.
+Voraussetzung einmalig: `daten/privat/manager_adressen.csv` (Manager;Team;E-Mail – liegt nur
+lokal, nie im Repository) und die Spielerbasis in `daten/spielerbasis/`.
+
+1. Die sechs Aufstellungs-Mails als `.eml` in `daten/spieltag_XX/eml/` ablegen (Ordner ist
+   per `.gitignore` vom Repository ausgeschlossen).
+2. `python -m kickerspiel aufstellungen XX` – liest die Mails, ordnet Absender und Namen zu und
+   schreibt `aufstellungen_stXX.xlsx`. Tolerante Zuordnungen sind gelb, unbekannte Namen rot;
+   Korrekturen direkt in der Datei (Spieler-ID, Rolle, Nr).
+3. Die neun kicker-Schema-Seiten (`.../schema`) und die Elf-des-Tages-Seite als Text in
+   `daten/spieltag_XX/kicker/` speichern (`schema_<Heim>_<Gast>.txt`, `elf_des_tages.txt`).
+4. `python -m kickerspiel kickerdaten XX` – erzeugt `kickerdaten_stXX.xlsx` (Blätter Spieler,
+   Vereine, Tore, Elf des Tages, Prüfung). Korrekturen direkt in der Datei.
+5. `python -m kickerspiel auswerten XX` – rechnet den Spieltag aus den beiden Excel-Dateien,
+   schreibt `report_stXX.txt`, `auswertung_stXX.xlsx`, `ergebnis_stXX.json` und baut
+   `daten/saison.xlsx` aus allen Spieltagen neu.
+6. Einchecken: `git add . && git commit -m "Spieltag XX ausgewertet" && git push`.
+
+Jeder Schritt ist einzeln wiederholbar; die Excel-Dateien sind die Schnittstelle zwischen den
+Schritten. `python -m kickerspiel saison` baut nur die Saisontabelle neu.
 
 ## Lesehilfe für den Report
 

@@ -1,1 +1,1 @@
-Hier die sechs Aufstellungs-Mails des 2. Spieltags als .eml ablegen.
+Spieltag 2: Mails liegen in eml/ (lokal), kicker-Seitentexte in kicker/, Ergebnisse daneben.

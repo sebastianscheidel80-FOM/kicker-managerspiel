@@ -237,8 +237,6 @@ def pruefe_aufstellung(a: Aufstellung, index: dict[str, Spieler], spieltag: Opti
         fehler.append(f"{len(a.bank)} Ersatzspieler, erlaubt sind {ERSATZBANK_GROESSE}")
     elif len(a.bank) < ERSATZBANK_GROESSE:
         warnungen.append(f"Nur {len(a.bank)} Ersatzspieler statt {ERSATZBANK_GROESSE}")
-    if a.bank and _pos_von(a.bank[-1], index) != Position.TOR:
-        warnungen.append("Der letzte Ersatzspieler ist kein Torwart")
     if a.bank and not any(_pos_von(s, index) == Position.TOR for s in a.bank):
         warnungen.append("Kein Ersatztorwart auf der Bank")
     return fehler, warnungen

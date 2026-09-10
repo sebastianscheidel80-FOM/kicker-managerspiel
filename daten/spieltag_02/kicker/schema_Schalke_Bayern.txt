@@ -1,0 +1,82 @@
+Bundesliga 2026/27, 2. Spieltag
+Schalke
+14. Platz
+0
+:
+0
+0
+:
+0
+Bayern
+6. Platz
+INFO
+SCHEMA
+TORE
+Fehlanzeige
+AUFSTELLUNG
+ Schalke
+Karius1,5
+T. Becker2,5
+Katic2,5 
+Kurucay2,0 
+Dina Ebimbe3,5  
+El-Faouzi2,0
+Tanaka2,0
+Gosens3,0 
+Ljubicic4,0 
+Aouchiche3,0 
+Sylla3,5
+ Bayern
+Neuer3,0
+Laimer3,5
+Upamecano3,5 
+Tah3,0
+Davies3,5
+Kimmich4,0
+Pavlovic4,0  
+Karl4,0 
+Brown3,5 
+Luis Diaz4,0
+Saibari4,5 
+TRAINER
+ Schalke
+Muslic
+ Bayern
+Kompany
+WECHSEL
+ Schalke
+V. Becker2,5
+65'
+Gosens3,0
+Ayhan3,0
+65'
+Dina Ebimbe3,5 
+Wöber
+74'
+Kurucay2,0
+Vozar
+74'
+Ljubicic4,0
+Karaman
+84'
+Aouchiche3,0
+ Bayern
+Kane3,5
+46'
+Brown3,5
+Musiala3,5
+57'
+Karl4,0
+Olise3,0
+57'
+Saibari4,5
+Bischof
+74'
+Pavlovic4,0 
+RESERVEBANK
+ Schalke
+Ke. Müller (Tor), Bachmann, Adamu, Dzeko
+ Bayern
+Urbig (Tor), H. Ito, M.-J. Kim, Stanisic, Sapoko Ndiaye
+KARTEN
+KICKER ABO

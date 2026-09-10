@@ -1,0 +1,108 @@
+Bundesliga 2026/27, 2. Spieltag
+Leverkusen
+7. Platz
+4
+:
+0
+2
+:
+0
+Union
+15. Platz
+INFO
+SCHEMA
+TORE
+E. Fernandez
+Linksschuss, Miguel
+1'
+1
+:
+0
+Medina
+Kopfball, Miguel
+28'
+2
+:
+0
+Schick
+Linksschuss, Quansah
+48'
+3
+:
+0
+Maza
+Rechtsschuss, Schick
+66'
+4
+:
+0
+AUFSTELLUNG
+ Leverkusen
+Flekken3,0
+Quansah2,0
+Tapsoba3,0
+Medina2,0  
+Miguel1,0  
+Aleix Garcia2,0
+E. Fernandez1,5  
+Moreira3,0
+Tillman3,0 
+Maza1,0  
+Schick1,5  
+ Union
+Rönnow2,0
+Juranovic5,0 
+van den Bosch5,0 
+Uduokhai6,0 
+Rothe5,0
+R. Khedira5,0
+Kemlein5,0 
+Aebischer5,0 
+Burcu5,5 
+Ljubicic5,0
+Latte Lath5,0 
+TRAINER
+ Leverkusen
+Martinez
+ Union
+Lustrinelli
+WECHSEL
+ Leverkusen
+Kofane
+67'
+Schick1,5 
+Diaby
+67'
+Tillman3,0
+Badé
+70'
+Medina2,0 
+Andrich
+70'
+E. Fernandez1,5 
+Vazquez
+83'
+Miguel1,0 
+ Union
+Skarke4,0
+63'
+Latte Lath5,0
+Haberer4,0
+63'
+Kemlein5,0
+Jeong4,0
+63'
+Aebischer5,0
+Trimmel
+74'
+Juranovic5,0
+Schäfer
+79'
+Burcu5,5
+RESERVEBANK
+ Leverkusen
+Blaswich (Tor), Oermann, Hofmann, Boniface
+ Union
+Raab (Tor), Köhn, Querfeld, Skov
+KARTEN
+KICKER ABO

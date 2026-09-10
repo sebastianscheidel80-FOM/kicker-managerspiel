@@ -1,0 +1,115 @@
+Bundesliga 2026/27, 2. Spieltag
+Stuttgart
+9. Platz
+4
+:
+1
+1
+:
+0
+Köln
+11. Platz
+INFO
+SCHEMA
+TORE
+El Khannouss
+Rechtsschuss, Vagnoman
+39'
+1
+:
+0
+Prömel
+Linksschuss, Mittelstädt
+60'
+2
+:
+0
+Demirovic
+Rechtsschuss, Jeltsch
+75'
+3
+:
+0
+3
+:
+1
+81'
+Hendriks (Eigentor)
+Rechtsschuss, Bülter
+Vagnoman
+Rechtsschuss
+90'
++1
+4
+:
+1
+AUFSTELLUNG
+ Stuttgart
+Bredlow2,0
+Vagnoman2,5 
+Jeltsch2,5
+Chabot2,0
+Mittelstädt2,5  
+Prömel2,5 
+Stiller3,0 
+El Khannouss2,0  
+Undav4,5 
+Führich3,5 
+Pejcinovic4,0
+ Köln
+Schwäbe2,0
+Castro-Montes5,0 
+Simpson-Pusey4,0 
+Lochoshvili5,0
+Mensah4,0
+Krauß3,5  
+Okon-Engstler4,5 
+Johannesson4,0
+Thielmann5,0 
+Maina4,5 
+Ache5,0 
+TRAINER
+ Stuttgart
+Hoeneß
+ Köln
+Wagner
+WECHSEL
+ Stuttgart
+Demirovic 
+70'
+Undav4,5
+Leweling
+70'
+Führich3,5
+Sauer
+78'
+El Khannouss2,0 
+Hendriks
+78'
+Mittelstädt2,5 
+Spalt
+90' +2
+Stiller3,0
+ Köln
+Skhiri4,0
+46'
+Okon-Engstler4,5
+Moore2,5
+46'
+Thielmann5,0
+Bülter
+75'
+Ache5,0
+Heskey
+75'
+Maina4,5
+Rondic
+90'
+Krauß3,5 
+RESERVEBANK
+ Stuttgart
+M. Funk (Tor), Al-Dakhil, Stergiou, Karazor
+ Köln
+Zieler (Tor), Schmied, Sosa, van den Berg
+KARTEN
+KICKER ABO
