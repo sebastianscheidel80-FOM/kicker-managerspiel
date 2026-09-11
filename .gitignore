@@ -220,3 +220,9 @@ __marimo__/
 # Kicker-Managerspiel: Mailadressen der Runde bleiben lokal
 daten/*/eml/
 daten/privat/
+
+# Ablageordner der Claude-App (Kopien der zugestellten Dateien)
+Claude outputs/
+
+# Excel-Sperrdateien (entstehen, solange eine Datei in Excel geöffnet ist)
+~$*
