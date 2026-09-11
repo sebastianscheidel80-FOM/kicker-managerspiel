@@ -34,7 +34,7 @@ Ein Spieler hat eine eindeutige Kennung, den Namen in kicker-Schreibweise, Verei
 
 ## 5. Regel-Engine
 
-Gewertete Elf: Je Position werden die Stammspieler in Aufstellungsreihenfolge durchgegangen. Ein Stammspieler mit Note zählt selbst. Ohne Note rückt der zuerst gelistete, noch nicht verbrauchte Ersatzspieler derselben kicker-Position nach, sofern er eine Note hat; Ersatzspieler ohne Note werden übersprungen. Gibt es keinen, bleibt der Stammspieler mit Strafnote 5,5 in der Wertung; seine Tore, Vorlagen und Gegentore aus dem Spiel zählen. Der Ersatztorwart rückt nur für den Stammtorwart nach.
+Gewertete Elf (Regeln v1.4): Stammspieler mit Note zählen selbst. Die Ausfälle werden in umgekehrter Aufstellungsreihenfolge bedient (der zuletzt genannte zuerst, der zuerst genannte bleibt am längsten drin). Für jeden Ausfall rückt der zuerst gelistete, noch nicht verbrauchte Ersatzspieler derselben kicker-Position mit Note nach. Gibt es keinen und hatte der Stammspieler 0 Minuten, rückt der zuerst gelistete Ersatzspieler derselben Position nach, der eingesetzt wurde, aber keine Note bekam (Note 5,5, Statistiken zählen, kein Strafgegentor). Sonst bleibt der Stammspieler mit Strafnote 5,5 in der Wertung; seine Tore, Vorlagen und Gegentore aus dem Spiel zählen. Der Ersatztorwart rückt nur für den Stammtorwart nach. Die gewertete Elf behält die Aufstellungsreihenfolge; ein Nachrücker steht auf dem Platz des Ersetzten.
 
 Kategorien: Notenschnitt der elf Noten inklusive Strafnoten; Gegentore des Vereins für jeden gewerteten TOR (doppelt) und ABW (einfach); Tore mit STU doppelt; Vorlagen mit MIT doppelt; Anzahl gewerteter Spieler in der Elf des Tages. Nur die elf gewerteten Spieler zählen.
 
@@ -65,7 +65,7 @@ Die sieben Fälle aus Abschnitt 4 des Briefings werden eins zu eins als Tests um
 
 ## 9. Offene Regelfragen
 
-A. Mehr Ausfälle als Ersatz derselben Position: Wenn zwei Stamm-Abwehrspieler keine Note haben und nur ein Ersatz-Abwehrspieler nachrücken kann, bekommt nach meinem Vorschlag der zuerst genannte Stammspieler den Nachrücker und der zweite die 5,5 (Aufstellungsreihenfolge). Das ist eindeutig und ohne Diskussion, aber der Manager kann nicht wählen, wessen Kurzeinsatz-Tore er behält.
+A. Mehr Ausfälle als Ersatz derselben Position: Ursprünglich (v1.2/1.3) bekam der zuerst genannte Stammspieler den Nachrücker. Seit v1.4 (Rückmeldung Wolfgang, 10.09.2026) gilt die umgekehrte Reihenfolge: Der zuletzt genannte Stammspieler wird zuerst ersetzt, der zuerst genannte bleibt am längsten drin – wer vorn steht, ist der wichtigste. Damit kann der Manager über die Reihenfolge steuern, wen er im Zweifel behält.
 
 B. Strafnote 5,5 ohne jeden Einsatz: Zählen die Gegentore des Vereins trotzdem? Im Beispiel hat Guerreiro (ABW, 5,5) ein Gegentor angerechnet bekommen – so wurde offenbar bisher gerechnet. Mein Vorschlag: ja, Vereins-Gegentore zählen für jeden gewerteten TOR/ABW, auch mit 5,5. Das ist einfach zu erfassen und schließt das Schlupfloch, dass ein sicher nicht spielender Torwart 0 Gegentore und damit den Bestwert bringt. Die Alternative (nur bei Kurzeinsatz) braucht in der Erfassung ein zusätzliches Feld „eingesetzt“.
 

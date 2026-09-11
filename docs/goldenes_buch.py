@@ -6,7 +6,13 @@ from reportlab.lib import colors
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.enums import TA_CENTER, TA_JUSTIFY
 from reportlab.platypus import (BaseDocTemplate, PageTemplate, Frame, Paragraph, Spacer, PageBreak,
-                                Table, TableStyle, KeepTogether, NextPageTemplate)
+                                Table, TableStyle, KeepTogether, NextPageTemplate, Image)
+from pathlib import Path
+
+HIER = Path(__file__).resolve().parent
+FOTO = HIER / "versteigerung_2026_archiv.jpg"      # erzeugt mit docs/foto_altern.py aus dem Original-Foto
+AUSGABE = HIER / "Das_Goldene_Buch_2026-27.pdf"
+VERSION, DATUM, DATUM_LANG = "1.4", "11.09.2026", "11. September 2026"
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 
@@ -29,8 +35,8 @@ RAND = 20 * mm
 
 st_body = ParagraphStyle("body", fontName="Serif", fontSize=10.8, leading=15.5, textColor=TINTE, alignment=TA_JUSTIFY, spaceAfter=5)
 st_para = ParagraphStyle("para", parent=st_body, spaceBefore=7, spaceAfter=3)
-st_h1 = ParagraphStyle("h1", fontName="Serif-Bold", fontSize=19, leading=24, textColor=GRUEN, alignment=TA_CENTER, spaceBefore=18, spaceAfter=4)
-st_h1sub = ParagraphStyle("h1sub", fontName="Serif-Italic", fontSize=11, leading=14, textColor=GOLD, alignment=TA_CENTER, spaceAfter=14)
+st_h1 = ParagraphStyle("h1", fontName="Serif-Bold", fontSize=19, leading=24, textColor=GRUEN, alignment=TA_CENTER, spaceBefore=18, spaceAfter=4, keepWithNext=1)
+st_h1sub = ParagraphStyle("h1sub", fontName="Serif-Italic", fontSize=11, leading=14, textColor=GOLD, alignment=TA_CENTER, spaceAfter=14, keepWithNext=1)
 st_h2 = ParagraphStyle("h2", fontName="Serif-Bold", fontSize=12.5, leading=16, textColor=GRUEN, spaceBefore=12, spaceAfter=3)
 st_zitat = ParagraphStyle("zitat", fontName="Serif-Italic", fontSize=10.5, leading=14.5, textColor=GRAU, leftIndent=14, rightIndent=14, alignment=TA_JUSTIFY, spaceAfter=6)
 st_small = ParagraphStyle("small", fontName="Serif", fontSize=9, leading=12, textColor=GRAU, alignment=TA_CENTER)
@@ -56,7 +62,7 @@ def rahmen(canv, doc):
     canv.setFont("Serif-Italic", 8.5)
     canv.setFillColor(GRAU)
     canv.drawCentredString(W / 2, RAND - 12 * mm, f"Das Goldene Buch des Kicker-Managerspiels · Saison 2026/27 · Seite {doc.page}")
-    canv.drawCentredString(W / 2, H - RAND + 10 * mm, "Verbindlich ist REGELN_1.md v1.3 – dieses Buch erklärt sie, mit einem Augenzwinkern")
+    canv.drawCentredString(W / 2, H - RAND + 10 * mm, f"Verbindlich ist REGELN_1.md v{VERSION} – dieses Buch erklärt sie, mit einem Augenzwinkern")
     canv.restoreState()
 
 
@@ -100,7 +106,7 @@ def deckblatt():
         Paragraph("beschlossen von den Hohen Vertragsparteien<br/>"
                   "<b>Fischköppe · Great Licors · Hallodries · Hansa Fürze · Käsefüße · Vickings</b>", s_t3),
         Spacer(1, 6 * mm),
-        Paragraph("in der Fassung der Regeldatei v1.3 vom 10. September 2026", s_t3),
+        Paragraph(f"in der Fassung der Regeldatei v{VERSION} vom {DATUM_LANG}", s_t3),
         Spacer(1, 95 * mm),
         Paragraph("Wer dieses Buch liest, hat keine Ausrede mehr.", ParagraphStyle("m", parent=s_t3, fontName="Serif-Italic", textColor=GRAU)),
     ]
@@ -110,7 +116,20 @@ def P(text, style=st_body):
     return Paragraph(text, style)
 
 
-def para(nr, titel, *absaetze):
+ORDNUNG = ["liga", "parteien", "kader", "beginn",
+           "vorschlag", "draft", "jugend", "geheim", "basis",
+           "formation", "position", "abgabe", "fehlend", "tippfehler",
+           "nachruecken", "mehr_ausfaelle", "strafnote", "nur_elf",
+           "kategorien", "gleichstand", "karten",
+           "tabelle", "nachhol",
+           "winter",
+           "aufgabe", "montag", "vorrang",
+           "aenderungen", "auslegung", "inkraft"]
+N = {k: i + 1 for i, k in enumerate(ORDNUNG)}
+
+
+def para(key, titel, *absaetze):
+    nr = N[key] if isinstance(key, str) else key
     out = [Paragraph(f"§ {nr} &nbsp;{titel}", st_h2)]
     for i, a in enumerate(absaetze, 1):
         out.append(P(f"({i}) {a}" if len(absaetze) > 1 else a, st_body))
@@ -150,6 +169,17 @@ story.append(P("Dieses Buch ist die lesbare Fassung. Verbindlich, im Zweifel und
                "bleibt die Regeldatei REGELN_1.md in ihrer jeweils gültigen Version. Wo dieses Buch scherzt, "
                "meint es die Regel trotzdem ernst.", st_zitat))
 
+if FOTO.exists():
+    bild = Image(str(FOTO), width=150 * mm, height=150 * mm * 0.75)
+    bild.hAlign = "CENTER"
+    story.append(Spacer(1, 6 * mm))
+    story.append(KeepTogether([
+        bild,
+        Spacer(1, 2 * mm),
+        P("Die Hohen Vertragsparteien bei der Versteigerung zur Saison 2026/27, am Morgen des 5. September. "
+          "Aufnahme aus dem Archiv der Runde; die Runde tagt seit 1997, das Frühstück vermutlich auch.", st_small),
+    ]))
+
 # ---------------------------------------------------------------- Erstes Buch
 story += buch("Erstes Buch – Die Grundordnung", "Von Liga, Managern und Geld, das es nicht gibt")
 story += para(1, "Die Liga",
@@ -171,41 +201,59 @@ story += para(4, "Die Wertung beginnt am 2. Spieltag",
 
 # ---------------------------------------------------------------- Zweites Buch
 story += buch("Zweites Buch – Die Auktion", "Wie Spieler zu Managern kommen")
-story += para(5, "Vorschlagsrecht und Gebot",
+story += para("vorschlag", "Vorschlagsrecht und Gebot",
               "Die Manager haben reihum das Vorschlagsrecht und rufen einen beliebigen Spieler auf. Der wird versteigert.",
               "Das Mindestgebot beträgt 300.000 Euro. Der Höchstbietende erhält den Spieler, sein Budget die Rechnung.")
-story += para(6, "Der Aufsteiger-Pick",
-              "Die schwächsten Manager des Vorjahres wählen vor der Auktion je einen Spieler eines Aufsteigers "
-              "(Schalke 04, SV Elversberg, SC Paderborn) zum Fixpreis von 300.000 Euro. Es ist das einzige "
+story += para("draft", "Der Draft",
+              "Vor der Auktion darf sich jeder Manager einen Spieler eines Aufsteigers (2026/27: Schalke 04, "
+              "SV Elversberg, SC Paderborn) zum Fixpreis von 300.000 Euro sichern. Die Reihenfolge ergibt sich aus "
+              "der Platzierung der Vorsaison: Der Letzte wählt zuerst, der Meister zuletzt. Es ist das einzige "
               "Schnäppchen, das dieses Buch kennt, und es wird mit dem Tabellenplatz des Vorjahres bezahlt.")
-story += para(7, "Die Spielerbasis",
+story += para("jugend", "Der Jugendspieler",
+              "Jeder Manager darf einen Spieler, den er bei der Sommerversteigerung der Vorsaison für höchstens "
+              "eine Million Euro gekauft hat, für 300.000 Euro in die neue Saison übernehmen. Winterkäufe zählen "
+              "nicht; wer im Januar billig einkauft, hat gehandelt, nicht ausgebildet.",
+              "Die Übernahme geschieht zu Beginn des Versteigerungstermins, vor der offiziellen Auktion. Will ein "
+              "anderer Manager den Jugendspieler haben, muss er mit mindestens zwei Millionen Euro bieten; danach "
+              "darf erhöht werden wie in jeder Versteigerung, auch vom Ausbilder selbst.",
+              "Wird dem Ausbilder sein Jugendspieler weggekauft, erhält er eine Million Euro Ausbildungsprämie "
+              "gutgeschrieben, sofort verfügbar. Er hat ihn schließlich großgezogen, jedenfalls in der Spielerbasis.")
+story += para("geheim", "Die Geheimversteigerung",
+              "Einmal pro Sommerversteigerung geht es reihum verdeckt zu: Jeder Manager ruft einmal einen Spieler auf, "
+              "alle schreiben ihr Gebot heimlich auf einen Zettel, und erst wenn alle fertig sind, werden die Zettel "
+              "gleichzeitig aufgefaltet.",
+              "Das höchste Gebot bekommt den Spieler – zum Preis des zweithöchsten Gebots. Wer dreißig Millionen "
+              "schreibt, bekommt ihn also sicher, zahlt aber nur, was der Zweitmutigste gewagt hat. Bei Gleichstand "
+              "der höchsten Gebote wird nur unter den Gleichauf-Bietern eine weitere verdeckte Runde gespielt.")
+story += para("basis", "Die Spielerbasis",
               "Das Ergebnis der Auktion wird in der Spielerbasis geführt: je Spieler der Manager, der Name in "
               "kicker-Schreibweise, der Verein, die kicker-Position und der Kaufpreis. Die Spielerbasis ist die "
               "Wahrheit über die Kader. Wer darin nicht steht, spielt nicht mit.")
 
 # ---------------------------------------------------------------- Drittes Buch
 story += buch("Drittes Buch – Die Aufstellung", "Elf Stammspieler, vier Ersatzspieler, eine Reihenfolge")
-story += para(8, "Die Formation",
+story += para("formation", "Die Formation",
               "Gespielt wird 3-5-2, immer: ein Torwart, drei Abwehrspieler, fünf Mittelfeldspieler, zwei Stürmer. "
               "Nach kicker-Position, nicht nach Gefühl.",
               "Die Ersatzbank hat vier Plätze. Drei sind frei wählbar, der vierte ist immer ein zweiter Torwart. "
               "Wer keinen zweiten Torwart aufstellt, spielt ohne Netz.")
-story += para(9, "Die Position gilt die ganze Saison",
+story += para("position", "Die Position gilt die ganze Saison",
               "Maßgeblich ist die Position, unter der der kicker einen Spieler in der Kaderliste führt. Sie gilt für "
               "die gesamte Saison, unabhängig davon, wo der Spieler tatsächlich herumläuft. Ein als Mittelfeldspieler "
               "geführter Außenverteidiger kassiert keine Gegentore und bekommt Vorlagen doppelt. Das ist kein Fehler "
               "im System, das ist das System.")
-story += para(10, "Die Abgabe",
-              "Die Aufstellung wird per E-Mail an die Runde geschickt, Freitag vor Anpfiff des Freitagsspiels. Wer am "
-              "Freitag ohne Spieler des Freitagsspiels abgibt, darf bis Samstag 15:30 Uhr nachbessern.",
-              "Die Reihenfolge der Namen ist Teil der Aufstellung. Sie entscheidet, wer bei mehreren Ausfällen den "
-              "Nachrücker bekommt (§ 14) und in welcher Reihenfolge die Bank befragt wird (§ 13).",
+story += para("abgabe", "Die Abgabe",
+              "Die Aufstellung wird per E-Mail an die Runde geschickt, vor Anpfiff des ersten Spiels des Spieltags. "
+              "Meist ist das der Freitagabend; der Spielplan kennt aber auch Dienstage und Samstage, und das Buch "
+              "kennt sie auch. Wer am Freitag ohne Spieler des Freitagsspiels abgibt, darf bis Samstag 15:30 Uhr nachbessern.",
+              "Die Reihenfolge der Namen ist Teil der Aufstellung. Sie entscheidet, wer bei mehreren Ausfällen "
+              f"am längsten drin bleibt (§ {N['mehr_ausfaelle']}) und in welcher Reihenfolge die Bank befragt wird (§ {N['nachruecken']}).",
               "Ob eine Mail rechtzeitig kam, prüft vorerst Sebastian. Das Tool merkt sich die Sendezeit trotzdem. "
               "Für immer.")
-story += para(11, "Fehlende oder ungültige Aufstellung",
+story += para("fehlend", "Fehlende oder ungültige Aufstellung",
               "Liegt keine gültige Aufstellung vor – keine Mail, falsche Formation, fremder Spieler –, gilt die letzte "
               "gültige Aufstellung des Managers weiter. Das Tool vermerkt das im Report, damit alle es sehen.")
-story += para(12, "Der Tippfehler",
+story += para("tippfehler", "Der Tippfehler",
               "Ein Name, der keinem Spieler des eigenen Kaders zugeordnet werden kann, gilt als Stammspieler ohne "
               "Einsatz: Der zuerst gelistete Ersatzspieler derselben Position rückt nach. Rückt niemand nach, bleibt "
               "der Platz mit Strafnote 5,5 in der Wertung, und bei einem Torwart- oder Abwehrplatz zusätzlich mit den "
@@ -215,16 +263,27 @@ story += para(12, "Der Tippfehler",
 
 # ---------------------------------------------------------------- Viertes Buch
 story += buch("Viertes Buch – Die gewertete Elf", "Von Noten, Nachrückern und der Fünfeinhalb")
-story += para(13, "Die Nachrückregel",
-              "Gewertet werden nur Spieler, die eine kicker-Note erhalten. Hat ein Stammspieler keine Note, rückt der "
+story += para("nachruecken", "Die Nachrückregel",
+              "Gewertet werden Spieler, die eine kicker-Note erhalten. Hat ein Stammspieler keine Note, rückt der "
               "zuerst gelistete Ersatzspieler derselben kicker-Position nach, sofern er eine Note hat. Hat er keine, "
               "wird der nächste derselben Position befragt. Ein Ersatzspieler rückt höchstens einmal nach; der "
-              "Ersatztorwart rückt nur für den Torwart nach, auch wenn er der beste Mann des Spieltags war.")
-story += para(14, "Mehr Ausfälle als Ersatz",
-              "Fehlen auf einer Position mehr Stammspieler, als Ersatzspieler mit Note vorhanden sind, werden die "
-              "Stammspieler in der Reihenfolge der Abgabe bedient. Der zuerst genannte bekommt den ersten Nachrücker. "
-              "Wer keinen mehr bekommt, bekommt § 15.")
-story += para(15, "Die Strafnote",
+              "Ersatztorwart rückt nur für den Torwart nach, auch wenn er der beste Mann des Spieltags war.",
+              "Hat kein Ersatzspieler der Position eine Note, kommt es darauf an, ob gespielt wurde, nicht ob benotet: "
+              "Hatte der Stammspieler null Minuten, rückt der zuerst gelistete Ersatzspieler derselben Position nach, "
+              "der zwar eingesetzt wurde, aber keine Note bekam. Er erhält die Note 5,5, seine Tore, Vorlagen und die "
+              "Gegentore seines Vereins zählen, und ein Strafgegentor gibt es nicht, denn er war ja da. Ersatzspieler, "
+              "die nicht gespielt haben, werden übersprungen.",
+              "Hat der Stammspieler selbst kurz gespielt und keine Note bekommen, bleibt er drin. Bei gleichem Status "
+              "geht der Stammspieler vor – so entschieden im Oktober 2013 im Fall Robben gegen Ronny, und so bleibt es.")
+story += para("mehr_ausfaelle", "Mehr Ausfälle als Ersatz",
+              "Fehlen auf einer Position mehr Stammspieler, als Ersatzspieler nachrücken können, gilt: Wer weiter vorn "
+              "in der Abgabe steht, ist wichtiger und bleibt am längsten drin. Ersetzt wird also von hinten nach vorn – "
+              "der zuletzt genannte Stammspieler ohne Note bekommt den ersten Nachrücker, der davor genannte den "
+              f"nächsten. Wer keinen mehr bekommt, bekommt § {N['strafnote']}.",
+              "Beispiel: Abwehr Legat, Nowotny, Helmer, auf der Bank Kohr. Fallen Legat und Helmer aus, ersetzt Kohr "
+              "den Helmer, und Legat bleibt mit der 5,5 und den Gegentoren seines Vereins in der Wertung. Wer Legat "
+              "vorn aufstellt, hat gesagt, dass er ihn behalten will.")
+story += para("strafnote", "Die Strafnote",
               "Kann niemand nachrücken, bleibt der Stammspieler ohne Note in der Wertung und erhält die Note 5,5. "
               "Sie ist schlechter als fast alles, was der kicker vergibt, und genau so ist sie gemeint.",
               "Hat der Spieler gespielt, aber keine Note bekommen (Kurzeinsatz), zählen seine Tore, Vorlagen und die "
@@ -232,16 +291,23 @@ story += para(15, "Die Strafnote",
               "Hat der Spieler null Minuten gespielt – nicht im Kader, nicht eingewechselt –, zählen für einen Torwart "
               "oder Abwehrspieler die Gegentore seines Vereins plus ein Strafgegentor; beim Torwart alles doppelt. "
               "Wer einen Verletzten aufstellt, verteidigt mit ihm.")
-story += para(16, "Nur die Elf zählt",
+story += para("nur_elf", "Nur die Elf zählt",
               "In allen Kategorien zählen ausschließlich die elf gewerteten Spieler. Ein Ersatzspieler, der nicht "
               "nachgerückt ist, mag drei Tore geschossen haben; für die Runde hat er auf der Bank gesessen.")
 
 # ---------------------------------------------------------------- Fünftes Buch
 story += buch("Fünftes Buch – Die Wertung", "Fünf Kategorien, sechs Ränge, dreißig Punkte")
-story += para(17, "Die fünf Kategorien",
+story += para("kategorien", "Die fünf Kategorien",
               "Jeder Spieltag wird in fünf Kategorien gewertet, jede gleich viel wert. Der Beste einer Kategorie erhält "
-              "sechs Punkte, dann fünf, vier, drei, zwei, eins. Mehr als dreißig Punkte gibt es an keinem Spieltag, "
-              "und noch niemand hat sie geholt.")
+              "sechs Punkte, dann fünf, vier, drei, zwei, eins. Mehr als dreißig Punkte gibt es in einer Runde von "
+              "sechs Managern an keinem Spieltag.",
+              "Aus dem alten Regelwerk übernimmt dieses Buch wörtlich: „Manager, die an einem Spieltag die maximale "
+              "Punktzahl erbeuten, werden ‚Superlord‘ genannt.“ Die Regel geht auf das Gedicht zum 29. Spieltag der "
+              "Saison 2012/13 zurück („Mit Sonny wärn die dreißig voll – dann wär ich ein Superlord!“), und die "
+              "Chronik kennt bis heute zwei Superlords: Daniel am 26. Spieltag 2001/02 mit 25 von 25 Punkten, in "
+              "einer Saison, die er obendrein als Meister beendete, und Wolfgang mit den Vikings am 31. Spieltag "
+              "2022/23. In größeren Runden, etwa 2003/04, gab es Spieltagssiege mit mehr als dreißig Punkten; "
+              "Superlords waren das nicht, denn erbeutet wurde nicht alles.")
 story.append(Spacer(1, 4))
 story.append(tabelle(
     ["Kategorie", "Was zählt", "Gewichtung"],
@@ -252,23 +318,23 @@ story.append(tabelle(
      ["Elf des Tages", "Anzahl gewerteter eigener Spieler in der kicker-Elf des Tages. Meiste gewinnen.", "alle gleich"]],
     [34 * mm, 96 * mm, 40 * mm]))
 story.append(Spacer(1, 6))
-story += para(18, "Der Gleichstand",
+story += para("gleichstand", "Der Gleichstand",
               "Liegen mehrere Manager in einer Kategorie gleichauf, teilen sie die Punkte der Ränge, die sie gemeinsam "
               "belegen: zwei Erste erhalten je 5,5, drei Erste je 5,0, vier Dritte je 2,5. Gleichstand ist nur, was "
               "exakt gleich ist; ein Notenschnitt von 3,27 gegen 3,27 ist einer, gerundet wird nicht.")
-story += para(19, "Keine Karten, keine Gnade, keine Ausnahmen",
+story += para("karten", "Keine Karten, keine Gnade, keine Ausnahmen",
               "Gelbe und rote Karten führen zu keinem Abzug. Der Spieler, der mit Rot vom Platz fliegt, bekommt "
               "seine kicker-Note und sonst nichts.")
 
 # ---------------------------------------------------------------- Sechstes Buch
 story += buch("Sechstes Buch – Die Saison", "Tabelle, Spieltagssiege, Nachholspiele")
-story += para(20, "Die Saisontabelle",
+story += para("tabelle", "Die Saisontabelle",
               "Die Saisonwertung ist die Summe aller Spieltagspunkte ab dem 2. Spieltag.",
               "Wer an einem Spieltag die meisten Punkte holt, erhält einen Spieltagssieg. Bei Gleichstand wird er geteilt: "
               "zwei Sieger je einen halben, drei je ein Drittel.",
               "Liegen zwei Manager in der Saisontabelle punktgleich, steht vorn, wer mehr Spieltagssiege hat. Sind auch "
               "die gleich, teilen sie sich den Platz und die Rechnung.")
-story += para(21, "Nachholspiele",
+story += para("nachhol", "Nachholspiele",
               "Fällt ein Spiel aus, wird der Spieltag zunächst vorläufig gewertet: Die Spieler des verlegten Spiels "
               "gelten als ohne Note, die Nachrückregel greift, der Report trägt den Vermerk „vorläufig“. Nach dem "
               "Nachholspiel wird der Spieltag mit den dann vorliegenden Noten neu berechnet. Die vorläufige Wertung "
@@ -276,39 +342,40 @@ story += para(21, "Nachholspiele",
 
 # ---------------------------------------------------------------- Siebtes Buch
 story += buch("Siebtes Buch – Der Winter", "Ein Fenster, halbe Preise, keine Erstattung")
-story += para(22, "Das Transferfenster",
+story += para("winter", "Das Transferfenster",
               "Es gibt ein Transferfenster: die Winterpause. Es läuft wie der Sommer – Vorschlagsrecht, Auktion, "
-              "Mindestgebot 300.000 Euro.",
-              "Eigene Spieler können für die Hälfte des ursprünglichen Kaufpreises verkauft werden. Erlös und Restbudget "
-              "stehen für Neukäufe bereit.",
+              "Mindestgebot 300.000 Euro –, nur feiner: Im Winter wird in Schritten von 50.000 Euro überboten. "
+              "Jugendspieler und Geheimversteigerung bleiben dem Sommer vorbehalten.",
+              "Eigene Spieler können für die Hälfte des ursprünglichen Kaufpreises verkauft werden, auch ohne dass "
+              "ein Neukauf ansteht. Erlös und Restbudget stehen für Neukäufe bereit.",
               "Verlässt ein Spieler im Winter die Bundesliga, gibt es keine Erstattung. Das Buch nennt das Pech, "
               "der Manager nennt es anders.")
 
 # ---------------------------------------------------------------- Achtes Buch
 story += buch("Achtes Buch – Das Auswertungstool", "Das Organ, das rechnet, und die Ordnung, in der es rechnet")
-story += para(23, "Aufgabe",
+story += para("aufgabe", "Aufgabe",
               "Das Auswertungstool bestimmt nach jedem Spieltag die gewertete Elf jedes Managers, rechnet die fünf "
               "Kategorien, die Rangpunkte, die Spieltagssumme und die Saisontabelle. Es tut das nachvollziehbar: Für "
               "jeden Nachrücker und jede Strafnote steht im Report, warum.")
-story += para(24, "Der Montag",
+story += para("montag", "Der Montag",
               "Die Aufstellungs-Mails werden gesammelt und dem Tool übergeben. Die Noten, Einsätze, Tore, Vorlagen und "
               "Gegentore kommen aus dem kicker-Spielschema jedes Spiels, die Elf des Tages von der kicker-Seite. Jeder "
               "Schritt schreibt eine Datei, die man öffnen, prüfen und korrigieren kann. Danach entsteht der Report.")
-story += para(25, "Der Vorrang der Regel",
+story += para("vorrang", "Der Vorrang der Regel",
               "Weicht das Tool von der Regeldatei ab, gilt die Regeldatei, und das Tool wird geändert. Weicht die "
               "Regeldatei von diesem Buch ab, gilt die Regeldatei, und dieses Buch wird geändert. Weicht die Runde von "
               "beidem ab, wird diskutiert, bis eine neue Version der Regeldatei vorliegt.")
 
 # ---------------------------------------------------------------- Schluss
 story += buch("Schlussbestimmungen", "Änderungen, Auslegung, Inkrafttreten")
-story += para(26, "Änderungen",
+story += para("aenderungen", "Änderungen",
               "Regeländerungen werden in der Regeldatei mit Versionsnummer und Änderungsprotokoll festgehalten. Eine "
               "Regel, die nicht in der Regeldatei steht, ist keine Regel, sondern eine Meinung.")
-story += para(27, "Auslegung",
+story += para("auslegung", "Auslegung",
               "Bei Unklarheiten wird gefragt, nicht geraten. Wer rät, zahlt beim nächsten Treffen die erste Runde; "
               "dieser Absatz ist nicht Teil der Regeldatei und wird auch nicht ausgewertet.")
-story += para(28, "Inkrafttreten",
-              "Dieses Buch gilt in der Fassung der Regeldatei v1.3 vom 10. September 2026 und tritt mit dem 2. Spieltag "
+story += para("inkraft", "Inkrafttreten",
+              f"Dieses Buch gilt in der Fassung der Regeldatei v{VERSION} vom {DATUM_LANG} und tritt mit dem 2. Spieltag "
               "der Saison 2026/27 in Kraft, an dem die Hallodries mit 23,5 Punkten den ersten Spieltagssieg holten – "
               "was hiermit amtlich ist.")
 
@@ -318,12 +385,13 @@ story.append(tabelle(
     [["1.0", "02.09.2026", "Grundregeln vollständig: Auktion, 3-5-2, Ersatzbank, fünf Kategorien, Winterfenster"],
      ["1.1", "02.09.2026", "Namen der sechs Manager"],
      ["1.2", "09.09.2026", "Nachrücker in Abgabereihenfolge, Strafgegentor bei null Minuten, Tippfehler-Regel, letzte gültige Aufstellung, Elfmeter und Eigentor, Spieltagssiege, Auswertungstool"],
-     ["1.3", "10.09.2026", "Spieltagssiege als Tiebreaker, Nachholspiele, Vorlage beim Elfmeter nach kicker"]],
+     ["1.3", "10.09.2026", "Spieltagssiege als Tiebreaker, Nachholspiele, Vorlage beim Elfmeter nach kicker"],
+     ["1.4", "11.09.2026", "Auf Zuruf der Runde: Ersatz bei mehreren Ausfällen von hinten nach vorn (Wolfgang); eingesetzter Ersatz ohne Note rückt für null Minuten nach (Martin, Präzedenzfall Robben/Ronny 2013); Winter in 50.000er-Schritten; Jugendspieler, Geheimversteigerung, Draft; Superlord-Chronik"]],
     [18 * mm, 24 * mm, 128 * mm]))
 story.append(Spacer(1, 8 * mm))
 story.append(P("Gegeben zu Zeiten des zweiten Spieltags, im Jahr des Herrn 2026, unter dem Siegel der Formation.", st_small))
 
-doc = BaseDocTemplate("/mnt/user-data/outputs/Das_Goldene_Buch_2026-27.pdf", pagesize=A4,
+doc = BaseDocTemplate(str(AUSGABE), pagesize=A4,
                       title="Das Goldene Buch des Kicker-Managerspiels 2026/27", author="Die sechs Manager",
                       leftMargin=RAND, rightMargin=RAND, topMargin=RAND, bottomMargin=RAND)
 frame_titel = Frame(RAND, RAND, W - 2 * RAND, H - 2 * RAND, id="titel")
@@ -331,4 +399,4 @@ frame_innen = Frame(RAND + 2 * mm, RAND + 2 * mm, W - 2 * RAND - 4 * mm, H - 2 *
 doc.addPageTemplates([PageTemplate(id="titel", frames=[frame_titel], onPage=titelseite),
                       PageTemplate(id="innen", frames=[frame_innen], onPage=rahmen)])
 doc.build(story)
-print("ok")
+print("ok:", AUSGABE)

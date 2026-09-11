@@ -259,7 +259,11 @@ def bestimme_elf(a: Aufstellung, daten: Spieltagsdaten, index: dict[str, Spieler
             return Spielerdaten(None, eingesetzt=None), True
         return d, False
 
-    for sid in a.start:
+    # Durchgang 1: Stammspieler mit Note stehen fest; Ausfälle merken.
+    # Die Elf behält die Aufstellungsreihenfolge, deshalb Platzhalter je Startplatz.
+    plaetze: list[Optional[GewerteterPlatz]] = [None] * len(a.start)
+    ausfaelle: list[tuple[int, Position, str, Optional[Spieler], Spielerdaten, bool]] = []
+    for i, sid in enumerate(a.start):
         pos = _pos_von(sid, index)
         name = _name_von(sid, index)
 
@@ -273,13 +277,25 @@ def bestimme_elf(a: Aufstellung, daten: Spieltagsdaten, index: dict[str, Spieler
                 warnungen.append(f"Keine kicker-Daten für {sp.name} ({sp.verein}) erfasst – als „keine Note“ und „nicht eingesetzt“ behandelt.")
 
         if d.hat_note:
-            elf.append(GewerteterPlatz(pos, sp, name, Herkunft.STAMM, note=d.note, eingesetzt=True,
-                                       tore=d.tore, vorlagen=d.vorlagen, edt=d.edt, daten_fehlen=fehlen))
-            continue
+            plaetze[i] = GewerteterPlatz(pos, sp, name, Herkunft.STAMM, note=d.note, eingesetzt=True,
+                                         tore=d.tore, vorlagen=d.vorlagen, edt=d.edt, daten_fehlen=fehlen)
+        else:
+            ausfaelle.append((i, pos, name, sp, d, fehlen))
 
-        # Nachrücker suchen: zuerst gelisteter Ersatz derselben Position mit Note, noch nicht verbraucht
-        nachruecker: Optional[tuple[int, Spieler, Spielerdaten]] = None
-        uebersprungen: list[str] = []
+    # Durchgang 2: Ausfälle in umgekehrter Aufstellungsreihenfolge bedienen (v1.4):
+    # der zuletzt genannte Stammspieler bekommt den ersten Nachrücker, wer weiter vorn steht, bleibt am längsten drin.
+    protokoll_ausfaelle: dict[int, list[str]] = {}
+    for i, pos, name, sp, d, fehlen in reversed(ausfaelle):
+        zeilen: list[str] = []
+        protokoll_ausfaelle[i] = zeilen
+
+        eingesetzt = d.eingesetzt
+        if sp is not None and eingesetzt is None:
+            warnungen.append(f"Für {sp.name} ist nicht erfasst, ob er eingesetzt wurde – als 0 Minuten behandelt.")
+            eingesetzt = False
+
+        # Kandidaten auf der Bank: gleiche Position, nicht verbraucht, bekannt
+        kandidaten: list[tuple[int, Spieler, Spielerdaten]] = []
         for j, bid in enumerate(a.bank):
             if ist_unbekannt(bid) or bid in verbraucht:
                 continue
@@ -288,44 +304,68 @@ def bestimme_elf(a: Aufstellung, daten: Spieltagsdaten, index: dict[str, Spieler
                 continue
             bd, bfehlen = daten_von(bid)
             if bfehlen:
-                warnungen.append(f"Keine kicker-Daten für Ersatzspieler {bsp.name} ({bsp.verein}) erfasst – als „keine Note“ behandelt.")
-            if bd.hat_note:
-                nachruecker = (j + 1, bsp, bd)
-                break
-            uebersprungen.append(f"  Ersatz {j + 1} {bsp.name} ({pos.value}) hat keine Note – übersprungen.")
+                warnungen.append(f"Keine kicker-Daten für Ersatzspieler {bsp.name} ({bsp.verein}) erfasst – als „keine Note“ und „nicht eingesetzt“ behandelt.")
+            kandidaten.append((j + 1, bsp, bd))
 
+        # Stufe 1: erster gelisteter Ersatz mit Note
+        nachruecker = next(((j, bsp, bd) for j, bsp, bd in kandidaten if bd.hat_note), None)
         if nachruecker is not None:
             j, bsp, bd = nachruecker
             verbraucht.add(bsp.id)
-            elf.append(GewerteterPlatz(pos, bsp, bsp.name, Herkunft.NACHRUECKER, ersetzt=sp, bankplatz=j,
-                                       note=bd.note, eingesetzt=True, tore=bd.tore, vorlagen=bd.vorlagen, edt=bd.edt))
-            protokoll.append(f"{pos.value} {name}: keine Note → {bsp.name} rückt nach (Bank {j}).")
-            protokoll.extend(uebersprungen)
+            plaetze[i] = GewerteterPlatz(pos, bsp, bsp.name, Herkunft.NACHRUECKER, ersetzt=sp, bankplatz=j,
+                                         note=bd.note, eingesetzt=True, tore=bd.tore, vorlagen=bd.vorlagen, edt=bd.edt)
+            zeilen.append(f"{pos.value} {name}: keine Note → {bsp.name} rückt nach (Bank {j}).")
+            for k, ksp, kd in kandidaten:
+                if k < j:
+                    zeilen.append(f"  Ersatz {k} {ksp.name} ({pos.value}) hat keine Note – übersprungen.")
             continue
 
-        # Strafnote
+        # Stufe 2 (v1.4): Stammspieler mit 0 Minuten → erster gelisteter Ersatz, der eingesetzt wurde, aber keine Note hat
+        if not eingesetzt:
+            nachruecker = next(((j, bsp, bd) for j, bsp, bd in kandidaten if bd.eingesetzt is True), None)
+            if nachruecker is not None:
+                j, bsp, bd = nachruecker
+                verbraucht.add(bsp.id)
+                plaetze[i] = GewerteterPlatz(pos, bsp, bsp.name, Herkunft.NACHRUECKER, ersetzt=sp, bankplatz=j,
+                                             note=regeln.strafnote, strafnote=True, eingesetzt=True,
+                                             tore=bd.tore, vorlagen=bd.vorlagen, edt=False)
+                zusatz = ""
+                if bd.tore or bd.vorlagen:
+                    zusatz = f"; Kurzeinsatz: {bd.tore} Tor(e), {bd.vorlagen} Vorlage(n) zählen"
+                zeilen.append(f"{pos.value} {name}: nicht eingesetzt, kein Ersatz-{pos.value} mit Note → {bsp.name} rückt mit Kurzeinsatz nach (Bank {j}), Note {note_text(regeln.strafnote)}, kein Strafgegentor{zusatz}.")
+                for k, ksp, kd in kandidaten:
+                    if k < j:
+                        zeilen.append(f"  Ersatz {k} {ksp.name} ({pos.value}) nicht eingesetzt – übersprungen.")
+                if bd.edt:
+                    warnungen.append(f"{bsp.name} steht ohne Note in der Elf des Tages – wird ignoriert.")
+                continue
+
+        # Strafnote: niemand kann nachrücken
         herkunft = Herkunft.UNBEKANNT if sp is None else Herkunft.STRAFNOTE
-        eingesetzt = d.eingesetzt
-        if sp is not None and eingesetzt is None:
-            warnungen.append(f"Für {sp.name} ist nicht erfasst, ob er eingesetzt wurde – als 0 Minuten (Strafgegentor) behandelt.")
-            eingesetzt = False
-        platz = GewerteterPlatz(pos, sp, name, herkunft, note=regeln.strafnote, strafnote=True, eingesetzt=eingesetzt,
-                                tore=d.tore, vorlagen=d.vorlagen, edt=False, daten_fehlen=fehlen)
-        elf.append(platz)
+        plaetze[i] = GewerteterPlatz(pos, sp, name, herkunft, note=regeln.strafnote, strafnote=True, eingesetzt=eingesetzt,
+                                     tore=d.tore, vorlagen=d.vorlagen, edt=False, daten_fehlen=fehlen)
         if d.edt:
             warnungen.append(f"{name} steht ohne Note in der Elf des Tages – wird ignoriert.")
-        grund = "kein Ersatz-" + pos.value + " mit Note"
         if sp is None:
-            protokoll.append(f"{pos.value} „{name}“: {grund} → Strafnote {note_text(regeln.strafnote)}.")
+            zeilen.append(f"{pos.value} „{name}“: kein Ersatz-{pos.value} mit Note oder Einsatz → Strafnote {note_text(regeln.strafnote)}.")
         elif eingesetzt:
             zusatz = ""
             if d.tore or d.vorlagen:
                 zusatz = f"; Kurzeinsatz: {d.tore} Tor(e), {d.vorlagen} Vorlage(n) zählen"
-            protokoll.append(f"{pos.value} {name}: keine Note, {grund} → Strafnote {note_text(regeln.strafnote)}{zusatz}.")
+            zeilen.append(f"{pos.value} {name}: keine Note, kein Ersatz-{pos.value} mit Note → Strafnote {note_text(regeln.strafnote)}{zusatz}.")
         else:
-            protokoll.append(f"{pos.value} {name}: nicht eingesetzt, {grund} → Strafnote {note_text(regeln.strafnote)}" + (", Strafgegentor" if regeln.strafgegentor and regeln.faktor_gegentore(pos) else "") + ".")
-        protokoll.extend(uebersprungen)
+            zeilen.append(f"{pos.value} {name}: nicht eingesetzt, kein Ersatz-{pos.value} mit Note oder Einsatz → Strafnote {note_text(regeln.strafnote)}" + (", Strafgegentor" if regeln.strafgegentor and regeln.faktor_gegentore(pos) else "") + ".")
+        for k, ksp, kd in kandidaten:
+            zeilen.append(f"  Ersatz {k} {ksp.name} ({pos.value}) {'hat keine Note' if kd.eingesetzt else 'nicht eingesetzt'} – übersprungen.")
 
+    # Protokoll in Aufstellungsreihenfolge ausgeben, mit Hinweis auf die Bedienreihenfolge
+    ausfall_positionen = [pos for _, pos, *_ in ausfaelle]
+    if any(ausfall_positionen.count(p) > 1 for p in set(ausfall_positionen)):
+        protokoll.append("Mehrere Ausfälle auf einer Position: Nachrücker werden in umgekehrter Aufstellungsreihenfolge vergeben (zuletzt genannter zuerst).")
+    for i, *_ in ausfaelle:
+        protokoll.extend(protokoll_ausfaelle[i])
+
+    elf = [p for p in plaetze if p is not None]
     return elf, protokoll, warnungen
 
 

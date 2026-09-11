@@ -177,16 +177,17 @@ ABW Davies                  3,5   0
 ABW Upamecano               3,5   0                 
 MIT Kimmich                 4,0                     
 MIT Doan                    4,0                     
-MIT Bellingham ↑            4,0                     für Kade (Bank 3)
+MIT Kade                    5,5*                    Strafnote, nicht eingesetzt
 MIT E. Fernandez        ja  1,5               1     
-MIT Chaibi                  5,5*                    Strafnote, Kurzeinsatz
+MIT Bellingham ↑            4,0                     für Chaibi (Bank 3)
 STU Gregoritsch             4,0                     
 STU Kane                    3,5                     
     gewichtet           1   3,50  0     0     1     TW-GegT ×2 · MIT-Vorl ×2 · STU-Tore ×2
     Rangpunkte          4,0 1,0   6,0   1,5   1,0   Summe 13,5
 Protokoll:
-  MIT Kade: keine Note → Bellingham rückt nach (Bank 3).
-  MIT Chaibi: keine Note, kein Ersatz-MIT mit Note → Strafnote 5,5.
+  Mehrere Ausfälle auf einer Position: Nachrücker werden in umgekehrter Aufstellungsreihenfolge vergeben (zuletzt genannter zuerst).
+  MIT Kade: nicht eingesetzt, kein Ersatz-MIT mit Note oder Einsatz → Strafnote 5,5.
+  MIT Chaibi: keine Note → Bellingham rückt nach (Bank 3).
 
 
 MANAGER: MARTIN (Hansa Fürze)

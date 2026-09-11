@@ -65,7 +65,8 @@ def test_1_ersatz_rueckt_nach():
 
 # ---------------------------------------------------------------------------
 # Testfall 2: Zwei Stamm-ABW ohne Note, nur ein Ersatz-ABW
-#             → einer rückt nach, der andere bekommt 5,5 (Aufstellungsreihenfolge)
+#             → der zuletzt genannte wird ersetzt, der zuerst genannte bleibt mit 5,5
+#             (v1.4, umgekehrte Aufstellungsreihenfolge – Wolfgangs Fall Legat/Helmer)
 # ---------------------------------------------------------------------------
 def test_2_zwei_ausfaelle_ein_ersatz():
     index, aufst = zwei_manager()
@@ -76,11 +77,98 @@ def test_2_zwei_ausfaelle_ein_ersatz():
 
     erg = werte_spieltag(aufst, d, index)
     e1 = platz(erg, "A", "A_e1")
-    assert e1.herkunft == Herkunft.NACHRUECKER and e1.ersetzt.id == "A_abw1"   # der zuerst genannte
-    abw2 = platz(erg, "A", "A_abw2")
-    assert abw2.herkunft == Herkunft.STRAFNOTE and abw2.note == F(5.5)
-    assert "A_abw1" not in ids(erg, "A")
+    assert e1.herkunft == Herkunft.NACHRUECKER and e1.ersetzt.id == "A_abw2"   # der zuletzt genannte wird ersetzt
+    abw1 = platz(erg, "A", "A_abw1")
+    assert abw1.herkunft == Herkunft.STRAFNOTE and abw1.note == F(5.5)          # der zuerst genannte bleibt drin
+    assert "A_abw2" not in ids(erg, "A")
     assert sum(1 for q in erg.manager["A"].elf if q.strafnote) == 1
+    # Reihenfolge der Elf bleibt die Aufstellungsreihenfolge: Nachrücker steht auf dem Platz des Ersetzten
+    assert ids(erg, "A")[:4] == ["A_tor1", "A_abw1", "A_e1", "A_abw3"]
+    assert any("umgekehrter Aufstellungsreihenfolge" in z for z in erg.manager["A"].protokoll)
+
+
+def test_2b_drei_ausfaelle_zwei_ersatz_von_hinten():
+    """Drei Stamm-ABW ohne Note, zwei Ersatz-ABW: abw3 bekommt Ersatz 1, abw2 Ersatz 2, abw1 die 5,5."""
+    index = {**kader("A", bank=[Position.ABW, Position.ABW, Position.MIT]), **kader("B")}
+    aufst = [aufstellung("A"), aufstellung("B")]
+    d = daten(index)
+    for sid in ("A_abw1", "A_abw2", "A_abw3"):
+        setze(d, sid, note=None, eingesetzt=False)
+    setze(d, "A_e1", note=2.0)
+    setze(d, "A_e2", note=4.0)
+
+    erg = werte_spieltag(aufst, d, index)
+    assert platz(erg, "A", "A_e1").ersetzt.id == "A_abw3" and platz(erg, "A", "A_e1").bankplatz == 1
+    assert platz(erg, "A", "A_e2").ersetzt.id == "A_abw2" and platz(erg, "A", "A_e2").bankplatz == 2
+    assert platz(erg, "A", "A_abw1").herkunft == Herkunft.STRAFNOTE
+    assert ids(erg, "A")[:4] == ["A_tor1", "A_abw1", "A_e2", "A_e1"]
+
+
+# ---------------------------------------------------------------------------
+# Testfälle 2c–2e (v1.4): Ersatzspieler mit Einsatz, aber ohne Note rückt nach,
+#             wenn der Stammspieler 0 Minuten hatte (Fall Robben/Ronny 2013, Martin 2026)
+# ---------------------------------------------------------------------------
+def test_2c_ersatz_mit_kurzeinsatz_rueckt_fuer_null_minuten_nach():
+    index = {**kader("A", bank=[Position.ABW, Position.ABW, Position.MIT]), **kader("B")}
+    aufst = [aufstellung("A"), aufstellung("B")]
+    d = daten(index)
+    setze(d, "A_abw1", note=None, eingesetzt=False)                  # Stamm: 0 Minuten
+    setze(d, "A_e1", note=None, eingesetzt=False)                    # Ersatz 1: nicht eingesetzt → übersprungen
+    setze(d, "A_e2", note=None, eingesetzt=True, tore=1)             # Ersatz 2: Kurzeinsatz mit Tor, keine Note
+
+    erg = werte_spieltag(aufst, d, index)
+    p = platz(erg, "A", "A_e2")
+    assert p.herkunft == Herkunft.NACHRUECKER and p.ersetzt.id == "A_abw1" and p.bankplatz == 2
+    assert p.note == F(5.5) and p.strafnote                          # keine Note → 5,5
+    assert p.eingesetzt is True and p.strafgegentore == 0            # eingesetzt → kein Strafgegentor
+    assert p.gegentore_verein == 1 and p.tore == 1                   # Gegentore des Vereins und Tor zählen
+    assert "A_abw1" not in ids(erg, "A") and "A_e1" not in ids(erg, "A")
+    assert erg.manager["A"].werte[Kategorie.GEGENTORE] == 1 * 2 + 3 * 1      # TW ×2 + 3 ABW, kein Strafgegentor
+    assert any("rückt mit Kurzeinsatz nach (Bank 2)" in z for z in erg.manager["A"].protokoll)
+    assert any("Ersatz 1 A e1 (ABW) nicht eingesetzt – übersprungen" in z for z in erg.manager["A"].protokoll)
+
+
+def test_2d_stamm_mit_kurzeinsatz_bleibt_vor_ersatz_mit_kurzeinsatz():
+    """Gleicher Status (beide gespielt, beide ohne Note) → der Stammspieler bleibt drin."""
+    index, aufst = zwei_manager()
+    d = daten(index)
+    setze(d, "A_abw1", note=None, eingesetzt=True, vorlagen=1)       # Stamm: Kurzeinsatz ohne Note
+    setze(d, "A_e1", note=None, eingesetzt=True, tore=1)             # Ersatz 1 (ABW): Kurzeinsatz ohne Note
+
+    erg = werte_spieltag(aufst, d, index)
+    p = platz(erg, "A", "A_abw1")
+    assert p.herkunft == Herkunft.STRAFNOTE and p.note == F(5.5) and p.vorlagen == 1 and p.strafgegentore == 0
+    assert "A_e1" not in ids(erg, "A")
+
+
+def test_2e_ersatz_mit_note_geht_vor_ersatz_mit_kurzeinsatz():
+    """Ersatz 1 mit Kurzeinsatz, Ersatz 2 mit Note → Note vor Kurzeinsatz, auch gegen die Bankreihenfolge."""
+    index = {**kader("A", bank=[Position.ABW, Position.ABW, Position.MIT]), **kader("B")}
+    aufst = [aufstellung("A"), aufstellung("B")]
+    d = daten(index)
+    setze(d, "A_abw1", note=None, eingesetzt=False)
+    setze(d, "A_e1", note=None, eingesetzt=True)
+    setze(d, "A_e2", note=2.5)
+
+    erg = werte_spieltag(aufst, d, index)
+    p = platz(erg, "A", "A_e2")
+    assert p.herkunft == Herkunft.NACHRUECKER and p.bankplatz == 2 and p.note == F(2.5) and not p.strafnote
+    assert "A_e1" not in ids(erg, "A")
+
+
+def test_2f_ersatz_mit_kurzeinsatz_wird_nur_einmal_verbraucht():
+    """Zwei Stamm-ABW mit 0 Minuten, ein Ersatz-ABW mit Kurzeinsatz → abw2 bekommt ihn, abw1 die 5,5 + Strafgegentor."""
+    index, aufst = zwei_manager()
+    d = daten(index)
+    setze(d, "A_abw1", note=None, eingesetzt=False)
+    setze(d, "A_abw2", note=None, eingesetzt=False)
+    setze(d, "A_e1", note=None, eingesetzt=True)
+
+    erg = werte_spieltag(aufst, d, index)
+    assert platz(erg, "A", "A_e1").ersetzt.id == "A_abw2"
+    abw1 = platz(erg, "A", "A_abw1")
+    assert abw1.herkunft == Herkunft.STRAFNOTE and abw1.strafgegentore == 1
+    assert erg.manager["A"].werte[Kategorie.GEGENTORE] == 1 * 2 + 3 * 1 + 1
 
 
 # ---------------------------------------------------------------------------

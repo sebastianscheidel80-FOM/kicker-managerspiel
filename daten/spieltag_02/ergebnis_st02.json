@@ -106,11 +106,11 @@
         },
         {
           "position": "MIT",
-          "spieler_id": "Dortmund:Bellingham",
-          "name": "Bellingham",
-          "herkunft": "Nachrücker",
-          "note": "4",
-          "strafnote": false,
+          "spieler_id": "Augsburg:Kade",
+          "name": "Kade",
+          "herkunft": "Strafnote",
+          "note": "11/2",
+          "strafnote": true,
           "tore": 0,
           "tore_gew": 0,
           "vorlagen": 0,
@@ -134,11 +134,11 @@
         },
         {
           "position": "MIT",
-          "spieler_id": "Frankfurt:Chaibi",
-          "name": "Chaibi",
-          "herkunft": "Strafnote",
-          "note": "11/2",
-          "strafnote": true,
+          "spieler_id": "Dortmund:Bellingham",
+          "name": "Bellingham",
+          "herkunft": "Nachrücker",
+          "note": "4",
+          "strafnote": false,
           "tore": 0,
           "tore_gew": 0,
           "vorlagen": 0,
@@ -176,8 +176,9 @@
         }
       ],
       "protokoll": [
-        "MIT Kade: keine Note → Bellingham rückt nach (Bank 3).",
-        "MIT Chaibi: keine Note, kein Ersatz-MIT mit Note → Strafnote 5,5."
+        "Mehrere Ausfälle auf einer Position: Nachrücker werden in umgekehrter Aufstellungsreihenfolge vergeben (zuletzt genannter zuerst).",
+        "MIT Kade: nicht eingesetzt, kein Ersatz-MIT mit Note oder Einsatz → Strafnote 5,5.",
+        "MIT Chaibi: keine Note → Bellingham rückt nach (Bank 3)."
       ],
       "warnungen": []
     },
