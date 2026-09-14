@@ -290,6 +290,8 @@ def index_seite(saison: Saison, ergebnisse: list[SpieltagErgebnis], basis: Spiel
         sieger = ", ".join(_team(basis, m) for m, a in e.spieltagssieg.items() if a > 0)
         body.append(f'<a href="spieltag-{e.spieltag:02d}.html">{e.spieltag}. Spieltag – Sieger: {_e(sieger)}</a>')
     body.append('</div>')
+    body.append('<h2>Regelwerk</h2><p><a href="../Das_Goldene_Buch_2026-27.pdf">Das Goldene Buch – Verfassung des Kickerspiels (PDF)</a> · '
+                'Verbindlich ist die Regeldatei <a href="https://github.com/sebastianscheidel80-FOM/kicker-managerspiel/blob/main/REGELN_1.md">REGELN_1.md</a>.</p>')
     body.append('<h2>Die Teams</h2><div class="teams">')
     for m in sorted(basis.teams):
         team = basis.teams[m]
