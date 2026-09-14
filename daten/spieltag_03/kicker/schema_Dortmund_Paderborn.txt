@@ -1,0 +1,112 @@
+BUNDESLIGA
+Spieltag
+Schema
+Bundesliga 2026/27, 3. Spieltag
+Borussia Dortmund
+2. Platz
+3
+:
+0
+1
+:
+0
+SC Paderborn 07
+15. Platz
+
+BVB
+
+SCP
+
+INFO
+SCHEMA
+ANALYSE
+EINZELKRITIK
+BILDER
+TICKER
+AUFSTELLUNG
+SPIELDATEN
+DATEN-VERGLEICH
+TORE
+Fabio Silva
+Rechtsschuss, Guirassy
+5'
+1
+:
+0
+F. Nmecha
+Rechtsschuss, Beier
+80'
+2
+:
+0
+F. Nmecha
+Rechtsschuss, Sabitzer
+89'
+3
+:
+0
+AUFSTELLUNG
+Kobel3,0
+Gadou3,5
+Anton2,5
+N. Schlotterbeck2,5
+Ryerson4,0
+J. Veerman3,0
+Bellingham3,0
+Svensson2,5
+Nwaneri3,5
+Fabio Silva2,5
+Guirassy2,5
+Noll2,0
+ter Horst4,0
+Scheller5,0
+Hansen4,0
+Curda4,0
+Castaneda3,0
+Obermair3,0
+Ulrich4,0
+Vidovic5,0
+Pieringer4,5
+Marino4,5
+TRAINER
+Kovac
+Kettemann
+WECHSEL
+F. Nmecha1,5
+65'
+J. Veerman3,0
+Chukwuemeka3,5
+65'
+Fabio Silva2,5
+Sabitzer3,0
+65'
+Nwaneri3,5
+Bensebaini
+77'
+N. Schlotterbeck2,5
+Beier
+77'
+Ryerson4,0
+Lippmann
+67'
+Curda4,0
+S. Tigges
+67'
+Marino4,5
+Batista Meier
+67'
+Vidovic5,0
+Duric
+77'
+Ulrich4,0
+Philippe
+82'
+Hansen4,0
+RESERVEBANK
+A. Meyer (Tor), Kaua Prates, Reggiani, Albert
+Schubert (Tor), Götze, Sticker, Baack
+KARTEN
+Bellingham (1. Gelbe Karte)
+66'
+Ulrich (1. Gelbe Karte)
+39'

@@ -14,9 +14,11 @@ import sys
 from pathlib import Path
 
 from . import dateien
-from .engine import EngineFehler, saisontabelle, werte_spieltag
+from .engine import EngineFehler, pruefe_aufstellung, saisontabelle, werte_spieltag
+from .html_report import site_schreiben
 from .kicker_parser import KickerImport, elf_des_tages_parsen, schema_dateien_lesen, zuordnen
-from .mail_parser import lade_adressen, ordner_verarbeiten
+from .mail_parser import MailAufstellung, Zuordnung, lade_adressen, ordner_verarbeiten
+from .model import Aufstellung
 from .report import textreport
 from .spielerbasis import lade_spielerbasis
 
@@ -29,6 +31,8 @@ class Pfade:
         self.spielerbasis = root / "daten" / "spielerbasis" / "Spielerbasis_2026-27.xlsx"
         self.adressen = root / "daten" / "privat" / "manager_adressen.csv"
         self.saison = root / "daten" / "saison.xlsx"
+        self.site = root / "docs" / "site"
+        self.fotos = root / "daten" / "fotos"
 
     def spieltag(self, n: int) -> Path:
         return self.root / "daten" / f"spieltag_{n:02d}"
@@ -59,7 +63,6 @@ def cmd_aufstellungen(p: Pfade, n: int) -> int:
     if not mails:
         print(f"Keine .eml-Dateien in {ordner}")
         return 1
-    dateien.aufstellungen_schreiben(p.aufstellungen(n), mails, basis, n)
     fehler = 0
     for ma in mails:
         status = "FEHLER" if ma.fehler else ("Hinweise" if ma.warnungen else "ok")
@@ -72,12 +75,48 @@ def cmd_aufstellungen(p: Pfade, n: int) -> int:
             fehler += 1
         for w in ma.warnungen:
             print(f"           Hinweis: {w}")
-    fehlend = sorted(set(basis.manager()) - {ma.manager for ma in mails if ma.manager})
-    for m in fehlend:
-        print(f"{m:10} FEHLT     keine Mail gefunden")
-        fehler += 1
+    # Regel „Fehlende oder ungültige Aufstellung“: letzte gültige Aufstellung des Managers gilt weiter
+    gueltig = {ma.manager for ma in mails if ma.manager and ma.aufstellung and not ma.fehler}
+    for m in sorted(set(basis.manager()) - gueltig):
+        grund = "keine Mail gefunden" if m not in {ma.manager for ma in mails} else "Abgabe ungültig"
+        ersatz = _letzte_gueltige_aufstellung(p, basis, m, n)
+        if ersatz is None:
+            print(f"{m:10} FEHLT     {grund} – auch keine frühere gültige Aufstellung vorhanden")
+            fehler += 1
+            continue
+        aufst, von = ersatz
+        mails = [ma for ma in mails if ma.manager != m] + [_uebernommene_mail(aufst, von, grund, basis)]
+        print(f"{m:10} ÜBERNOMMEN {grund} → letzte gültige Aufstellung vom {von}. Spieltag gilt")
+    dateien.aufstellungen_schreiben(p.aufstellungen(n), mails, basis, n)
     print(f"\nGeschrieben: {p.aufstellungen(n)}")
     return 1 if fehler else 0
+
+
+def _letzte_gueltige_aufstellung(p: Pfade, basis, manager: str, n: int):
+    """Sucht rückwärts die letzte Aufstellung des Managers, die für Spieltag n gültig ist."""
+    for k in range(n - 1, 0, -1):
+        pfad = p.aufstellungen(k)
+        if not pfad.exists():
+            continue
+        for a in dateien.aufstellungen_lesen(pfad, basis):
+            if a.manager != manager:
+                continue
+            fehler, _ = pruefe_aufstellung(a, basis.spieler, n)
+            if not fehler:
+                return a, k
+    return None
+
+
+def _uebernommene_mail(a, von: int, grund: str, basis):
+    hinweis = f"{grund}, letzte gültige Aufstellung vom {von}. Spieltag übernommen"
+    zuordnungen = []
+    for rolle, ids in (("Stamm", a.start), ("Bank", a.bank)):
+        for sid in ids:
+            sp = basis.spieler.get(sid)
+            zuordnungen.append(Zuordnung(sp.name if sp else sid, sp, "übernommen", rolle, hinweis))
+    aufst = Aufstellung(a.manager, list(a.start), list(a.bank), quelle="uebernommen", hinweis=hinweis)
+    return MailAufstellung(datei=f"(übernommen aus Spieltag {von})", absender="", absender_name="", datum=None,
+                           betreff="", manager=a.manager, aufstellung=aufst, zuordnungen=zuordnungen, warnungen=[hinweis])
 
 
 def cmd_kickerdaten(p: Pfade, n: int) -> int:
@@ -126,6 +165,20 @@ def cmd_auswerten(p: Pfade, n: int) -> int:
     return 0
 
 
+def cmd_site(p: Pfade) -> int:
+    """Webseite (docs/site/) aus allen ausgewerteten Spieltagen erzeugen."""
+    basis = lade_spielerbasis(p.spielerbasis)
+    ergebnisse = _alle_ergebnisse(p, basis)
+    if not ergebnisse:
+        print("Noch kein ausgewerteter Spieltag vorhanden")
+        return 1
+    reports = {e.spieltag: p.spieltag(e.spieltag) / f"report_st{e.spieltag:02d}.txt" for e in ergebnisse}
+    dateien_ = site_schreiben(p.site, ergebnisse, basis, saisontabelle, p.fotos, reports)
+    for d in dateien_:
+        print(f"Geschrieben: {d}")
+    return 0
+
+
 def cmd_saison(p: Pfade) -> int:
     basis = lade_spielerbasis(p.spielerbasis)
     ergebnisse = _alle_ergebnisse(p, basis)
@@ -159,6 +212,7 @@ def main(argv=None) -> int:
         s = sub.add_parser(name)
         s.add_argument("spieltag", type=int)
     sub.add_parser("saison")
+    sub.add_parser("site")
     args = parser.parse_args(argv)
     p = Pfade(Path(args.root).resolve())
     if args.befehl == "aufstellungen":
@@ -167,6 +221,8 @@ def main(argv=None) -> int:
         return cmd_kickerdaten(p, args.spieltag)
     if args.befehl == "auswerten":
         return cmd_auswerten(p, args.spieltag)
+    if args.befehl == "site":
+        return cmd_site(p)
     return cmd_saison(p)
 
 

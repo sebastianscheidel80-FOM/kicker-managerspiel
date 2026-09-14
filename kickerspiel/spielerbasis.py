@@ -49,7 +49,8 @@ def normalisieren(text: str) -> str:
 class Spielerbasis:
     spieler: dict[str, Spieler] = field(default_factory=dict)        # ID -> Spieler
     teams: dict[str, str] = field(default_factory=dict)              # Manager -> Team (fiktiv)
-    aliase: dict[str, set[str]] = field(default_factory=dict)        # ID -> normalisierte Namensvarianten
+    aliase: dict[str, set[str]] = field(default_factory=dict)        # ID -> normalisierte Namensvarianten (exakter Vergleich)
+    aliase_tolerant: dict[str, set[str]] = field(default_factory=dict)  # ID -> Varianten für den Tippfehler-Vergleich
 
     def manager(self) -> list[str]:
         return sorted({s.manager for s in self.spieler.values()})
@@ -76,7 +77,9 @@ class Spielerbasis:
             if n in al or n_ohne_initial in al:
                 exakt.append(s)
                 continue
-            beste = max((difflib.SequenceMatcher(None, n_ohne_initial, a).ratio() for a in al), default=0)
+            # Tolerant nur gegen Nachnamen/Kurznamen, nicht gegen Vornamen und Kurzformen (sonst „aber“ → „Albert“)
+            al_tol = self.aliase_tolerant.get(s.id, al)
+            beste = max((difflib.SequenceMatcher(None, n_ohne_initial, a).ratio() for a in al_tol), default=0)
             if beste >= 0.8:
                 tolerant.append((beste, s))
         if position is not None:
@@ -111,7 +114,24 @@ def _aliase_fuer(kurz: str, kaderliste: str, auktion: str) -> set[str]:
         for k in range(1, len(toks)):
             al.add(" ".join(toks[:k]))
     al.discard("")
-    return al
+    # Sehr kurze Namensteile („El“, „De“) sind keine eigenständigen Aliase – sie würden im Mailtext
+    # als exakter Treffer greifen, bevor der volle Name („El Aynaoui“) geprüft ist.
+    return {a for a in al if len(a) >= 3}
+
+
+def _aliase_tolerant_fuer(kurz: str, kaderliste: str, auktion: str) -> set[str]:
+    """Aliase, gegen die Tippfehler-tolerant verglichen werden darf: volle Namen und Nachnamen, keine Vornamen."""
+    al = set()
+    for variante in (kurz, kaderliste, auktion):
+        if variante:
+            al.add(normalisieren(variante))
+            al.add(normalisieren(ohne_initial(variante)))
+    toks = normalisieren(kaderliste).split()
+    if len(toks) >= 2:
+        for k in range(1, len(toks)):
+            al.add(" ".join(toks[:k]))          # Nachname(n) ohne Vorname
+    al.discard("")
+    return {a for a in al if len(a) >= 3}
 
 
 def lade_spielerbasis(pfad: str | Path) -> Spielerbasis:
@@ -141,6 +161,7 @@ def lade_spielerbasis(pfad: str | Path) -> Spielerbasis:
             raise ValueError(f"Doppelte Spieler-ID in der Spielerbasis: {sid}")
         basis.spieler[sid] = Spieler(sid, name, verein, position, manager, preis, ab, bis)
         basis.aliase[sid] = _aliase_fuer(kurz, kaderliste, auktion)
+        basis.aliase_tolerant[sid] = _aliase_tolerant_fuer(kurz, kaderliste, auktion)
         team = str(z.get(SPALTEN["team"], "") or "").strip()
         if team:
             basis.teams[manager] = team

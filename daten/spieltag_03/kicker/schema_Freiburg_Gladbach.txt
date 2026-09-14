@@ -1,0 +1,125 @@
+BUNDESLIGA
+Spieltag
+Schema
+Bundesliga 2026/27, 3. Spieltag
+SC Freiburg
+1. Platz
+5
+:
+0
+2
+:
+0
+Bor. Mönchengladbach
+17. Platz
+
+SCF
+
+BMG
+
+INFO
+SCHEMA
+ANALYSE
+BILDER
+TICKER
+AUFSTELLUNG
+SPIELDATEN
+DATEN-VERGLEICH
+DIREKTVERGLEICH
+TORE
+Engelhardt
+Kopfball, Scherhant
+23'
+1
+:
+0
+Matanovic
+Rechtsschuss, Ginter
+29'
+2
+:
+0
+Matanovic
+Kopfball, Makengo
+77'
+3
+:
+0
+Engelhardt
+Linksschuss, Ginter
+79'
+4
+:
+0
+M. Eggestein
+Rechtsschuss, Makengo
+86'
+5
+:
+0
+AUFSTELLUNG
+Backhaus3,0
+Treu2,5
+Ginter1,5
+Lienhart2,5
+Makengo2,0
+M. Eggestein2,5
+Engelhardt1,5
+Beste3,5
+Y. Suzuki3,0
+Scherhant3,0
+Matanovic1,0
+Nicolas5,5
+Scally5,0
+Itakura5,5
+Diks5,5
+Herold5,5
+Sander5,0
+Stöger5,5
+Honorat5,0
+Bolin5,0
+Hack5,5
+Kleindienst6,0
+TRAINER
+Schuster
+Polanski
+WECHSEL
+Grifo
+67'
+Scherhant3,0
+Goto
+78'
+Y. Suzuki3,0
+Höler
+78'
+Matanovic1,0
+Irié
+82'
+Beste3,5
+Kübler
+82'
+Treu2,5
+Machino5,5
+46'
+Bolin5,0
+Mohya
+67'
+Hack5,5
+Lidberg
+67'
+Honorat5,0
+Nguefack
+83'
+Stöger5,5
+RESERVEBANK
+F. Müller (Tor), Günter, Rosenfelder, Yilmaz
+Batz (Tor), Chiarodia, Leszczynski, Ullrich, Neuhaus
+KARTEN
+Irié (1. Gelbe Karte)
+90' +2
+Diks (2. Gelbe Karte)
+14'
+Kleindienst
+52'
+Scally (1. Gelbe Karte)
+90' +2

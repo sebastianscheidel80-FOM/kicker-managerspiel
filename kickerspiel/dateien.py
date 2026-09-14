@@ -121,7 +121,9 @@ def aufstellungen_lesen(pfad: Path, basis: Spielerbasis) -> list[Aufstellung]:
         nr = r[idx["Nr"]]
         if not sid:
             continue
-        d = je_manager.setdefault(m, {"start": [], "bank": []})
+        d = je_manager.setdefault(m, {"start": [], "bank": [], "uebernommen": ""})
+        if str(r[idx["Zuordnung"]] or "").strip() == "übernommen":
+            d["uebernommen"] = str(r[idx["Hinweis"]] or "").strip() or "letzte gültige Aufstellung"
         try:
             nr = int(nr) if nr not in (None, "") else 10**6
         except (TypeError, ValueError):
@@ -131,7 +133,10 @@ def aufstellungen_lesen(pfad: Path, basis: Spielerbasis) -> list[Aufstellung]:
     for m, d in sorted(je_manager.items()):
         start = [s for _, s in sorted(d["start"], key=lambda t: t[0])]
         bank = [s for _, s in sorted(d["bank"], key=lambda t: t[0])]
-        ergebnis.append(Aufstellung(m, start, bank))
+        if d["uebernommen"]:
+            ergebnis.append(Aufstellung(m, start, bank, quelle="uebernommen", hinweis=d["uebernommen"]))
+        else:
+            ergebnis.append(Aufstellung(m, start, bank))
     return ergebnis
 
 

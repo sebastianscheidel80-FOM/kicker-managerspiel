@@ -1,0 +1,128 @@
+BUNDESLIGA
+Spieltag
+Schema
+Bundesliga 2026/27, 3. Spieltag
+1. FC Union Berlin
+16. Platz
+1
+:
+3
+0
+:
+1
+FC Schalke 04
+11. Platz
+
+FCU
+
+S04
+
+INFO
+SCHEMA
+ANALYSE
+EINZELKRITIK
+BILDER
+TICKER
+AUFSTELLUNG
+SPIELDATEN
+DATEN-VERGLEICH
+TORE
+0
+:
+1
+25'
+Gosens
+Linksschuss
+0
+:
+2
+46'
+Aouchiche
+Rechtsschuss, Adamu
+Skarke
+Rechtsschuss, Rothe
+90'
++6
+1
+:
+2
+1
+:
+3
+90'
++13
+Wöber
+Linksschuss, H.-C. Hwang
+BESONDERE VORKOMMNISSE
+
+Schiedsrichter Gerach wurde wegen einer Verletzung durch den 4. Offiziellen Wienefeld ersetzt (68.).
+
+AUFSTELLUNG
+Rönnow2,0
+Juranovic4,5
+Querfeld5,0
+Uduokhai5,0
+Rothe3,0
+Aebischer3,5
+Kemlein5,0
+Jeong3,5
+R. Khedira4,5
+Burcu4,5
+Latte Lath5,0
+Karius2,0
+T. Becker2,5
+Katic2,5
+Kurucay2,5
+Ljubicic
+El-Faouzi2,0
+Tanaka3,0
+Gosens2,5
+Karaman2,0
+Aouchiche2,0
+Adamu2,5
+TRAINER
+Lustrinelli
+Muslic
+WECHSEL
+Ljubicic4,0
+46'
+Burcu4,5
+Schäfer4,0
+46'
+Kemlein5,0
+Skarke
+76'
+Latte Lath5,0
+Haberer
+85'
+Aebischer3,5
+Skov
+90' +1
+Jeong3,5
+Dina Ebimbe3,5
+21'
+Ljubicic
+Dzeko
+80'
+Karaman2,0
+H.-C. Hwang
+80'
+Adamu2,5
+Wöber
+80'
+Gosens2,5
+Bachmann
+90' +4
+Aouchiche2,0
+RESERVEBANK
+Raab (Tor), Trimmel, van den Bosch, Güther
+Ke. Müller (Tor), Ayhan, V. Becker, Vozar
+KARTEN
+Kemlein (1. Gelbe Karte)
+45'
+Ljubicic (1. Gelbe Karte)
+74'
+Uduokhai (2. Gelbe Karte)
+79'
+Karius (1. Gelbe Karte)
+90' +9

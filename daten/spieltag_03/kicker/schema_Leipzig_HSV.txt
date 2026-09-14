@@ -1,0 +1,126 @@
+BUNDESLIGA
+Spieltag
+Schema
+Bundesliga 2026/27, 3. Spieltag
+RB Leipzig
+5. Platz
+5
+:
+0
+2
+:
+0
+Hamburger SV
+18. Platz
+
+RBL
+
+HSV
+
+INFO
+SCHEMA
+ANALYSE
+BILDER
+TICKER
+AUFSTELLUNG
+SPIELDATEN
+DATEN-VERGLEICH
+DIREKTVERGLEICH
+TORE
+Gomis
+Rechtsschuss, Banzuzi
+17'
+1
+:
+0
+Nusa
+Rechtsschuss
+28'
+2
+:
+0
+Orban
+Rechtsschuss, Nusa
+72'
+3
+:
+0
+Nkunku
+Rechtsschuss, Nusa
+74'
+4
+:
+0
+Romulo
+Rechtsschuss
+77'
+5
+:
+0
+AUFSTELLUNG
+Vandevoordt2,5
+Henrichs3,0
+Orban2,0
+Lukeba4,0
+Raum3,0
+El Aynaoui3,0
+Ouedraogo3,0
+Banzuzi3,0
+Gruda2,0
+Gomis2,0
+Nusa1,5
+Heuer Fernandes4,0
+Nandja6,0
+Torunarigha5,0
+Capaldo6,0
+El Ouahdi5,0
+Sambi Lokonga5,0
+Remberg5,0
+Wolfe4,0
+Daka5,0
+Grönbaek4,0
+Poulsen5,0
+TRAINER
+Demichelis
+Polzin
+WECHSEL
+Nkunku2,5
+35'
+Ouedraogo3,0
+Esteve
+73'
+Lukeba4,0
+Romulo
+74'
+Gomis2,0
+R. Baku
+74'
+Henrichs3,0
+Finkgräfe
+78'
+Nusa1,5
+Moffi4,0
+46'
+Poulsen5,0
+Fabio Vieira
+72'
+Daka5,0
+Omari
+73'
+Nandja6,0
+Stange
+78'
+Sambi Lokonga5,0
+Jatta
+89'
+El Ouahdi5,0
+RESERVEBANK
+Nyland (Tor), Maksimovic, Seiwald, Guiu
+Tangvik (Tor), Lemke, Adeline, Nadir
+KARTEN
+Lukeba (1. Gelbe Karte)
+48'
+Capaldo (1. Gelbe Karte)
+6'
+Nandja (1. Gelbe Karte)
+71'

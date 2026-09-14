@@ -1,0 +1,122 @@
+BUNDESLIGA
+Spieltag
+Schema
+Bundesliga 2026/27, 3. Spieltag
+FC Augsburg
+3. Platz
+2
+:
+2
+0
+:
+1
+Bayer 04 Leverkusen
+7. Platz
+
+FCA
+
+B04
+
+INFO
+SCHEMA
+ANALYSE
+BILDER
+TICKER
+AUFSTELLUNG
+SPIELDATEN
+DATEN-VERGLEICH
+DIREKTVERGLEICH
+TORE
+0
+:
+1
+18'
+Kofane
+Linksschuss, Tapsoba
+Gregoritsch
+Linksschuss, Behrens
+50'
+1
+:
+1
+Gregoritsch
+Kopfball, Rieder
+55'
+2
+:
+1
+2
+:
+2
+89'
+Schick
+Rechtsschuss, Tillman
+AUFSTELLUNG
+Dahmen2,5
+Banks3,0
+Matsima4,0
+Brackelmann4,0
+M. Wolf4,0
+Massengo3,5
+Rieder3,0
+Behrens2,5
+Fellhauer3,5
+Ibrahimovic4,0
+Gregoritsch1,5
+Flekken5,0
+Quansah3,0
+Tapsoba2,5
+Medina3,0
+Miguel3,0
+E. Fernandez3,0
+Aleix Garcia3,5
+Diaby4,0
+Maza2,5
+Moreira4,5
+Kofane2,0
+TRAINER
+Baum
+Martinez
+WECHSEL
+Claude-Maurice3,5
+58'
+Ibrahimovic4,0
+Kömür
+77'
+Fellhauer3,5
+Seol
+77'
+M. Wolf4,0
+Ribeiro
+85'
+Gregoritsch1,5
+Keitel
+85'
+Massengo3,5
+Schick2,0
+63'
+Kofane2,0
+G. Doué3,0
+63'
+Quansah3,0
+Tillman
+75'
+Moreira4,5
+Terrier
+76'
+E. Fernandez3,0
+Vazquez
+85'
+Medina3,0
+RESERVEBANK
+Labrovic (Tor), Bah, Gouweleeuw, Ogundu
+Blaswich (Tor), Badé, Andrich, Hofmann
+KARTEN
+Banks (2. Gelbe Karte)
+38'
+Baum (1. Gelbe Karte)
+60'
+G. Doué (1. Gelbe Karte)
+72'
+Martinez (1. Gelbe Karte)
+77'

@@ -34,8 +34,15 @@ VEREINE = {
     "Hoffenheim": "Hoffenheim", "M’gladbach": "Gladbach", "M'gladbach": "Gladbach", "Gladbach": "Gladbach",
     "Mönchengladbach": "Gladbach", "HSV": "HSV", "Hamburg": "HSV", "Hamburger SV": "HSV",
     "Schalke": "Schalke", "Elversberg": "Elversberg", "Paderborn": "Paderborn",
+    # Langformen (kicker zeigt sie im Schema-Kopf bei breitem Fenster)
+    "FC Bayern München": "Bayern", "Bayern München": "Bayern", "Bayer 04 Leverkusen": "Leverkusen", "Bayer Leverkusen": "Leverkusen",
+    "Eintracht Frankfurt": "Frankfurt", "Borussia Dortmund": "Dortmund", "VfB Stuttgart": "Stuttgart", "RB Leipzig": "Leipzig",
+    "SC Freiburg": "Freiburg", "FC Augsburg": "Augsburg", "1. FSV Mainz 05": "Mainz", "FSV Mainz 05": "Mainz",
+    "SV Werder Bremen": "Bremen", "Werder Bremen": "Bremen", "1. FC Köln": "Köln", "1. FC Union Berlin": "Union",
+    "TSG Hoffenheim": "Hoffenheim", "TSG 1899 Hoffenheim": "Hoffenheim", "Borussia Mönchengladbach": "Gladbach", "Bor. Mönchengladbach": "Gladbach",
+    "FC Schalke 04": "Schalke", "SV Elversberg": "Elversberg", "SC Paderborn 07": "Paderborn", "SC Paderborn": "Paderborn",
 }
-ABSCHNITTE = {"TORE", "AUFSTELLUNG", "TRAINER", "WECHSEL", "RESERVEBANK", "KARTEN", "KICKER ABO", "SPIELINFO", "INFO"}
+ABSCHNITTE = {"TORE", "AUFSTELLUNG", "TRAINER", "WECHSEL", "RESERVEBANK", "KARTEN", "KICKER ABO", "SPIELINFO", "INFO", "BESONDERE VORKOMMNISSE"}
 MINUTE = re.compile(r"^\d{1,3}'(\s*\+\d+)?$")
 NOTE_AM_ENDE = re.compile(r"^(.*?)(\d,\d)\s*$")
 EIGENTOR = re.compile(r"\s*\(Eigentor\)\s*", re.I)
@@ -129,7 +136,7 @@ def schema_parsen(text: str, quelle: str = "") -> Spiel:
     for z in roh[i:]:
         if z in ABSCHNITTE:
             aktuell = z
-            abschnitte.setdefault(aktuell, [])
+            abschnitte[aktuell] = []      # Reiterleiste nennt „AUFSTELLUNG“ schon vorher – der spätere, echte Abschnitt zählt
             continue
         if aktuell and z:
             abschnitte[aktuell].append(z)
@@ -142,8 +149,13 @@ def schema_parsen(text: str, quelle: str = "") -> Spiel:
     return spiel
 
 
-def _team_bloecke(spiel: Spiel, zeilen: list[str]) -> dict[str, list[str]]:
-    """Zerlegt einen Abschnitt in {verein: zeilen} anhand der Team-Zwischenüberschriften."""
+def _team_bloecke(spiel: Spiel, zeilen: list[str], art: str = "") -> dict[str, list[str]]:
+    """Zerlegt einen Abschnitt in {verein: zeilen} anhand der Team-Zwischenüberschriften.
+
+    Im breiten Seitenlayout zeigt kicker keine Zwischenüberschriften; dann wird nach Struktur geteilt:
+    AUFSTELLUNG erste elf Zeilen = Heim, RESERVEBANK erste Zeile = Heim, WECHSEL nach dem
+    Verein des ausgewechselten Spielers.
+    """
     bloecke: dict[str, list[str]] = {}
     aktuell = None
     for z in zeilen:
@@ -157,18 +169,37 @@ def _team_bloecke(spiel: Spiel, zeilen: list[str]) -> dict[str, list[str]]:
             continue
         if aktuell:
             bloecke[aktuell].append(z)
+    if bloecke or not zeilen:
+        return bloecke
+    if art == "AUFSTELLUNG":
+        return {spiel.heim: zeilen[:11], spiel.gast: zeilen[11:]}
+    if art == "RESERVEBANK":
+        return {spiel.heim: zeilen[:1], spiel.gast: zeilen[1:2]}
+    if art == "WECHSEL":
+        team_von = {p.name: p.verein for p in spiel.spieler}
+        for j in range(0, len(zeilen) - 2, 3):
+            if not MINUTE.match(zeilen[j + 1]):
+                spiel.warnungen.append(f"Wechsel-Zeile nicht verstanden: {zeilen[j]!r}")
+                continue
+            aus, _ = _name_note(zeilen[j + 2])
+            v = team_von.get(aus)
+            if v is None:
+                spiel.warnungen.append(f"Ausgewechselter {aus!r} keinem Team zuzuordnen")
+                continue
+            bloecke.setdefault(v, []).extend(zeilen[j:j + 3])
+        return bloecke
     return bloecke
 
 
 def _aufstellung_parsen(spiel: Spiel, zeilen: list[str]) -> None:
-    for verein, block in _team_bloecke(spiel, zeilen).items():
+    for verein, block in _team_bloecke(spiel, zeilen, "AUFSTELLUNG").items():
         for z in block:
             name, note = _name_note(z)
             spiel.spieler.append(KickerSpieler(verein, name, note, "Startelf"))
 
 
 def _wechsel_parsen(spiel: Spiel, zeilen: list[str]) -> None:
-    for verein, block in _team_bloecke(spiel, zeilen).items():
+    for verein, block in _team_bloecke(spiel, zeilen, "WECHSEL").items():
         j = 0
         while j < len(block):
             if j + 2 < len(block) and MINUTE.match(block[j + 1]):
@@ -182,7 +213,7 @@ def _wechsel_parsen(spiel: Spiel, zeilen: list[str]) -> None:
 
 
 def _reservebank_parsen(spiel: Spiel, zeilen: list[str]) -> None:
-    for verein, block in _team_bloecke(spiel, zeilen).items():
+    for verein, block in _team_bloecke(spiel, zeilen, "RESERVEBANK").items():
         for z in block:
             for name in z.split(","):
                 n = re.sub(r"\s*\((Tor|TW)\)\s*", "", name).strip()

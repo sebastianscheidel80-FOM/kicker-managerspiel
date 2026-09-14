@@ -1,0 +1,110 @@
+BUNDESLIGA
+Spieltag
+Schema
+Bundesliga 2026/27, 3. Spieltag
+TSG Hoffenheim
+13. Platz
+2
+:
+1
+1
+:
+0
+VfB Stuttgart
+14. Platz
+
+TSG
+
+VFB
+
+INFO
+SCHEMA
+ANALYSE
+BILDER
+TICKER
+AUFSTELLUNG
+SPIELDATEN
+DATEN-VERGLEICH
+DIREKTVERGLEICH
+TORE
+Hlozek
+Rechtsschuss, Conté
+13'
+1
+:
+0
+1
+:
+1
+48'
+Mittelstädt
+Linksschuss, Vagnoman
+Hlozek
+Linksschuss, Daghim
+67'
+2
+:
+1
+AUFSTELLUNG
+Baumann1,5
+Coufal3,5
+Kabak2,5
+Hajdari3,5
+M. Rots3,0
+Avdullahu3,5
+Burger2,0
+Conté2,5
+Daghim2,0
+Lemperle3,0
+Hlozek1,5
+Bredlow3,0
+Jeltsch3,0
+Chabot4,5
+Hendriks4,5
+Vagnoman2,5
+Prömel3,5
+Stiller3,0
+Mittelstädt3,0
+Demirovic2,5
+Führich2,5
+Pejcinovic3,0
+TRAINER
+Ilzer
+Hoeneß
+WECHSEL
+Wimmer2,5
+55'
+Conté2,5
+Gendrey
+69'
+Coufal3,5
+Machida
+69'
+M. Rots3,0
+Kramaric
+82'
+Hlozek1,5
+Asllani
+83'
+Lemperle3,0
+Spalt3,0
+35'
+Stiller3,0
+Undav5,0
+65'
+Demirovic2,5
+El Khannouss3,0
+65'
+Führich2,5
+Sauer
+81'
+Hendriks4,5
+Leweling
+81'
+Vagnoman2,5
+RESERVEBANK
+L. Philipp (Tor), Hranac, De Cat, Moerstedt
+M. Funk (Tor), Herwerth, Stergiou, Karazor
+KARTEN
+Burger (2. Gelbe Karte)
+63'

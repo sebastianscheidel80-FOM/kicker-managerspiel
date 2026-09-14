@@ -242,9 +242,22 @@ def _erkenne(text: str, kader: list[Spieler], basis: Spielerbasis) -> tuple[list
                         i += 1
         return gefunden, uebrig
 
+    def ist_kommentar(zeile: str, gefunden: list[_Treffer]) -> bool:
+        """Fließtext-Zeile (Kommentar, Signatur), in der zufällig ein Spielername vorkommt:
+        mindestens vier inhaltliche Wörter, von denen weniger als die Hälfte exakt auf Spieler passen."""
+        woerter = [t for seg, _ in _segmente(zeile) for grp in _tokens(seg) for t in grp if not KUERZEL.match(t)]
+        if len(woerter) < 4:
+            return False
+        getroffen = sum(len(t.name_mail.split()) for t in gefunden)
+        return getroffen * 2 < len(woerter)
+
     exakt_je_zeile = {}
+    kommentare: set[int] = set()
     for nr, z in enumerate(zeilen):
         g, _ = scan(nr, z, tolerant=False)
+        if ist_kommentar(z, g):
+            kommentare.add(nr)
+            continue
         if g:
             exakt_je_zeile[nr] = g
     if not exakt_je_zeile:
@@ -255,7 +268,7 @@ def _erkenne(text: str, kader: list[Spieler], basis: Spielerbasis) -> tuple[list
     for nr, z in enumerate(zeilen):
         if not z.strip():
             continue
-        if nr < erste or nr > letzte:
+        if nr < erste or nr > letzte or nr in kommentare:
             ignoriert.append(z.strip())
             continue
         g, uebrig = scan(nr, z, tolerant=True)

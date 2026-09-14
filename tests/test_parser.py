@@ -4,7 +4,7 @@ from pathlib import Path
 from kickerspiel.kicker_parser import elf_des_tages_parsen, schema_parsen, spieltagsdaten_bauen, zuordnen, KickerImport
 from kickerspiel.mail_parser import aufstellung_aus_text, zitat_abschneiden
 from kickerspiel.model import Position, Spieler, ist_unbekannt
-from kickerspiel.spielerbasis import Spielerbasis, _aliase_fuer, ohne_initial
+from kickerspiel.spielerbasis import Spielerbasis, _aliase_fuer, _aliase_tolerant_fuer, ohne_initial
 
 FIX = Path(__file__).parent / "fixtures"
 
@@ -30,11 +30,14 @@ def basis_bauen() -> Spielerbasis:
         ("Leverkusen", "Schick", "Schick Patrik", "Schick", "STU"),
         ("Stuttgart", "Undav", "Undav Deniz", "Undav", "STU"),
         ("Union", "Latte Lath", "Latte Lath Emmanuel", "Latte Lath", "STU"),
+        ("Leipzig", "El Aynaoui", "El Aynaoui Neil", "El Aynaoui", "MIT"),
+        ("HSV", "Grönbaek", "Grönbaek Albert", "Grönbaek", "MIT"),
     ]
     for verein, kurz, kader, auktion, pos in rows:
         sid = f"{verein}:{kurz}"
         b.spieler[sid] = Spieler(sid, kurz, verein, Position(pos), "Thomas")
         b.aliase[sid] = _aliase_fuer(kurz, kader, auktion)
+        b.aliase_tolerant[sid] = _aliase_tolerant_fuer(kurz, kader, auktion)
     b.teams["Thomas"] = "Hallodries"
     return b
 
@@ -188,3 +191,71 @@ def test_ohne_initial():
     assert ohne_initial("Kai. Sano") == "Sano"
     assert ohne_initial("La. Günther") == "Günther"
     assert ohne_initial("Latte Lath") == "Latte Lath"
+
+
+# ---------------------------------------------------------------------------
+# 3. Spieltag: Kommentarzeilen, Signaturen, kurze Namensteile, breites Schema-Layout
+# ---------------------------------------------------------------------------
+MAIL_SIGNATUR = """Undav UND Schick? Da habt ihr aber nicht gut aufgepasst. FAP FAP FAP
+
+Atubolu
+|Kaua Santos
+
+Anton
+Medina
+Quansah
+|Coufal
+
+Avdullahu
+Petkov
+M. Eggestein
+Prömel
+El Anaouyi
+|Grönbaek
+
+Schick
+Undav
+|Latte Lath
+
+
+
+Hallodries e.V.
+Der etwas andere Verein.
+Kickerspiel-Meister 1999 +++ Kickerspiel-Meister 2000 +++
+Launch der Fastfood-Kette „Beste Schick“ (2026)
+Launch der Produkt-Innovation „Terrier-Undav“ (2026)
+"""
+
+
+def test_kommentar_und_signatur_werden_ignoriert():
+    a, zu, ign, warn, fehler = aufstellung_aus_text(MAIL_SIGNATUR, "Thomas", basis_bauen(), 3)
+    assert fehler == []
+    assert [s.split(":")[1] for s in a.start] == ["Atubolu", "Anton", "Medina", "Quansah", "Avdullahu", "Petkov", "M. Eggestein", "Prömel", "El Aynaoui", "Schick", "Undav"]
+    assert [s.split(":")[1] for s in a.bank] == ["Kaua Santos", "Coufal", "Grönbaek", "Latte Lath"]
+    assert not [z for z in zu if z.art == "unbekannt"]
+    # „aber“ darf nicht mehr tolerant auf den Vornamen „Albert“ (Grönbaek) passen
+    assert {z.name_mail: z.spieler.name for z in zu if z.art == "tolerant"} == {"El Anaouyi": "El Aynaoui"}
+
+
+def test_kurzer_namensteil_ist_kein_alias():
+    b = basis_bauen()
+    assert "el" not in b.aliase["Leipzig:El Aynaoui"]
+    assert b.finde("El Anaouyi", b.kader("Thomas"))[1] == "tolerant"
+    assert b.finde("aber", b.kader("Thomas"))[1] == "unbekannt"
+
+
+def test_schema_breites_layout_ohne_teamueberschriften():
+    sp = schema_parsen((FIX / "schema_dortmund_paderborn_breit.txt").read_text(encoding="utf-8"))
+    assert (sp.heim, sp.gast, sp.tore_heim, sp.tore_gast) == ("Dortmund", "Paderborn", 3, 0)
+    assert sp.warnungen == []
+    von = {(s.verein, s.status) for s in sp.spieler}
+    assert len([s for s in sp.spieler if s.verein == "Dortmund" and s.status == "Startelf"]) == 11
+    assert len([s for s in sp.spieler if s.verein == "Paderborn" and s.status == "Startelf"]) == 11
+    ein = {s.name: (s.verein, s.minute, s.note) for s in sp.spieler if s.status == "Eingewechselt"}
+    assert ein["F. Nmecha"] == ("Dortmund", "65'", "1,5") and ein["Lippmann"] == ("Paderborn", "67'", None)
+    bank = {s.name: s.verein for s in sp.spieler if s.status == "Reservebank"}
+    assert bank["A. Meyer"] == "Dortmund" and bank["Schubert"] == "Paderborn"
+    tore = {(t.schuetze, t.vorlage) for t in sp.tore}
+    assert tore == {("Fabio Silva", "Guirassy"), ("F. Nmecha", "Beier"), ("F. Nmecha", "Sabitzer")}
+    nmecha = next(s for s in sp.spieler if s.name == "F. Nmecha")
+    assert nmecha.tore == 2

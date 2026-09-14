@@ -1,0 +1,109 @@
+BUNDESLIGA
+Spieltag
+Schema
+Bundesliga 2026/27, 3. Spieltag
+SV Elversberg
+6. Platz
+1
+:
+2
+0
+:
+1
+Bayern München
+4. Platz
+
+ELV
+
+FCB
+
+INFO
+SCHEMA
+ANALYSE
+EINZELKRITIK
+BILDER
+TICKER
+AUFSTELLUNG
+SPIELDATEN
+DATEN-VERGLEICH
+TORE
+0
+:
+1
+26'
+Karl
+Linksschuss, Saibari
+Krattenmacher
+Rechtsschuss, Darvich
+61'
+1
+:
+1
+1
+:
+2
+72'
+Kane
+Rechtsschuss, Pavlovic
+AUFSTELLUNG
+Kristof3,0
+Gyamerah4,0
+Pinckert3,0
+Rohr4,0
+La. Günther4,0
+Keidel3,5
+Poreba3,5
+L. Petkov2,5
+Onyeka
+Campbell3,5
+Mokwa4,5
+Urbig3,0
+Stanisic4,5
+Upamecano3,5
+M.-J. Kim3,0
+Brown4,5
+Bischof4,5
+Pavlovic3,0
+Karl3,0
+Olise3,5
+Saibari3,5
+Kane3,0
+TRAINER
+Wagner
+Kompany
+WECHSEL
+Darvich3,0
+11'
+Onyeka
+Krattenmacher2,0
+46'
+Campbell3,5
+Condé
+73'
+Keidel3,5
+Futkeu
+74'
+Mokwa4,5
+Schnellbacher
+83'
+L. Petkov2,5
+Davies3,0
+65'
+Brown4,5
+Kimmich3,0
+65'
+Bischof4,5
+Luis Diaz4,0
+65'
+Saibari3,5
+Musiala4,0
+65'
+Karl3,0
+RESERVEBANK
+Boss (Tor), Le Joncour, Mickelson, Sirch
+Neuer (Tor), H. Ito, Laimer, Tah, Gnabry
+KARTEN
+Onyeka (1. Gelbe Karte)
+7'
+Keidel (1. Gelbe Karte)
+63'

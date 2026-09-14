@@ -1,0 +1,112 @@
+BUNDESLIGA
+Spieltag
+Schema
+Bundesliga 2026/27, 3. Spieltag
+1. FC Köln
+12. Platz
+1
+:
+1
+1
+:
+0
+Werder Bremen
+10. Platz
+
+KOE
+
+SVW
+
+INFO
+SCHEMA
+ANALYSE
+BILDER
+TICKER
+AUFSTELLUNG
+SPIELDATEN
+DATEN-VERGLEICH
+DIREKTVERGLEICH
+TORE
+Maina
+Rechtsschuss, Skhiri
+11'
+1
+:
+0
+1
+:
+1
+69'
+Füllkrug
+Linksschuss
+BESONDERE VORKOMMNISSE
+
+Hein hält Handelfmeter von Dallinga (8.)
+
+AUFSTELLUNG
+Schwäbe3,0
+Castro-Montes3,5
+Simpson-Pusey4,0
+Lochoshvili4,0
+Mensah3,0
+Skhiri3,0
+Krauß3,5
+Maina2,5
+Moore3,0
+Bülter3,0
+Dallinga5,0
+Hein1,5
+Arthur4,0
+Pieper4,0
+Friedl2,5
+Deman3,5
+Regeer4,0
+Chuki3,0
+Reis4,0
+Dinkci4,0
+Grüll3,5
+Füllkrug2,5
+TRAINER
+Wagner
+Thioune
+WECHSEL
+Sebulonsen3,5
+65'
+Castro-Montes3,5
+Ache4,0
+65'
+Dallinga5,0
+Johannesson4,0
+65'
+Maina2,5
+S. El Mala
+74'
+Moore3,0
+Okon-Engstler
+90'
+Krauß3,5
+Stalmach
+70'
+Reis4,0
+Itten
+81'
+Füllkrug2,5
+Schmetgens
+81'
+Arthur4,0
+Weiser
+83'
+Regeer4,0
+Erevbenagie
+83'
+Dinkci4,0
+RESERVEBANK
+Zieler (Tor), Schmied, Sosa, Thielmann
+A. Schlager (Tor), Stark, Wojcik, Musah
+KARTEN
+Mensah (1. Gelbe Karte)
+86'
+Okon-Engstler (1. Gelbe Karte)
+90' +2
+Deman (1. Gelbe Karte)
+72'

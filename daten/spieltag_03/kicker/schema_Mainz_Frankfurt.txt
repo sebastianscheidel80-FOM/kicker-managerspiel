@@ -1,0 +1,120 @@
+BUNDESLIGA
+Spieltag
+Schema
+Bundesliga 2026/27, 3. Spieltag
+1. FSV Mainz 05
+8. Platz
+1
+:
+3
+0
+:
+2
+Eintracht Frankfurt
+9. Platz
+
+M05
+
+SGE
+
+INFO
+SCHEMA
+ANALYSE
+EINZELKRITIK
+BILDER
+TICKER
+AUFSTELLUNG
+SPIELDATEN
+DATEN-VERGLEICH
+TORE
+0
+:
+1
+9'
+Uzun
+Rechtsschuss, Burkardt
+0
+:
+2
+45'
++1
+Burkardt
+Rechtsschuss, Maluze
+0
+:
+3
+60'
+Uzun
+Rechtsschuss, M. Götze
+P. Tietz
+Rechtsschuss, Ruoppi
+89'
+1
+:
+3
+BESONDERE VORKOMMNISSE
+
+Atubolu hält Foulelfmeter von Amiri (43.)
+
+AUFSTELLUNG
+Zentner3,0
+Posch3,0
+Gruber5,0
+Potulski5,0
+Caci4,0
+Kai. Sano3,5
+Mwene5,5
+Amiri5,0
+J.-S. Lee5,0
+Becker4,0
+P. Tietz4,0
+Atubolu2,0
+Maluze2,5
+R. Koch3,0
+Brassier3,5
+Baum2,5
+Aseko3,0
+Onyedika4,0
+Kosugi3,5
+Doan2,0
+Uzun2,0
+Burkardt2,0
+TRAINER
+Fischer
+Hütter
+WECHSEL
+Königsdörffer4,5
+46'
+J.-S. Lee5,0
+da Costa3,5
+62'
+Caci4,0
+Nakuzola
+74'
+Mwene5,5
+Hollerbach
+74'
+Becker4,0
+Ruoppi
+85'
+Amiri5,0
+M. Götze2,5
+59'
+Aseko3,0
+Ebnoutalib
+74'
+Burkardt2,0
+Amaimouni-Echghouyab
+87'
+Uzun2,0
+Chandler
+87'
+Baum2,5
+RESERVEBANK
+Schwolow (Tor), Bell, Kawasaki, Maloney
+Kaua Santos (Tor), Collins, Otavio, Arrhov, Pimpong
+KARTEN
+Onyedika (2. Gelbe Karte)
+41'
+M. Götze (1. Gelbe Karte)
+70'
