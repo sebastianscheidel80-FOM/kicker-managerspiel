@@ -21,6 +21,7 @@ from typing import Optional
 
 from .engine import (KATEGORIEN, Herkunft, Kategorie, ManagerErgebnis, Saison, SpieltagErgebnis,
                      note_text, punkte_text, schnitt_text)
+from .kasse import euro, kasse_berechnen
 from .spielerbasis import Spielerbasis
 from .wappen import WAPPEN, wappen_svg
 
@@ -290,6 +291,20 @@ def index_seite(saison: Saison, ergebnisse: list[SpieltagErgebnis], basis: Spiel
         sieger = ", ".join(_team(basis, m) for m, a in e.spieltagssieg.items() if a > 0)
         body.append(f'<a href="spieltag-{e.spieltag:02d}.html">{e.spieltag}. Spieltag – Sieger: {_e(sieger)}</a>')
     body.append('</div>')
+    # Kasse (Regeln 4.4)
+    k = kasse_berechnen(saison)
+    z = [f'<h2>Kasse</h2><p style="color:var(--grau);font-size:13px;margin:0 0 8px">1 € je Manager und Spieltag – {k.spieltage_gewertet} von {k.spieltage_gesamt} Spieltagen gewertet. '
+         f'{euro(k.praemie_je_sieg)} je Spieltagssieg (geteilte Siege anteilig); Meisterschaftstopf {euro(k.meisterschaftstopf)}: '
+         + ", ".join(f"{p}. Platz {euro(v)}" for p, v in sorted(k.platzpraemien.items()))
+         + f'. Auszahlung am Saisonende, Kassenwart {_e(k.kassenwart)}. * Vorschau: Platzprämie nach aktuellem Tabellenstand, Saldo Ende mit dem vollen Saison-Einsatz.</p>',
+         '<div class="tabelle"><table><tr><th>Platz</th><th>Team</th><th class="z">Siege</th><th class="z">Siegprämie</th><th class="z" title="Vorschau nach aktuellem Tabellenstand">Platzprämie*</th><th class="z">Einsatz bisher</th><th class="z">Saldo bisher</th><th class="z" title="mit vollem Saison-Einsatz">Saldo Ende*</th></tr>']
+    for r in k.zeilen:
+        farbe = "var(--gruen)" if r.saldo_ende > 0 else ("var(--rot)" if r.saldo_ende < 0 else "inherit")
+        z.append(f'<tr><td class="z">{r.platz}.</td><td class="m">{_mini(basis, r.manager)}{_e(_team(basis, r.manager))} <span style="color:var(--grau)">· {_e(r.manager)}</span></td>'
+                 f'<td class="z">{punkte_text(r.spieltagssiege)}</td><td class="z">{euro(r.siegpraemie)}</td><td class="z">{euro(r.platzpraemie)}</td>'
+                 f'<td class="z">{euro(r.einsatz)}</td><td class="z">{euro(r.saldo)}</td><td class="z" style="color:{farbe}"><b>{euro(r.saldo_ende)}</b></td></tr>')
+    z.append('</table></div>')
+    body.extend(z)
     body.append('<h2>Regelwerk</h2><p><a href="../Das_Goldene_Buch_2026-27.pdf">Das Goldene Buch – Verfassung des Kickerspiels (PDF)</a> · '
                 'Verbindlich ist die Regeldatei <a href="https://github.com/sebastianscheidel80-FOM/kicker-managerspiel/blob/main/REGELN_1.md">REGELN_1.md</a>.</p>')
     body.append('<h2>Die Teams</h2><div class="teams">')

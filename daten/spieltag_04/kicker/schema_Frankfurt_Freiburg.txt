@@ -1,0 +1,124 @@
+BUNDESLIGA
+Spieltag
+Schema
+Bundesliga 2026/27, 4. Spieltag
+Frankfurt
+10. Platz
+2
+:
+2
+2
+:
+1
+Freiburg
+3. Platz
+INFO
+SCHEMA
+ANALYSE
+BILDER
+TICKER
+AUFSTELLUNG
+SPIELDATEN
+DATEN-VERGLEICH
+DIREKTVERGLEICH
+TORE
+Ebnoutalib
+Rechtsschuss, Doan
+10'
+1
+:
+0
+1
+:
+1
+34'
+Scherhant
+Rechtsschuss, Makengo
+Burkardt
+Rechtsschuss, R. Koch
+36'
+2
+:
+1
+2
+:
+2
+48'
+Y. Suzuki
+Rechtsschuss, Scherhant
+AUFSTELLUNG
+ Frankfurt
+Atubolu3,5
+Baum5,0
+R. Koch4,5
+Brassier3,0
+Kosugi3,5
+Onyedika4,0
+Aseko4,5
+Doan3,0
+Uzun3,5
+Ebnoutalib3,0
+Burkardt2,0
+ Freiburg
+Backhaus3,0
+Treu3,0
+Ginter2,5
+Lienhart3,0
+Makengo3,0
+M. Eggestein3,5
+Engelhardt3,0
+Beste3,5
+Y. Suzuki2,5
+Scherhant1,5
+Matanovic3,0
+TRAINER
+ Frankfurt
+Hütter
+ Freiburg
+Schuster
+WECHSEL
+ Frankfurt
+O. Höjlund5,0
+46'
+Aseko4,5
+Collins3,0
+61'
+Baum5,0
+Knauff3,0
+61'
+Doan3,0
+M. Götze
+89'
+Uzun3,5
+Amaimouni-Echghouyab
+89'
+Burkardt2,0
+ Freiburg
+Kübler
+71'
+Beste3,5
+Grifo
+71'
+Scherhant1,5
+Höler
+84'
+Y. Suzuki2,5
+Goto
+84'
+Matanovic3,0
+RESERVEBANK
+ Frankfurt
+Kaua Santos (Tor), Chandler, Otavio, Pimpong
+ Freiburg
+F. Müller (Tor), Günter, Rosenfelder, Yilmaz, Irié
+KARTEN
+ Frankfurt
+Onyedika (3. Gelbe Karte)
+9'
+O. Höjlund (1. Gelbe Karte)
+56'
+ Freiburg
+Backhaus (1. Gelbe Karte)
+36'
+Höler (1. Gelbe Karte)
+88'

@@ -1,0 +1,122 @@
+BUNDESLIGA
+Spieltag
+Schema
+Bundesliga 2026/27, 4. Spieltag
+HSV
+16. Platz
+2
+:
+1
+1
+:
+0
+Köln
+13. Platz
+INFO
+SCHEMA
+ANALYSE
+EINZELKRITIK
+BILDER
+TICKER
+AUFSTELLUNG
+SPIELDATEN
+DATEN-VERGLEICH
+DIREKTVERGLEICH
+TORE
+Capaldo
+Kopfball, Grönbaek
+44'
+1
+:
+0
+Poulsen
+Rechtsschuss, Grönbaek
+50'
+2
+:
+0
+2
+:
+1
+90'
+Ache
+Kopfball, Skhiri
+AUFSTELLUNG
+ HSV
+Heuer Fernandes2,0
+Capaldo1,5
+Torunarigha2,0
+Omari4,0
+El Ouahdi3,0
+Sambi Lokonga3,0
+Remberg3,0
+Wolfe2,5
+Fabio Vieira4,0
+Grönbaek2,5
+Moffi5,0
+ Köln
+Schwäbe4,0
+Castro-Montes3,5
+Simpson-Pusey4,5
+Lochoshvili4,5
+Mensah3,5
+Krauß4,0
+Skhiri3,5
+Maina4,0
+Moore3,5
+S. El Mala3,5
+Dallinga4,5
+TRAINER
+ HSV
+Polzin
+ Köln
+Wagner
+WECHSEL
+ HSV
+Poulsen2,0
+46'
+Moffi5,0
+Daka
+67'
+Grönbaek2,5
+Lemke
+77'
+Wolfe2,5
+Jatta
+77'
+El Ouahdi3,0
+Adeline
+90'
+Sambi Lokonga3,0
+ Köln
+Sosa3,5
+64'
+Mensah3,5
+Ache3,0
+64'
+Dallinga4,5
+Johannesson
+68'
+Castro-Montes3,5
+Waldschmidt
+81'
+Krauß4,0
+Bülter
+81'
+Maina4,0
+RESERVEBANK
+ HSV
+Tangvik (Tor), Nandja, Nadir, Stange
+ Köln
+Zieler (Tor), Schmied, Sebulonsen, Thielmann
+KARTEN
+ HSV
+Grönbaek (1. Gelbe Karte)
+10'
+ Köln
+Mensah (2. Gelbe Karte)
+54'
+Johannesson (1. Gelbe Karte)
+77'
+Skhiri (1. Gelbe Karte)
+84'

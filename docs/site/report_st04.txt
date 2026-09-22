@@ -1,0 +1,207 @@
+KICKERSPIEL SAISON 2026-2027
+
+*****************************************************************
+
+GESAMTSTAND NACH DEM 4. SPIELTAG
+
+PUNKTE
+
+1. Andreas, 62,5 Punkte
+2. Daniel, 56,0 Punkte
+3. Sebastian, 55,5 Punkte
+4. Thomas, 52,0 Punkte
+5. Wolfgang, 45,0 Punkte
+6. Martin, 44,0 Punkte
+
+SPIELTAGSSIEGE
+
+1. Andreas, 2,0
+2. Thomas, 1,0
+3. Daniel, 0,0
+   Martin, 0,0
+   Sebastian, 0,0
+   Wolfgang, 0,0
+
+*****************************************************************
+
+ERGEBNIS 4. SPIELTAG
+
+1. Andreas, 26,5 Punkte
+2. Martin, 18,0 Punkte
+3. Daniel, 17,5 Punkte
+4. Sebastian, 16,5 Punkte
+5. Thomas, 14,5 Punkte
+6. Wolfgang, 12,0 Punkte
+
+ELF DES TAGES
+
+1. Andreas, 6,0 Punkte (2)
+2. Daniel, 4,5 Punkte (1)
+   Martin, 4,5 Punkte (1)
+4. Sebastian, 2,0 Punkte (0)
+   Thomas, 2,0 Punkte (0)
+   Wolfgang, 2,0 Punkte (0)
+
+GEGENTORE
+
+1. Sebastian, 6,0 Punkte (0)
+2. Daniel, 5,0 Punkte (2)
+3. Andreas, 4,0 Punkte (4)
+4. Thomas, 3,0 Punkte (6)
+5. Wolfgang, 2,0 Punkte (7)
+6. Martin, 1,0 Punkte (8)
+
+NOTE
+
+1. Andreas, 6,0 Punkte (2,68)
+2. Sebastian, 5,0 Punkte (2,82)
+3. Daniel, 4,0 Punkte (3,14)
+4. Wolfgang, 3,0 Punkte (3,27)
+5. Thomas, 2,0 Punkte (3,32)
+6. Martin, 1,0 Punkte (3,59)
+
+VORLAGEN
+
+1. Andreas, 5,5 Punkte (6)
+   Martin, 5,5 Punkte (6)
+3. Thomas, 4,0 Punkte (3)
+4. Daniel, 3,0 Punkte (1)
+5. Sebastian, 1,5 Punkte (0)
+   Wolfgang, 1,5 Punkte (0)
+
+TORE
+
+1. Martin, 6,0 Punkte (6)
+2. Andreas, 5,0 Punkte (4)
+3. Thomas, 3,5 Punkte (3)
+   Wolfgang, 3,5 Punkte (3)
+5. Sebastian, 2,0 Punkte (2)
+6. Daniel, 1,0 Punkte (1)
+
+
+MANAGER: ANDREAS (Fischköppe)
+Ø-Note 2,68 · Gegentore 4 · Tore 4 · Vorlagen 6 · Elf des Tages 2  →  26,5 Punkte (Platz 1)
+--------------------------------------------------------------
+Pos Spieler             Elf Note  GegT  Vorl  Tore  Herkunft
+--- ------------------- --- ----  ----  ----  ----  --------
+TOR Backhaus                3,0   2                 
+ABW Davies                  2,0   0     2           
+ABW Upamecano               2,5   0                 
+ABW Stanisic            ja  2,5   0                 
+MIT Kimmich                 2,0                     
+MIT Doan                    3,0         1           
+MIT Bellingham              2,5         1           
+MIT E. Fernandez            3,0                     
+MIT Mohya                   4,0                     
+STU Kane                ja  2,0               2     
+STU Matanovic               3,0                     
+    gewichtet           2   2,68  4     6     4     TW-GegT ×2 · MIT-Vorl ×2 · STU-Tore ×2
+    Rangpunkte          6,0 6,0   4,0   5,5   5,0   Summe 26,5
+
+
+MANAGER: MARTIN (Hansa Fürze)
+Ø-Note 3,59 · Gegentore 8 · Tore 6 · Vorlagen 6 · Elf des Tages 1  →  18,0 Punkte (Platz 2)
+--------------------------------------------------------------
+Pos Spieler             Elf Note  GegT  Vorl  Tore  Herkunft
+--- ------------------- --- ----  ----  ----  ----  --------
+TOR Kobel                   2,5   0                 
+ABW Lienhart                3,0   2                 
+ABW Simpson-Pusey           4,5   2                 
+ABW Diks                    5,0   4                 
+MIT Amiri                   3,5                     
+MIT Onyeka ↑                5,5*                    für Karl (Bank 3)
+MIT Leweling                3,5                     
+MIT Burger                  4,0                     
+MIT Grönbaek                2,5         2           
+STU Olise               ja  1,0         2     3     
+STU Lemperle                4,5                     
+    gewichtet           1   3,59  8     6     6     TW-GegT ×2 · MIT-Vorl ×2 · STU-Tore ×2
+    Rangpunkte          4,5 1,0   1,0   5,5   6,0   Summe 18,0
+Protokoll:
+  MIT Karl: nicht eingesetzt, kein Ersatz-MIT mit Note → Onyeka rückt mit Kurzeinsatz nach (Bank 3), Note 5,5, kein Strafgegentor.
+
+
+MANAGER: DANIEL (Käsefüße)
+Ø-Note 3,14 · Gegentore 2 · Tore 1 · Vorlagen 1 · Elf des Tages 1  →  17,5 Punkte (Platz 3)
+--------------------------------------------------------------
+Pos Spieler             Elf Note  GegT  Vorl  Tore  Herkunft
+--- ------------------- --- ----  ----  ----  ----  --------
+TOR Flekken                 2,0   0                 
+ABW Miguel              ja  1,5   0     1     1     
+ABW Vagnoman ↑              3,5   1                 für Lukeba (Bank 1)
+ABW Mittelstädt             4,0   1                 
+MIT S. El Mala              3,5                     
+MIT Karaman                 3,5                     
+MIT Karetsas                3,0                     
+MIT Wimmer                  3,5                     
+MIT F. Nmecha               2,0                     
+STU Guirassy                4,0                     
+STU Romulo                  4,0                     
+    gewichtet           1   3,14  2     1     1     TW-GegT ×2 · MIT-Vorl ×2 · STU-Tore ×2
+    Rangpunkte          4,5 4,0   5,0   3,0   1,0   Summe 17,5
+Protokoll:
+  ABW Lukeba: keine Note → Vagnoman rückt nach (Bank 1).
+  Warnung: Nur 3 Ersatzspieler statt 4
+  Warnung: Kein Ersatztorwart auf der Bank
+
+
+MANAGER: SEBASTIAN (Great Licors)
+Ø-Note 2,82 · Gegentore 0 · Tore 2 · Vorlagen 0 · Elf des Tages 0  →  16,5 Punkte (Platz 4)
+--------------------------------------------------------------
+Pos Spieler             Elf Note  GegT  Vorl  Tore  Herkunft
+--- ------------------- --- ----  ----  ----  ----  --------
+TOR Neuer                   2,0   0                 
+ABW Gadou ↑                 4,0   0                 für Laimer (Bank 2)
+ABW Tapsoba                 2,5   0                 
+ABW Ryerson                 3,0   0                 
+MIT Maza                    3,0                     
+MIT Pavlovic                2,0                     
+MIT Gruda                   3,5                     
+MIT Aleix Garcia            2,5                     
+MIT Uzun                    3,5                     
+STU Burkardt                2,0               1     
+STU Diaby                   3,0                     
+    gewichtet           0   2,82  0     0     2     TW-GegT ×2 · MIT-Vorl ×2 · STU-Tore ×2
+    Rangpunkte          2,0 5,0   6,0   1,5   2,0   Summe 16,5
+Protokoll:
+  ABW Laimer: keine Note → Gadou rückt nach (Bank 2).
+
+
+MANAGER: THOMAS (Hallodries)
+Ø-Note 3,32 · Gegentore 6 · Tore 3 · Vorlagen 3 · Elf des Tages 0  →  14,5 Punkte (Platz 5)
+--------------------------------------------------------------
+Pos Spieler             Elf Note  GegT  Vorl  Tore  Herkunft
+--- ------------------- --- ----  ----  ----  ----  --------
+TOR Atubolu                 3,5   2                 
+ABW Quansah                 3,0   0                 
+ABW Medina                  2,0   0                 
+ABW R. Koch                 4,5   2     1           
+MIT Petkov                  4,0                     
+MIT Musiala                 2,0         1     1     
+MIT Moore                   3,5                     
+MIT M. Eggestein            3,5                     
+MIT Führich                 4,0                     
+STU Schick                  2,5               1     
+STU Hlozek                  4,0                     
+    gewichtet           0   3,32  6     3     3     TW-GegT ×2 · MIT-Vorl ×2 · STU-Tore ×2
+    Rangpunkte          2,0 2,0   3,0   4,0   3,5   Summe 14,5
+
+
+MANAGER: WOLFGANG (Vickings)
+Ø-Note 3,27 · Gegentore 7 · Tore 3 · Vorlagen 0 · Elf des Tages 0  →  12,0 Punkte (Platz 6)
+--------------------------------------------------------------
+Pos Spieler             Elf Note  GegT  Vorl  Tore  Herkunft
+--- ------------------- --- ----  ----  ----  ----  --------
+TOR Vandevoordt             3,5   2                 
+ABW Tah                     2,0   0                 
+ABW Kabak                   4,5   3                 
+ABW Schlotterbeck           2,5   0                 
+MIT Veerman                 3,0                     
+MIT El Aynaoui              3,0                     
+MIT Honorat                 4,5                     
+MIT Lee                     5,0                     
+MIT Suzuki                  2,5               1     
+STU Luis Diaz               3,5                     
+STU Füllkrug                2,0               1     
+    gewichtet           0   3,27  7     0     3     TW-GegT ×2 · MIT-Vorl ×2 · STU-Tore ×2
+    Rangpunkte          2,0 3,0   2,0   1,5   3,5   Summe 12,0

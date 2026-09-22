@@ -1,0 +1,162 @@
+BUNDESLIGA
+Spieltag
+Schema
+Bundesliga 2026/27, 4. Spieltag
+M’gladbach
+18. Platz
+3
+:
+4
+1
+:
+2
+Mainz
+6. Platz
+INFO
+SCHEMA
+ANALYSE
+BILDER
+TICKER
+AUFSTELLUNG
+SPIELDATEN
+DATEN-VERGLEICH
+DIREKTVERGLEICH
+TORE
+Neuhaus
+Rechtsschuss, Ullrich
+11'
+1
+:
+0
+1
+:
+1
+18'
+P. Tietz
+Linksschuss, Becker
+1
+:
+2
+45'
++1
+Becker
+Kopfball, Caci
+Lidberg
+Rechtsschuss, Ullrich
+59'
+2
+:
+2
+2
+:
+3
+78'
+Martel
+Kopfball, Kai. Sano
+2
+:
+4
+89'
+da Costa
+Linksschuss
+Machino (Elfmeter)
+Rechtsschuss
+90'
++5
+3
+:
+4
+BESONDERE VORKOMMNISSE
+
+Diks schießt Handelfmeter an den Pfosten (57.)
+
+AUFSTELLUNG
+ M’gladbach
+Nicolas3,5
+Diks5,0
+Leszczynski4,0
+Itakura5,0
+Scally4,5
+Bolin4,0
+Sander3,5
+Ullrich3,5
+Honorat4,5
+Neuhaus2,5
+Lidberg4,0
+ Mainz
+Schwolow2,5
+Posch3,0
+Gruber3,5
+Potulski4,0
+Caci3,5
+Kai. Sano2,5
+Mwene5,0
+Amiri3,5
+J.-S. Lee5,0
+Becker1,5
+P. Tietz4,0
+TRAINER
+ M’gladbach
+Lichte
+ Mainz
+Fischer
+WECHSEL
+ M’gladbach
+Mohya4,0
+64'
+Neuhaus2,5
+Hashioka
+76'
+Scally4,5
+Stöger
+76'
+Honorat4,5
+Hack
+84'
+Bolin4,0
+Machino
+84'
+Itakura5,0
+ Mainz
+Martel3,0
+65'
+J.-S. Lee5,0
+da Costa2,5
+65'
+Caci3,5
+Königsdörffer
+76'
+Becker1,5
+Maloney
+90' +1
+Amiri3,5
+RESERVEBANK
+ M’gladbach
+Batz (Tor), Chiarodia, Herold, Nguefack
+ Mainz
+Kinzig (Tor), Bell, Nakuzola, Ruoppi, Hollerbach
+KARTEN
+ M’gladbach
+Ullrich (1. Gelbe Karte)
+19'
+Sander (1. Gelbe Karte)
+55'
+Neuhaus (1. Gelbe Karte)
+62'
+Mohya (1. Gelbe Karte)
+87'
+Stöger (1. Gelbe Karte)
+87'
+Machino (1. Gelbe Karte)
+90' +3
+ Mainz
+Posch (1. Gelbe Karte)
+55'
+Mwene (3. Gelbe Karte)
+73'
+Potulski (1. Gelbe Karte)
+90' +3
+Schwolow (1. Gelbe Karte)
+90' +4
+Königsdörffer (1. Gelbe Karte)
+90' +7

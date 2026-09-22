@@ -1,0 +1,133 @@
+BUNDESLIGA
+Spieltag
+Schema
+Bundesliga 2026/27, 4. Spieltag
+Bremen
+8. Platz
+3
+:
+2
+0
+:
+1
+Augsburg
+4. Platz
+INFO
+SCHEMA
+ANALYSE
+BILDER
+TICKER
+AUFSTELLUNG
+SPIELDATEN
+DATEN-VERGLEICH
+DIREKTVERGLEICH
+TORE
+0
+:
+1
+18'
+Fellhauer
+Rechtsschuss, Rieder
+0
+:
+2
+58'
+Brackelmann
+Kopfball, Claude-Maurice
+Grüll
+Rechtsschuss, Chuki
+66'
+1
+:
+2
+Füllkrug
+Rechtsschuss, Grüll
+86'
+2
+:
+2
+Weiser
+Linksschuss, Grüll
+90'
++3
+3
+:
+2
+AUFSTELLUNG
+ Bremen
+Hein3,0
+Arthur3,0
+Pieper3,0
+Friedl3,5
+Deman4,0
+Regeer2,5
+Reis3,0
+Chuki3,0
+Dinkci4,0
+Grüll1,0
+Füllkrug2,0
+ Augsburg
+Dahmen2,0
+Banks5,0
+Matsima3,0
+Brackelmann2,5
+M. Wolf4,0
+Massengo4,0
+Rieder3,0
+Behrens4,5
+Fellhauer3,0
+Kömür5,0
+Gregoritsch4,0
+TRAINER
+ Bremen
+Thioune
+ Augsburg
+Baum
+WECHSEL
+ Bremen
+Weiser
+67'
+Dinkci4,0
+Musah
+78'
+Reis3,0
+Wojcik
+78'
+Pieper3,0
+Schmetgens
+90' +4
+Arthur3,0
+ Augsburg
+Ribeiro4,0
+52'
+Gregoritsch4,0
+Claude-Maurice3,0
+53'
+Kömür5,0
+Keitel4,0
+53'
+Massengo4,0
+Seol
+74'
+M. Wolf4,0
+Gouweleeuw
+83'
+Brackelmann2,5
+RESERVEBANK
+ Bremen
+A. Schlager (Tor), Stark, Stalmach, Erevbenagie, Itten
+ Augsburg
+Labrovic (Tor), Bah, Ibrahimovic, Ogundu
+KARTEN
+ Bremen
+Arthur (1. Gelbe Karte)
+27'
+Grüll (1. Gelbe Karte)
+60'
+ Augsburg
+Massengo (1. Gelbe Karte)
+6'
+Baum (2. Gelbe Karte)
+73'
+Behrens (1. Gelbe Karte)
+77'

@@ -1,0 +1,102 @@
+BUNDESLIGA
+Spieltag
+Schema
+Bundesliga 2026/27, 4. Spieltag
+Schalke
+11. Platz
+0
+:
+0
+0
+:
+0
+Elversberg
+7. Platz
+INFO
+SCHEMA
+ANALYSE
+BILDER
+TICKER
+AUFSTELLUNG
+SPIELDATEN
+DATEN-VERGLEICH
+DIREKTVERGLEICH
+TORE
+Fehlanzeige
+AUFSTELLUNG
+ Schalke
+Karius3,0
+T. Becker3,5
+Katic3,0
+Kurucay2,0
+Dina Ebimbe4,0
+El-Faouzi3,5
+Tanaka3,5
+Gosens3,5
+Karaman3,5
+Aouchiche3,5
+Dzeko4,0
+ Elversberg
+Kristof3,0
+Gyamerah4,0
+Pinckert2,5
+Rohr2,5
+La. Günther3,5
+Keidel3,0
+Poreba3,5
+L. Petkov4,0
+Darvich4,5
+Campbell3,5
+Mokwa4,0
+TRAINER
+ Schalke
+Muslic
+ Elversberg
+Wagner
+WECHSEL
+ Schalke
+Sylla4,0
+62'
+Dzeko4,0
+Wöber4,0
+62'
+T. Becker3,5
+V. Becker
+70'
+Gosens3,5
+H.-C. Hwang
+70'
+Aouchiche3,5
+Schallenberg
+78'
+Tanaka3,5
+ Elversberg
+Krattenmacher3,5
+46'
+Darvich4,5
+Sirch4,0
+51'
+Gyamerah4,0
+Futkeu
+76'
+Mokwa4,0
+Mickelson
+76'
+La. Günther3,5
+Onyeka
+87'
+Campbell3,5
+RESERVEBANK
+ Schalke
+Ke. Müller (Tor), Ayhan, Vozar, Adamu
+ Elversberg
+Boss (Tor), Le Joncour, Condé, Schnellbacher
+KARTEN
+ Schalke
+Kurucay (1. Gelbe Karte)
+62'
+ Elversberg
+Keidel (2. Gelbe Karte)
+26'
+Darvich (1. Gelbe Karte)
+36'

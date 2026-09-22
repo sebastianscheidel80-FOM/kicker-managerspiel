@@ -1,0 +1,121 @@
+BUNDESLIGA
+Spieltag
+Schema
+Bundesliga 2026/27, 4. Spieltag
+Paderborn
+12. Platz
+3
+:
+1
+2
+:
+0
+Hoffenheim
+14. Platz
+INFO
+SCHEMA
+ANALYSE
+BILDER
+TICKER
+AUFSTELLUNG
+SPIELDATEN
+DATEN-VERGLEICH
+DIREKTVERGLEICH
+TORE
+Castaneda
+Linksschuss
+29'
+1
+:
+0
+Marino
+Rechtsschuss, Curda
+42'
+2
+:
+0
+2
+:
+1
+50'
+Daghim
+Rechtsschuss, Moerstedt
+S. Tigges
+Kopfball, Sticker
+69'
+3
+:
+1
+AUFSTELLUNG
+ Paderborn
+Noll2,5
+ter Horst3,0
+Scheller2,5
+Hansen3,5
+Curda2,5
+Castaneda2,5
+Obermair3,5
+Ulrich2,0
+Vidovic4,0
+Pieringer3,5
+Marino2,5
+ Hoffenheim
+Baumann3,0
+Coufal4,0
+Kabak4,5
+Machida5,0
+M. Rots5,0
+Avdullahu5,0
+Burger4,0
+Conté3,0
+Daghim2,5
+Hlozek4,0
+Moerstedt3,5
+TRAINER
+ Paderborn
+Kettemann
+ Hoffenheim
+Ilzer
+WECHSEL
+ Paderborn
+S. Tigges2,0
+46'
+Pieringer3,5
+Sticker2,5
+63'
+Obermair3,5
+Philippe
+73'
+Marino2,5
+Baack
+73'
+Vidovic4,0
+Götze
+75'
+Hansen3,5
+ Hoffenheim
+Hajdari5,0
+46'
+M. Rots5,0
+Lemperle4,5
+62'
+Moerstedt3,5
+Wimmer3,5
+62'
+Hlozek4,0
+Kramaric
+80'
+Daghim2,5
+Asllani
+80'
+Avdullahu5,0
+RESERVEBANK
+ Paderborn
+Schubert (Tor), Müller, S. Michel, Zeitler
+ Hoffenheim
+L. Philipp (Tor), Gendrey, Hranac, De Cat
+KARTEN
+ Paderborn
+ Hoffenheim
+Burger (3. Gelbe Karte)
+45'

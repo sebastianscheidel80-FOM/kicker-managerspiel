@@ -46,6 +46,7 @@ ABSCHNITTE = {"TORE", "AUFSTELLUNG", "TRAINER", "WECHSEL", "RESERVEBANK", "KARTE
 MINUTE = re.compile(r"^\d{1,3}'(\s*\+\d+)?$")
 NOTE_AM_ENDE = re.compile(r"^(.*?)(\d,\d)\s*$")
 EIGENTOR = re.compile(r"\s*\(Eigentor\)\s*", re.I)
+ELFMETER = re.compile(r"\s*\((Elfmeter|Foulelfmeter|Handelfmeter)\)\s*", re.I)
 
 
 @dataclass
@@ -249,9 +250,13 @@ def _tore_parsen(spiel: Spiel, zeilen: list[str]) -> None:
                 spiel.warnungen.append(f"Torzeile ohne Minute beim Stand {stand}: {minute!r}")
             eigentor = bool(EIGENTOR.search(schuetze))
             schuetze = EIGENTOR.sub("", schuetze).strip()
+            elfmeter = bool(ELFMETER.search(schuetze))
+            schuetze = ELFMETER.sub("", schuetze).strip()          # "Kane (Elfmeter)" → Kane, zählt normal
             vorlage = None
             if "," in art:
                 art, vorlage = [x.strip() for x in art.split(",", 1)]
+            if elfmeter:
+                art = f"{art} (Elfmeter)" if art else "Elfmeter"
             spiel.tore.append(Tor(minute, verein, schuetze, eigentor, art, vorlage, stand))
             k += 3 if verein == spiel.heim else 6
             continue

@@ -261,6 +261,16 @@ def saison_schreiben(pfad: Path, saison: Saison, basis: Spielerbasis) -> None:
     for b in sorted(saison.beitraege.values(), key=lambda b: (b.spieler.manager, b.spieler.position.value, b.spieler.name)):
         ws4.append([b.spieler.manager, b.spieler.name, b.spieler.verein, b.spieler.position.value, b.einsaetze, b.nachgerueckt, b.strafnoten,
                     round(_f(b.notenschnitt), 2) if b.notenschnitt is not None else "", b.tore, b.tore_gew, b.vorlagen, b.vorlagen_gew, b.gegentore_gew, b.edt])
+    # Kasse (REGELN 4.4): Anzeige, keine Wertungslogik
+    from .kasse import kasse_berechnen
+    k = kasse_berechnen(saison)
+    ws5 = _blatt(wb, "Abrechnung", ["Platz", "Manager", "Team", "Spieltagssiege", "Siegprämien €", "Platzierungsprämie € (Vorschau)", "Einsatz bisher €", "Saldo bisher €", "Saldo Saisonende € (Vorschau)"],
+                 [6, 11, 14, 13, 13, 24, 15, 14, 24])
+    for z in k.zeilen:
+        ws5.append([z.platz, z.manager, basis.teams.get(z.manager, ""), _f(z.spieltagssiege), _f(z.siegpraemie), _f(z.platzpraemie), _f(z.einsatz), _f(z.saldo), _f(z.saldo_ende)])
+    ws5.append([])
+    ws5.append(["Regel", f"1 € je Manager und Spieltag ({k.spieltage_gewertet} von {k.spieltage_gesamt} gewertet), Topf {_f(k.topf_gesamt)} €; {_f(k.praemie_je_sieg)} € je Spieltagssieg (geteilt anteilig); Meisterschaftstopf {_f(k.meisterschaftstopf)} €: "
+                + ", ".join(f"{p}. Platz {_f(v)} €" for p, v in sorted(k.platzpraemien.items())) + f"; Auszahlung am Saisonende, Kassenwart {k.kassenwart}"])
     _fertig(wb, pfad)
 
 

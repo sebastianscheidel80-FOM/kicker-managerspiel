@@ -12,7 +12,7 @@ from pathlib import Path
 HIER = Path(__file__).resolve().parent
 FOTO = HIER / "versteigerung_2026_archiv.jpg"      # erzeugt mit docs/foto_altern.py aus dem Original-Foto
 AUSGABE = HIER / "Das_Goldene_Buch_2026-27.pdf"
-VERSION, DATUM, DATUM_LANG = "1.4", "11.09.2026", "11. September 2026"
+VERSION, DATUM, DATUM_LANG = "1.5", "22.09.2026", "22. September 2026"
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 
@@ -121,7 +121,7 @@ ORDNUNG = ["liga", "parteien", "kader", "beginn",
            "formation", "position", "abgabe", "fehlend", "tippfehler",
            "nachruecken", "mehr_ausfaelle", "strafnote", "nur_elf",
            "kategorien", "gleichstand", "karten",
-           "tabelle", "nachhol",
+           "tabelle", "nachhol", "kasse",
            "winter",
            "aufgabe", "montag", "vorrang",
            "aenderungen", "auslegung", "inkraft"]
@@ -211,8 +211,9 @@ story += para("draft", "Der Draft",
               "Schnäppchen, das dieses Buch kennt, und es wird mit dem Tabellenplatz des Vorjahres bezahlt.")
 story += para("jugend", "Der Jugendspieler",
               "Jeder Manager darf einen Spieler, den er bei der Sommerversteigerung der Vorsaison für höchstens "
-              "eine Million Euro gekauft hat, für 300.000 Euro in die neue Saison übernehmen. Winterkäufe zählen "
-              "nicht; wer im Januar billig einkauft, hat gehandelt, nicht ausgebildet.",
+              "900.000 Euro gekauft hat, zu genau diesem Vorjahrespreis in die neue Saison übernehmen – nicht "
+              "billiger, nicht teurer. Winterkäufe zählen nicht; wer im Januar billig einkauft, hat gehandelt, "
+              "nicht ausgebildet.",
               "Die Übernahme geschieht zu Beginn des Versteigerungstermins, vor der offiziellen Auktion. Will ein "
               "anderer Manager den Jugendspieler haben, muss er mit mindestens zwei Millionen Euro bieten; danach "
               "darf erhöht werden wie in jeder Versteigerung, auch vom Ausbilder selbst.",
@@ -339,6 +340,15 @@ story += para("nachhol", "Nachholspiele",
               "gelten als ohne Note, die Nachrückregel greift, der Report trägt den Vermerk „vorläufig“. Nach dem "
               "Nachholspiel wird der Spieltag mit den dann vorliegenden Noten neu berechnet. Die vorläufige Wertung "
               "verschwindet, als hätte es sie nie gegeben; die Saisontabelle rechnet sich von selbst neu.")
+story += para("kasse", "Einsatz und Auszahlung",
+              "Gespielt wird um Ehre, und um einen Euro. Jeder Manager zahlt einen Euro je gewertetem Spieltag in den "
+              "Topf; in dieser Saison sind das 33 Euro pro Kopf und 198 Euro insgesamt. Die Hälfte des Topfs gehört "
+              "den Spieltagssiegern: drei Euro pro Spieltag, bei geteiltem Sieg geteilt.",
+              "Die andere Hälfte ist der Meisterschaftstopf. Am Saisonende bekommt der Meister die Hälfte davon, der "
+              "Zweite drei Zehntel, der Dritte zwei Zehntel – in dieser Saison 49,50, 29,70 und 19,80 Euro. Die "
+              "Plätze vier bis sechs erhalten den Dank der Runde, sonst nichts.",
+              "Ausgezahlt wird am Saisonende, alles auf einmal, verrechnet mit dem Einsatz. Kassenwart ist Martin; "
+              "was er notiert, gilt. Nachholspiele und Neuberechnungen verändern den Topf nicht, nur seine Verteilung.")
 
 # ---------------------------------------------------------------- Siebtes Buch
 story += buch("Siebtes Buch – Der Winter", "Ein Fenster, halbe Preise, keine Erstattung")
@@ -379,17 +389,18 @@ story += para("inkraft", "Inkrafttreten",
               "der Saison 2026/27 in Kraft, an dem die Hallodries mit 23,5 Punkten den ersten Spieltagssieg holten – "
               "was hiermit amtlich ist.")
 
-story.append(Spacer(1, 10 * mm))
-story.append(tabelle(
+story.append(Spacer(1, 3 * mm))
+_tab = tabelle(
     ["Version", "Datum", "Was sich änderte"],
     [["1.0", "02.09.2026", "Grundregeln vollständig: Auktion, 3-5-2, Ersatzbank, fünf Kategorien, Winterfenster"],
      ["1.1", "02.09.2026", "Namen der sechs Manager"],
      ["1.2", "09.09.2026", "Nachrücker in Abgabereihenfolge, Strafgegentor bei null Minuten, Tippfehler-Regel, letzte gültige Aufstellung, Elfmeter und Eigentor, Spieltagssiege, Auswertungstool"],
      ["1.3", "10.09.2026", "Spieltagssiege als Tiebreaker, Nachholspiele, Vorlage beim Elfmeter nach kicker"],
-     ["1.4", "11.09.2026", "Auf Zuruf der Runde: Ersatz bei mehreren Ausfällen von hinten nach vorn (Wolfgang); eingesetzter Ersatz ohne Note rückt für null Minuten nach (Martin, Präzedenzfall Robben/Ronny 2013); Winter in 50.000er-Schritten; Jugendspieler, Geheimversteigerung, Draft; Superlord-Chronik"]],
-    [18 * mm, 24 * mm, 128 * mm]))
-story.append(Spacer(1, 8 * mm))
-story.append(P("Gegeben zu Zeiten des zweiten Spieltags, im Jahr des Herrn 2026, unter dem Siegel der Formation.", st_small))
+     ["1.4", "11.09.2026", "Auf Zuruf der Runde: Ersatz bei mehreren Ausfällen von hinten nach vorn (Wolfgang); eingesetzter Ersatz ohne Note rückt für null Minuten nach (Martin, Präzedenzfall Robben/Ronny 2013); Winter in 50.000er-Schritten; Jugendspieler, Geheimversteigerung, Draft; Superlord-Chronik"],
+     ["1.5", "22.09.2026", "Jugendspieler zum exakten Vorjahrespreis (höchstens 900.000 Euro, Andreas); neuer Paragraf Einsatz und Auszahlung: ein Euro je Spieltag, halbe-halbe zwischen Spieltagssiegern und Meisterschaftstopf, 50/30/20, Kassenwart Martin (Andreas, Wolfgang, Martin)"]],
+    [18 * mm, 24 * mm, 128 * mm])
+story.append(KeepTogether([_tab, Spacer(1, 4 * mm),
+                           P("Gegeben zu Zeiten des zweiten Spieltags, im Jahr des Herrn 2026, unter dem Siegel der Formation.", st_small)]))
 
 doc = BaseDocTemplate(str(AUSGABE), pagesize=A4,
                       title="Das Goldene Buch des Kicker-Managerspiels 2026/27", author="Die sechs Manager",

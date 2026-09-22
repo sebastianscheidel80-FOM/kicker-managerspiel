@@ -1,0 +1,113 @@
+BUNDESLIGA
+Spieltag
+Schema
+Bundesliga 2026/27, 4. Spieltag
+Stuttgart
+15. Platz
+0
+:
+1
+0
+:
+0
+Dortmund
+1. Platz
+INFO
+SCHEMA
+ANALYSE
+EINZELKRITIK
+BILDER
+TICKER
+AUFSTELLUNG
+SPIELDATEN
+DATEN-VERGLEICH
+DIREKTVERGLEICH
+TORE
+0
+:
+1
+70'
+Beier
+Rechtsschuss, Bellingham
+AUFSTELLUNG
+ Stuttgart
+Bredlow3,0
+Jeltsch4,0
+Chabot2,5
+Mittelstädt4,0
+Vagnoman3,5
+Prömel4,0
+Stiller4,0
+Führich4,0
+Undav4,5
+El Khannouss3,5
+Demirovic4,5
+ Dortmund
+Kobel2,5
+Gadou4,0
+Anton2,0
+N. Schlotterbeck2,5
+Ryerson3,0
+J. Veerman3,0
+F. Nmecha2,0
+Svensson3,0
+Nwaneri4,5
+Beier3,0
+Guirassy4,0
+TRAINER
+ Stuttgart
+Hoeneß
+ Dortmund
+Kovac
+WECHSEL
+ Stuttgart
+Leweling3,5
+64'
+Führich4,0
+Pejcinovic4,5
+64'
+Undav4,5
+Sauer
+84'
+El Khannouss3,5
+Nartey
+84'
+Prömel4,0
+ Dortmund
+Bellingham2,5
+62'
+J. Veerman3,0
+Karetsas3,0
+62'
+Nwaneri4,5
+Fabio Silva
+74'
+Guirassy4,0
+Sabitzer
+82'
+Beier3,0
+Bensebaini
+82'
+Ryerson3,0
+RESERVEBANK
+ Stuttgart
+M. Funk (Tor), Al-Dakhil, Hendriks, Karazor, Spalt
+ Dortmund
+A. Meyer (Tor), Reggiani, Chukwuemeka, Inacio
+KARTEN
+ Stuttgart
+Demirovic (1. Gelbe Karte)
+13'
+Stiller (1. Gelbe Karte)
+17'
+ Dortmund
+N. Schlotterbeck (1. Gelbe Karte)
+32'
+J. Veerman (1. Gelbe Karte)
+47'
+Gadou (1. Gelbe Karte)
+57'
+Bellingham (2. Gelbe Karte)
+81'
+Ryerson (2. Gelbe Karte)
+82'

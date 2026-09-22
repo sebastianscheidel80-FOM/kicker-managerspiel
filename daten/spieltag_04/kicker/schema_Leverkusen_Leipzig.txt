@@ -1,0 +1,111 @@
+BUNDESLIGA
+Spieltag
+Schema
+Bundesliga 2026/27, 4. Spieltag
+Leverkusen
+5. Platz
+2
+:
+0
+1
+:
+0
+Leipzig
+9. Platz
+INFO
+SCHEMA
+ANALYSE
+BILDER
+TICKER
+AUFSTELLUNG
+SPIELDATEN
+DATEN-VERGLEICH
+DIREKTVERGLEICH
+TORE
+Schick
+Rechtsschuss, Miguel
+44'
+1
+:
+0
+Miguel
+Linksschuss
+57'
+2
+:
+0
+AUFSTELLUNG
+ Leverkusen
+Flekken2,0
+Quansah3,0
+Tapsoba2,5
+Medina2,0
+Miguel1,5
+E. Fernandez3,0
+Aleix Garcia2,5
+Diaby3,0
+Maza3,0
+Moreira4,0
+Schick2,5
+ Leipzig
+Vandevoordt3,5
+R. Baku4,0
+Orban4,5
+Esteve4,5
+Raum3,5
+Banzuzi4,0
+El Aynaoui3,0
+Gruda3,5
+Nkunku4,0
+Nusa3,0
+Romulo4,0
+TRAINER
+ Leverkusen
+Martinez
+ Leipzig
+Demichelis
+WECHSEL
+ Leverkusen
+Andrich
+72'
+E. Fernandez3,0
+Kofane
+77'
+Schick2,5
+Vazquez
+89'
+Diaby3,0
+ Leipzig
+Gomis5,0
+26'
+Gruda3,5
+Seiwald
+67'
+Banzuzi4,0
+Maksimovic
+67'
+Romulo4,0
+Konaté
+84'
+Nkunku4,0
+Henrichs
+84'
+R. Baku4,0
+RESERVEBANK
+ Leverkusen
+Blaswich (Tor), Badé, Hofmann, Tillman, Boniface, Terrier
+ Leipzig
+Nyland (Tor), Finkgräfe, Klostermann, Koné
+KARTEN
+ Leverkusen
+Tapsoba (1. Gelbe Karte)
+82'
+Moreira (1. Gelbe Karte)
+90' +1
+ Leipzig
+Nusa (2. Gelbe Karte)
+11'
+El Aynaoui (1. Gelbe Karte)
+74'
+Henrichs (1. Gelbe Karte)
+90' +1

@@ -1,0 +1,146 @@
+BUNDESLIGA
+Spieltag
+Schema
+Bundesliga 2026/27, 4. Spieltag
+Bayern
+2. Platz
+7
+:
+0
+3
+:
+0
+Union
+17. Platz
+INFO
+SCHEMA
+ANALYSE
+EINZELKRITIK
+BILDER
+TICKER
+AUFSTELLUNG
+SPIELDATEN
+DATEN-VERGLEICH
+DIREKTVERGLEICH
+TORE
+Musiala
+Rechtsschuss, Davies
+18'
+1
+:
+0
+Kane (Elfmeter)
+Rechtsschuss, Olise
+39'
+2
+:
+0
+Olise
+Linksschuss, Musiala
+43'
+3
+:
+0
+Kane
+Kopfball, Olise
+54'
+4
+:
+0
+Saibari
+Linksschuss, Davies
+70'
+5
+:
+0
+Olise
+Rechtsschuss, Bischof
+73'
+6
+:
+0
+Olise
+Linksschuss, Bischof
+76'
+7
+:
+0
+AUFSTELLUNG
+ Bayern
+Neuer2,0
+Stanisic2,5
+Upamecano2,5
+Tah2,0
+Davies2,0
+Kimmich2,0
+Pavlovic2,0
+Olise1,0
+Musiala2,0
+Luis Diaz3,5
+Kane2,0
+ Union
+Rönnow4,5
+Trimmel5,0
+Querfeld6,0
+Uduokhai5,5
+Rothe6,0
+Haberer6,0
+R. Khedira5,5
+Aebischer5,5
+Jeong5,0
+Schäfer5,5
+Latte Lath5,5
+TRAINER
+ Bayern
+Kompany
+ Union
+Lustrinelli
+WECHSEL
+ Bayern
+M.-J. Kim2,5
+46'
+Upamecano2,5
+Saibari2,0
+63'
+Luis Diaz3,5
+Bischof2,0
+63'
+Pavlovic2,0
+Gnabry
+77'
+Kane2,0
+Brown
+83'
+Davies2,0
+ Union
+Skarke4,5
+46'
+Latte Lath5,5
+Kemlein5,0
+60'
+Haberer6,0
+Burcu5,0
+60'
+Jeong5,0
+van den Bosch
+71'
+Trimmel5,0
+Köhn
+82'
+Schäfer5,5
+RESERVEBANK
+ Bayern
+Urbig (Tor), H. Ito, Karl, Sapoko Ndiaye
+ Union
+Raab (Tor), Imeri, Skov, Ljubicic
+KARTEN
+ Bayern
+Upamecano (2. Gelbe Karte)
+45' +2
+ Union
+Uduokhai (3. Gelbe Karte)
+38'
+R. Khedira (1. Gelbe Karte)
+42'
+Burcu (1. Gelbe Karte)
+78'

@@ -446,3 +446,39 @@ def test_saisontabelle_tiebreaker_spieltagssiege():
     s = saisontabelle([werte_spieltag(aufst, d1, index), werte_spieltag(aufst, d2, index), werte_spieltag(aufst, d3, index)])
     assert s.zeile("A").spieltagssiege == s.zeile("B").spieltagssiege == F(1.5)
     assert s.zeile("A").platz == s.zeile("B").platz == 1
+
+
+# ---------------------------------------------------------------------------
+# Kasse (REGELN 4.4, v1.5): reine Rechnung auf der Saisontabelle
+# ---------------------------------------------------------------------------
+def test_kasse_verteilung_und_saldo():
+    from kickerspiel.engine import SaisonZeile, Saison
+    from kickerspiel.kasse import kasse_berechnen, praemie_je_spieltagssieg
+    zeilen = [SaisonZeile("A", F(60), F("1.5"), platz=1), SaisonZeile("B", F(50), F("0.5"), platz=2),
+              SaisonZeile("C", F(40), F(1), platz=3), SaisonZeile("D", F(30), F(0), platz=4),
+              SaisonZeile("E", F(20), F(0), platz=5), SaisonZeile("F", F(10), F(0), platz=6)]
+    saison = Saison(zeilen, [2, 3, 4], {})
+    k = kasse_berechnen(saison, spieltage_gesamt=33)
+    assert praemie_je_spieltagssieg(6) == 3
+    assert k.topf_gesamt == 198 and k.meisterschaftstopf == 99
+    assert k.platzpraemien == {1: F("49.5"), 2: F("29.7"), 3: F("19.8")}
+    a = next(z for z in k.zeilen if z.manager == "A")
+    assert a.siegpraemie == F("4.5") and a.platzpraemie == F("49.5") and a.einsatz == 3
+    assert a.saldo == F("4.5") + F("49.5") - 3 and a.saldo_ende == F("4.5") + F("49.5") - 33
+    d = next(z for z in k.zeilen if z.manager == "D")
+    assert d.platzpraemie == 0 and d.saldo_ende == -33
+    # Summe der Siegprämien = 3 € je gewertetem Spieltag; Summe der Platzprämien = Meisterschaftstopf
+    assert sum(z.siegpraemie for z in k.zeilen) == 3 * 3
+    assert sum(z.platzpraemie for z in k.zeilen) == 99
+
+
+def test_kasse_geteilter_platz():
+    from kickerspiel.engine import SaisonZeile, Saison
+    from kickerspiel.kasse import kasse_berechnen
+    zeilen = [SaisonZeile("A", F(60), F(1), platz=1), SaisonZeile("B", F(60), F(1), platz=1),
+              SaisonZeile("C", F(40), F(0), platz=3), SaisonZeile("D", F(30), F(0), platz=4),
+              SaisonZeile("E", F(20), F(0), platz=5), SaisonZeile("F", F(10), F(0), platz=6)]
+    k = kasse_berechnen(Saison(zeilen, [2], {}), spieltage_gesamt=33)
+    a = next(z for z in k.zeilen if z.manager == "A")
+    assert a.platzpraemie == (F("49.5") + F("29.7")) / 2       # zwei Erste teilen 1. und 2. Prämie
+    assert next(z for z in k.zeilen if z.manager == "C").platzpraemie == F("19.8")
