@@ -1,0 +1,224 @@
+KICKERSPIEL SAISON 2026-2027
+
+*****************************************************************
+
+GESAMTSTAND NACH DEM 5. SPIELTAG
+
+PUNKTE
+
+1. Andreas, 80,0 Punkte
+2. Daniel, 76,0 Punkte
+3. Wolfgang, 71,0 Punkte
+4. Sebastian, 69,5 Punkte
+5. Thomas, 68,0 Punkte
+6. Martin, 55,5 Punkte
+
+SPIELTAGSSIEGE
+
+1. Andreas, 2,0
+2. Thomas, 1,0
+   Wolfgang, 1,0
+4. Daniel, 0,0
+   Martin, 0,0
+   Sebastian, 0,0
+
+*****************************************************************
+
+ERGEBNIS 5. SPIELTAG
+
+1. Wolfgang, 26,0 Punkte
+2. Daniel, 20,0 Punkte
+3. Andreas, 17,5 Punkte
+4. Thomas, 16,0 Punkte
+5. Sebastian, 14,0 Punkte
+6. Martin, 11,5 Punkte
+
+ELF DES TAGES
+
+1. Daniel, 4,5 Punkte (1)
+   Sebastian, 4,5 Punkte (1)
+   Thomas, 4,5 Punkte (1)
+   Wolfgang, 4,5 Punkte (1)
+5. Andreas, 1,5 Punkte (0)
+   Martin, 1,5 Punkte (0)
+
+GEGENTORE
+
+1. Andreas, 5,5 Punkte (7)
+   Wolfgang, 5,5 Punkte (7)
+3. Martin, 4,0 Punkte (8)
+4. Daniel, 3,0 Punkte (9)
+5. Sebastian, 2,0 Punkte (12)
+6. Thomas, 1,0 Punkte (20)
+
+NOTE
+
+1. Wolfgang, 6,0 Punkte (3,23)
+2. Andreas, 5,0 Punkte (3,36)
+3. Daniel, 3,5 Punkte (3,41)
+   Thomas, 3,5 Punkte (3,41)
+5. Martin, 2,0 Punkte (3,91)
+6. Sebastian, 1,0 Punkte (4,00)
+
+VORLAGEN
+
+1. Daniel, 6,0 Punkte (5)
+2. Wolfgang, 5,0 Punkte (4)
+3. Andreas, 4,0 Punkte (3)
+4. Martin, 2,5 Punkte (2)
+   Sebastian, 2,5 Punkte (2)
+6. Thomas, 1,0 Punkte (1)
+
+TORE
+
+1. Thomas, 6,0 Punkte (4)
+2. Wolfgang, 5,0 Punkte (3)
+3. Sebastian, 4,0 Punkte (2)
+4. Daniel, 3,0 Punkte (1)
+5. Andreas, 1,5 Punkte (0)
+   Martin, 1,5 Punkte (0)
+
+
+MANAGER: WOLFGANG (Vickings)
+Ø-Note 3,23 · Gegentore 7 · Tore 3 · Vorlagen 4 · Elf des Tages 1  →  26,0 Punkte (Platz 1)
+--------------------------------------------------------------
+Pos Spieler             Elf Note  GegT  Vorl  Tore  Herkunft
+--- ------------------- --- ----  ----  ----  ----  --------
+TOR Vandevoordt         ja  1,0   0                 
+ABW Tah                     3,5   2                 
+ABW Kabak                   3,0   3                 
+ABW Schlotterbeck           3,0   2           1     
+MIT Veerman                 5,5*        1           Strafnote, Kurzeinsatz
+MIT El Aynaoui              2,5         1           
+MIT Beste                   4,0                     
+MIT Nwaneri                 3,0                     
+MIT Suzuki                  3,0                     
+STU Luis Diaz               4,0                     
+STU Saibari                 3,0               1     
+    gewichtet           1   3,23  7     4     3     TW-GegT ×2 · MIT-Vorl ×2 · STU-Tore ×2
+    Rangpunkte          4,5 6,0   5,5   5,0   5,0   Summe 26,0
+Protokoll:
+  MIT Veerman: keine Note, kein Ersatz-MIT mit Note → Strafnote 5,5; Kurzeinsatz: 0 Tor(e), 1 Vorlage(n) zählen.
+    Ersatz 3 Lee (MIT) hat keine Note – übersprungen.
+
+
+MANAGER: DANIEL (Käsefüße)
+Ø-Note 3,41 · Gegentore 9 · Tore 1 · Vorlagen 5 · Elf des Tages 1  →  20,0 Punkte (Platz 2)
+--------------------------------------------------------------
+Pos Spieler             Elf Note  GegT  Vorl  Tore  Herkunft
+--- ------------------- --- ----  ----  ----  ----  --------
+TOR Flekken                 3,0   3                 
+ABW Mittelstädt             3,0   0                 
+ABW Vagnoman                4,0   0                 
+ABW Miguel ↑                4,0   3                 für Bensebaini (Bank 1)
+MIT S. El Mala              3,0               1     
+MIT Karaman                 4,0                     
+MIT F. Nmecha               3,5                     
+MIT Stiller             ja  2,0         2           
+MIT Karetsas                5,5*                    Strafnote, Kurzeinsatz
+STU Guirassy                3,0                     
+STU Romulo                  2,5         1           
+    gewichtet           1   3,41  9     5     1     TW-GegT ×2 · MIT-Vorl ×2 · STU-Tore ×2
+    Rangpunkte          4,5 3,5   3,0   6,0   3,0   Summe 20,0
+Protokoll:
+  ABW Bensebaini: keine Note → Miguel rückt nach (Bank 1).
+  MIT Karetsas: keine Note, kein Ersatz-MIT mit Note → Strafnote 5,5.
+    Ersatz 2 Wimmer (MIT) nicht eingesetzt – übersprungen.
+  Warnung: Nur 3 Ersatzspieler statt 4
+  Warnung: Kein Ersatztorwart auf der Bank
+
+
+MANAGER: ANDREAS (Fischköppe)
+Ø-Note 3,36 · Gegentore 7 · Tore 0 · Vorlagen 3 · Elf des Tages 0  →  17,5 Punkte (Platz 3)
+--------------------------------------------------------------
+Pos Spieler             Elf Note  GegT  Vorl  Tore  Herkunft
+--- ------------------- --- ----  ----  ----  ----  --------
+TOR Backhaus                3,5   1                 
+ABW Davies                  4,0   2                 
+ABW Upamecano               2,5   2                 
+ABW Ginter                  2,5   1     1           
+MIT Kimmich                 3,5                     
+MIT Doan                    5,0                     
+MIT Seiwald ↑               3,0                     für E. Fernandez (Bank 3)
+MIT Bellingham              4,0                     
+MIT Mohya                   3,5                     
+STU Kane                    2,0         2           
+STU Matanovic               3,5                     
+    gewichtet           0   3,36  7     3     0     TW-GegT ×2 · MIT-Vorl ×2 · STU-Tore ×2
+    Rangpunkte          1,5 5,0   5,5   4,0   1,5   Summe 17,5
+Protokoll:
+  MIT E. Fernandez: keine Note → Seiwald rückt nach (Bank 3).
+
+
+MANAGER: THOMAS (Hallodries)
+Ø-Note 3,41 · Gegentore 20 · Tore 4 · Vorlagen 1 · Elf des Tages 1  →  16,0 Punkte (Platz 4)
+--------------------------------------------------------------
+Pos Spieler             Elf Note  GegT  Vorl  Tore  Herkunft
+--- ------------------- --- ----  ----  ----  ----  --------
+TOR Atubolu                 5,0   6                 
+ABW Anton                   4,0   2                 
+ABW Quansah                 2,0   3           1     
+ABW Medina                  3,0   3                 
+MIT Petkov                  4,5                     
+MIT Führich                 2,0               1     
+MIT Khedira                 3,0                     
+MIT Moore                   4,0                     
+MIT Avdullahu               4,0                     
+STU Schick              ja  2,0         1     1     
+STU Hlozek                  4,0                     
+    gewichtet           1   3,41  20    1     4     TW-GegT ×2 · MIT-Vorl ×2 · STU-Tore ×2
+    Rangpunkte          4,5 3,5   1,0   1,0   6,0   Summe 16,0
+
+
+MANAGER: SEBASTIAN (Great Licors)
+Ø-Note 4,00 · Gegentore 12 · Tore 2 · Vorlagen 2 · Elf des Tages 1  →  14,0 Punkte (Platz 5)
+--------------------------------------------------------------
+Pos Spieler             Elf Note  GegT  Vorl  Tore  Herkunft
+--- ------------------- --- ----  ----  ----  ----  --------
+TOR Neuer                   6,0   2                 
+ABW Laimer                  5,5*  2+1               Strafnote, nicht eingesetzt
+ABW Tapsoba                 3,5   3                 
+ABW Gadou ↑                 3,0   2                 für Ryerson (Bank 2)
+MIT Maza                    3,0                     
+MIT Pavlovic                3,0                     
+MIT El Khannouss ↑          5,5*                    für Gruda (Bank 3)
+MIT Aleix Garcia            3,0         1           
+MIT Uzun                    4,5                     
+STU Burkardt                5,0                     
+STU Diaby               ja  2,0               1     
+    gewichtet           1   4,00  12    2     2     TW-GegT ×2 · MIT-Vorl ×2 · STU-Tore ×2
+    Rangpunkte          4,5 1,0   2,0   2,5   4,0   Summe 14,0
+Protokoll:
+  Aufstellung übernommen: keine Mail gefunden, letzte gültige Aufstellung vom 4. Spieltag übernommen.
+  Mehrere Ausfälle auf einer Position: Nachrücker werden in umgekehrter Aufstellungsreihenfolge vergeben (zuletzt genannter zuerst).
+  ABW Laimer: nicht eingesetzt, kein Ersatz-ABW mit Note oder Einsatz → Strafnote 5,5, Strafgegentor.
+  ABW Ryerson: keine Note → Gadou rückt nach (Bank 2).
+  MIT Gruda: nicht eingesetzt, kein Ersatz-MIT mit Note → El Khannouss rückt mit Kurzeinsatz nach (Bank 3), Note 5,5, kein Strafgegentor.
+    ABW Laimer: Gegentore Bayern 2 + 1 Strafgegentor = 3.
+
+
+MANAGER: MARTIN (Hansa Fürze)
+Ø-Note 3,91 · Gegentore 8 · Tore 0 · Vorlagen 2 · Elf des Tages 0  →  11,5 Punkte (Platz 6)
+--------------------------------------------------------------
+Pos Spieler             Elf Note  GegT  Vorl  Tore  Herkunft
+--- ------------------- --- ----  ----  ----  ----  --------
+TOR Kobel                   3,5   2                 
+ABW Lienhart                3,0   1                 
+ABW Diks ↑                  3,5   2                 für Jeltsch (Bank 2)
+ABW Simpson-Pusey           4,5   1                 
+MIT Amiri                   3,0         1           
+MIT Karl                    5,5*                    Strafnote, Kurzeinsatz
+MIT Leweling                3,5                     
+MIT Burger                  3,5                     
+MIT Reitz                   5,5*                    Strafnote, Kurzeinsatz
+STU Olise                   4,0                     
+STU Lemperle                3,5                     
+    gewichtet           0   3,91  8     2     0     TW-GegT ×2 · MIT-Vorl ×2 · STU-Tore ×2
+    Rangpunkte          1,5 2,0   4,0   2,5   1,5   Summe 11,5
+Protokoll:
+  Mehrere Ausfälle auf einer Position: Nachrücker werden in umgekehrter Aufstellungsreihenfolge vergeben (zuletzt genannter zuerst).
+  ABW Jeltsch: keine Note → Diks rückt nach (Bank 2).
+  MIT Karl: keine Note, kein Ersatz-MIT mit Note → Strafnote 5,5.
+    Ersatz 3 Onyeka (MIT) nicht eingesetzt – übersprungen.
+  MIT Reitz: keine Note, kein Ersatz-MIT mit Note → Strafnote 5,5.
+    Ersatz 3 Onyeka (MIT) nicht eingesetzt – übersprungen.

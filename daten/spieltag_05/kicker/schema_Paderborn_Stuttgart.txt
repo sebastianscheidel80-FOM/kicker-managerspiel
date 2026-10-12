@@ -1,0 +1,109 @@
+BUNDESLIGA
+Spieltag
+Schema
+Bundesliga 2026/27, 5. Spieltag
+Paderborn
+15. Platz
+0
+:
+2
+0
+:
+1
+Stuttgart
+11. Platz
+INFO
+SCHEMA
+ANALYSE
+BILDER
+TICKER
+AUFSTELLUNG
+SPIELDATEN
+DATEN-VERGLEICH
+DIREKTVERGLEICH
+TORE
+0
+:
+1
+25'
+Chabot
+Kopfball, Stiller
+0
+:
+2
+83'
+Führich
+Linksschuss, Stiller
+AUFSTELLUNG
+ Paderborn
+Noll2,0
+ter Horst3,5
+Scheller3,0
+Hansen3,5
+Curda3,0
+Castaneda3,0
+Obermair3,5
+Ulrich3,0
+Vidovic2,5
+Pieringer4,5
+Marino4,0
+ Stuttgart
+Seimen3,5
+Vagnoman4,0
+Hendriks3,5
+Chabot2,5
+Mittelstädt3,0
+Karazor3,0
+Stiller2,0
+Leweling3,5
+Undav3,5
+Führich2,0
+Demirovic4,5
+TRAINER
+ Paderborn
+Kettemann
+ Stuttgart
+Hoeneß
+WECHSEL
+ Paderborn
+S. Tigges
+70'
+Marino4,0
+Philippe
+70'
+Pieringer4,5
+Batista Meier
+80'
+Ulrich3,0
+Sticker
+85'
+Scheller3,0
+Götze
+85'
+Hansen3,5
+ Stuttgart
+Jeltsch
+71'
+Chabot2,5
+Pejcinovic
+77'
+Demirovic4,5
+El Khannouss
+77'
+Leweling3,5
+Prömel
+85'
+Undav3,5
+Sauer
+85'
+Führich2,0
+RESERVEBANK
+ Paderborn
+Schubert (Tor), Müller, Baack, S. Michel
+ Stuttgart
+Bredlow (Tor), Assignon, Stergiou, Spalt
+KARTEN
+ Paderborn
+Pieringer (1. Gelbe Karte)
+45'
+ Stuttgart

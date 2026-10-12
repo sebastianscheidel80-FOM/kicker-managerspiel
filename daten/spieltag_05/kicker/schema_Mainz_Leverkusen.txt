@@ -1,0 +1,146 @@
+BUNDESLIGA
+Spieltag
+Schema
+Bundesliga 2026/27, 5. Spieltag
+Mainz
+8. Platz
+3
+:
+4
+2
+:
+2
+Leverkusen
+4. Platz
+INFO
+SCHEMA
+ANALYSE
+BILDER
+TICKER
+AUFSTELLUNG
+SPIELDATEN
+DATEN-VERGLEICH
+DIREKTVERGLEICH
+TORE
+0
+:
+1
+5'
+Andrich
+Rechtsschuss
+0
+:
+2
+9'
+Schick
+Linksschuss, Aleix Garcia
+Caci
+Rechtsschuss, Martel
+33'
+1
+:
+2
+Caci
+Linksschuss, Amiri
+42'
+2
+:
+2
+2
+:
+3
+55'
+Quansah
+Kopfball, Schick
+2
+:
+4
+65'
+Diaby
+Linksschuss, Moreira
+Hollerbach
+Rechtsschuss, Maloney
+90'
++2
+3
+:
+4
+AUFSTELLUNG
+ Mainz
+Schwolow3,0
+Posch3,5
+Gruber4,0
+Potulski5,0
+Caci2,0
+Kai. Sano3,0
+Mwene5,0
+Martel4,0
+Amiri3,0
+Becker3,0
+P. Tietz4,5
+ Leverkusen
+Flekken3,0
+Quansah2,0
+Tapsoba3,5
+Medina3,0
+Miguel4,0
+Andrich2,5
+Aleix Garcia3,0
+Diaby2,0
+Maza3,0
+Moreira3,5
+Schick2,0
+TRAINER
+ Mainz
+Fischer
+ Leverkusen
+Martinez
+WECHSEL
+ Mainz
+J.-S. Lee
+70'
+Martel4,0
+da Costa
+70'
+Caci2,0
+Königsdörffer
+70'
+Potulski5,0
+Hollerbach
+78'
+Becker3,0
+Maloney
+81'
+Kai. Sano3,0
+ Leverkusen
+Terrier
+66'
+Maza3,0
+Tillman
+75'
+Diaby2,0
+Tella
+75'
+Moreira3,5
+Hofmann
+84'
+Schick2,0
+E. Fernandez
+84'
+Aleix Garcia3,0
+RESERVEBANK
+ Mainz
+Kinzig (Tor), Bell, Nakuzola, Kawasaki
+ Leverkusen
+Blaswich (Tor), Badé, Vazquez, Boniface
+KARTEN
+ Mainz
+P. Tietz (1. Gelbe Karte)
+20'
+Becker (2. Gelbe Karte)
+35'
+J.-S. Lee (1. Gelbe Karte)
+76'
+ Leverkusen
+Quansah (1. Gelbe Karte)
+90' +3

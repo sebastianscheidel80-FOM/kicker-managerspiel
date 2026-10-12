@@ -1,0 +1,119 @@
+BUNDESLIGA
+Spieltag
+Schema
+Bundesliga 2026/27, 5. Spieltag
+Freiburg
+1. Platz
+2
+:
+1
+1
+:
+1
+Schalke
+13. Platz
+INFO
+SCHEMA
+ANALYSE
+BILDER
+TICKER
+AUFSTELLUNG
+SPIELDATEN
+DATEN-VERGLEICH
+DIREKTVERGLEICH
+TORE
+M. Eggestein
+Linksschuss, Ginter
+10'
+1
+:
+0
+1
+:
+1
+30'
+Gantenbein
+Rechtsschuss
+Goto
+Kopfball, Grifo
+85'
+2
+:
+1
+AUFSTELLUNG
+ Freiburg
+Backhaus3,5
+Treu3,0
+Ginter2,5
+Lienhart3,0
+Makengo3,0
+M. Eggestein2,5
+Engelhardt3,5
+Beste4,0
+Y. Suzuki3,0
+Scherhant3,0
+Matanovic3,5
+ Schalke
+Karius2,5
+Kurucay2,5
+Katic3,0
+Wöber4,5
+El-Faouzi3,0
+Tanaka3,0
+Gantenbein2,5
+Gosens4,0
+Sylla4,0
+Karaman4,0
+Adamu4,5
+TRAINER
+ Freiburg
+Schuster
+ Schalke
+Muslic
+WECHSEL
+ Freiburg
+Höler3,5
+65'
+Matanovic3,5
+Irié
+69'
+Beste4,0
+Goto
+69'
+Engelhardt3,5
+Kübler
+83'
+Treu3,0
+Grifo
+83'
+Scherhant3,0
+ Schalke
+Schallenberg
+69'
+Tanaka3,0
+Dzeko
+69'
+Adamu4,5
+Aouchiche
+79'
+Gantenbein2,5
+H.-C. Hwang
+79'
+Sylla4,0
+T. Becker
+79'
+Wöber4,5
+RESERVEBANK
+ Freiburg
+Huth (Tor), Günter, Rosenfelder, Osterhage
+ Schalke
+Ke. Müller (Tor), Ayhan, V. Becker, Dina Ebimbe
+KARTEN
+ Freiburg
+Ginter (1. Gelbe Karte)
+58'
+Y. Suzuki
+64'
+ Schalke
+H.-C. Hwang (1. Gelbe Karte)
+88'

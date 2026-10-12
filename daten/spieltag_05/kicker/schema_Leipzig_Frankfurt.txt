@@ -1,0 +1,136 @@
+BUNDESLIGA
+Spieltag
+Schema
+Bundesliga 2026/27, 5. Spieltag
+Leipzig
+5. Platz
+6
+:
+0
+4
+:
+0
+Frankfurt
+14. Platz
+INFO
+SCHEMA
+ANALYSE
+BILDER
+TICKER
+AUFSTELLUNG
+SPIELDATEN
+DATEN-VERGLEICH
+DIREKTVERGLEICH
+TORE
+Banzuzi
+Rechtsschuss, El Aynaoui
+1'
+1
+:
+0
+Nkunku
+Linksschuss, Nusa
+5'
+2
+:
+0
+Nkunku
+Linksschuss, Romulo
+41'
+3
+:
+0
+Nkunku
+Linksschuss, Banzuzi
+44'
+4
+:
+0
+Nusa
+Rechtsschuss, Banzuzi
+54'
+5
+:
+0
+Gomis
+Rechtsschuss
+89'
+6
+:
+0
+AUFSTELLUNG
+ Leipzig
+Vandevoordt1,0
+R. Baku4,0
+Orban3,0
+Lukeba2,0
+Raum3,0
+Banzuzi2,0
+El Aynaoui2,5
+Maksimovic2,5
+Nkunku1,0
+Nusa1,5
+Romulo2,5
+ Frankfurt
+Atubolu5,0
+Collins6,0
+R. Koch6,0
+Brassier5,5
+Knauff5,0
+Onyedika5,0
+Aseko5,0
+Kosugi5,5
+Doan5,0
+Uzun4,5
+Burkardt5,0
+TRAINER
+ Leipzig
+Demichelis
+ Frankfurt
+Hütter
+WECHSEL
+ Leipzig
+Seiwald3,0
+58'
+El Aynaoui2,5
+Henrichs3,0
+58'
+R. Baku4,0
+Gomis2,0
+64'
+Nkunku1,0
+Finkgräfe3,0
+65'
+Nusa1,5
+Reitz
+73'
+Banzuzi2,0
+ Frankfurt
+Baum4,5
+46'
+R. Koch6,0
+Ebnoutalib5,0
+46'
+Kosugi5,5
+Chaibi
+73'
+Aseko5,0
+Arrhov
+73'
+Doan5,0
+RESERVEBANK
+ Leipzig
+Nyland (Tor), Esteve, Klostermann, Gruda
+ Frankfurt
+Kaua Santos (Tor), Chandler, Otavio, O. Höjlund
+KARTEN
+ Leipzig
+El Aynaoui (2. Gelbe Karte)
+27'
+ Frankfurt
+Baum (1. Gelbe Karte)
+63'
+Knauff (1. Gelbe Karte)
+76'
+Onyedika (4. Gelbe Karte)
+84'

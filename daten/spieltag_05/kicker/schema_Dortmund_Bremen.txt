@@ -1,0 +1,123 @@
+BUNDESLIGA
+Spieltag
+Schema
+Bundesliga 2026/27, 5. Spieltag
+Dortmund
+2. Platz
+2
+:
+2
+0
+:
+0
+Bremen
+7. Platz
+INFO
+SCHEMA
+ANALYSE
+EINZELKRITIK
+BILDER
+TICKER
+AUFSTELLUNG
+SPIELDATEN
+DATEN-VERGLEICH
+DIREKTVERGLEICH
+TORE
+Svensson
+Linksschuss, Fabio Silva
+80'
+1
+:
+0
+N. Schlotterbeck
+Kopfball, J. Veerman
+85'
+2
+:
+0
+2
+:
+1
+88'
+Reis
+Rechtsschuss, Wojcik
+2
+:
+2
+90'
++2
+Füllkrug
+Kopfball, Grüll
+AUFSTELLUNG
+ Dortmund
+Kobel3,5
+Gadou3,0
+Anton4,0
+N. Schlotterbeck3,0
+Beier3,0
+Bellingham4,0
+F. Nmecha3,5
+Svensson2,5
+Nwaneri3,0
+Sabitzer3,5
+Guirassy3,0
+ Bremen
+Hein1,5
+Arthur3,5
+Pieper
+Friedl3,5
+Deman3,5
+Reis3,0
+Regeer3,5
+Chuki4,5
+Dinkci5,0
+Grüll3,0
+Füllkrug2,5
+TRAINER
+ Dortmund
+Kovac
+ Bremen
+Thioune
+WECHSEL
+ Dortmund
+Fabio Silva4,0
+63'
+Nwaneri3,0
+Karetsas
+72'
+Sabitzer3,5
+J. Veerman
+72'
+Bellingham4,0
+ Bremen
+Wojcik3,0
+19'
+Pieper
+Weiser3,0
+65'
+Arthur3,5
+Stalmach3,5
+65'
+Regeer3,5
+Erevbenagie
+81'
+Chuki4,5
+Schmetgens
+81'
+Dinkci5,0
+RESERVEBANK
+ Dortmund
+A. Meyer (Tor), Bensebaini, Kaua Prates, Reggiani, Albert, Inacio
+ Bremen
+A. Schlager (Tor), Stark, Soylu, Itten
+KARTEN
+ Dortmund
+J. Veerman (2. Gelbe Karte)
+90' +2
+F. Nmecha (1. Gelbe Karte)
+90' +4
+ Bremen
+Stalmach (1. Gelbe Karte)
+90'
+Thioune (1. Gelbe Karte)
+90' +8

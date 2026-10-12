@@ -1,0 +1,122 @@
+BUNDESLIGA
+Spieltag
+Schema
+Bundesliga 2026/27, 5. Spieltag
+Köln
+10. Platz
+2
+:
+1
+1
+:
+1
+M’gladbach
+18. Platz
+INFO
+SCHEMA
+ANALYSE
+EINZELKRITIK
+BILDER
+TICKER
+AUFSTELLUNG
+SPIELDATEN
+DATEN-VERGLEICH
+DIREKTVERGLEICH
+TORE
+Johannesson
+Linksschuss
+26'
+1
+:
+0
+1
+:
+1
+39'
+Scally
+Kopfball, Ullrich
+S. El Mala
+Rechtsschuss, Maina
+66'
+2
+:
+1
+AUFSTELLUNG
+ Köln
+Schwäbe3,0
+Sebulonsen4,0
+Simpson-Pusey4,5
+Lochoshvili3,0
+Sosa3,5
+Johannesson2,5
+Skhiri3,5
+Bülter4,0
+Moore4,0
+Maina3,0
+S. El Mala3,0
+ M’gladbach
+Nicolas3,5
+Hashioka5,5
+Diks3,5
+Leszczynski3,5
+Scally2,5
+Sander3,0
+Neuhaus4,0
+Ullrich3,0
+Bolin4,0
+Hack5,0
+Lidberg5,0
+TRAINER
+ Köln
+Wagner
+ M’gladbach
+Blessin
+WECHSEL
+ Köln
+Krauß2,5
+46'
+Skhiri3,5
+Schmied
+78'
+Lochoshvili3,0
+Thielmann
+78'
+S. El Mala3,0
+Rondic
+85'
+Moore4,0
+Waldschmidt
+90' +2
+Maina3,0
+ M’gladbach
+Mohya3,5
+64'
+Hack5,0
+Machino4,0
+64'
+Lidberg5,0
+Uno
+68'
+Neuhaus4,0
+Fleck
+80'
+Hashioka5,5
+Chiarodia
+80'
+Leszczynski3,5
+RESERVEBANK
+ Köln
+Zieler (Tor), Mensah, Heskey, Okon-Engstler
+ M’gladbach
+Batz (Tor), Herold, Konoplia, Nguefack
+KARTEN
+ Köln
+Bülter (1. Gelbe Karte)
+14'
+ M’gladbach
+Leszczynski (1. Gelbe Karte)
+25'
+Uno (1. Gelbe Karte)
+81'
+Machino (2. Gelbe Karte)
+90' +6

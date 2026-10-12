@@ -1,0 +1,131 @@
+BUNDESLIGA
+Spieltag
+Schema
+Bundesliga 2026/27, 5. Spieltag
+Hoffenheim
+17. Platz
+2
+:
+3
+1
+:
+1
+HSV
+12. Platz
+INFO
+SCHEMA
+ANALYSE
+BILDER
+TICKER
+AUFSTELLUNG
+SPIELDATEN
+DATEN-VERGLEICH
+DIREKTVERGLEICH
+TORE
+0
+:
+1
+12'
+Poulsen
+Linksschuss, Capaldo
+Bornauw (Eigentor)
+linker Oberarm, Asllani
+45'
++6
+1
+:
+1
+Conté
+Linksschuss, Asllani
+53'
+2
+:
+1
+2
+:
+2
+83'
+Moffi
+Kopfball, Muheim
+2
+:
+3
+90'
++4
+Muheim
+Linksschuss
+AUFSTELLUNG
+ Hoffenheim
+Baumann3,0
+Coufal3,0
+Kabak3,0
+Machida3,5
+Bernardo5,0
+Avdullahu4,0
+Burger3,5
+Conté2,5
+Daghim4,0
+Lemperle3,5
+Asllani3,0
+ HSV
+Heuer Fernandes3,0
+Capaldo3,0
+Bornauw4,0
+Omari4,5
+Wolfe3,5
+Sambi Lokonga4,0
+Remberg3,0
+Lemke4,0
+Fabio Vieira4,0
+Adeline5,0
+Poulsen3,0
+TRAINER
+ Hoffenheim
+Ilzer
+ HSV
+Polzin
+WECHSEL
+ Hoffenheim
+Hlozek4,0
+63'
+Lemperle3,5
+Kramaric4,0
+63'
+Asllani3,0
+Hranac
+74'
+Machida3,5
+Prass
+74'
+Daghim4,0
+Gendrey
+87'
+Conté2,5
+ HSV
+Muheim2,5
+41'
+Remberg3,0
+Stange3,0
+59'
+Poulsen3,0
+Rössing-Lelesiit
+76'
+Lemke4,0
+Moffi
+76'
+Adeline5,0
+Amoako
+76'
+Sambi Lokonga4,0
+RESERVEBANK
+ Hoffenheim
+L. Philipp (Tor), M. Rots, De Cat, Moerstedt
+ HSV
+Tangvik (Tor), Nandja, Torunarigha, Pherai
+KARTEN
+ Hoffenheim
+Bernardo
+65'
+Avdullahu (1. Gelbe Karte)
+80'
+ HSV

@@ -1,0 +1,120 @@
+BUNDESLIGA
+Spieltag
+Schema
+Bundesliga 2026/27, 5. Spieltag
+Augsburg
+6. Platz
+2
+:
+2
+1
+:
+0
+Bayern
+3. Platz
+INFO
+SCHEMA
+ANALYSE
+EINZELKRITIK
+BILDER
+TICKER
+AUFSTELLUNG
+SPIELDATEN
+DATEN-VERGLEICH
+DIREKTVERGLEICH
+TORE
+Fellhauer
+Rechtsschuss
+1'
+1
+:
+0
+1
+:
+1
+55'
+Saibari
+Rechtsschuss, Kane
+Ribeiro
+Linksschuss, Brackelmann
+64'
+2
+:
+1
+2
+:
+2
+81'
+Brown
+Linksschuss, Kane
+AUFSTELLUNG
+ Augsburg
+Dahmen3,5
+Bah3,0
+Matsima2,5
+Brackelmann3,0
+Seol4,5
+Massengo3,0
+Rieder3,0
+Behrens3,0
+Fellhauer2,5
+Ibrahimovic4,0
+Ribeiro3,0
+ Bayern
+Neuer6,0
+Stanisic5,0
+Upamecano2,5
+Tah3,5
+Davies4,0
+Kimmich3,5
+Pavlovic3,0
+Olise4,0
+Saibari3,0
+Luis Diaz4,0
+Kane2,0
+TRAINER
+ Augsburg
+Baum
+ Bayern
+Kompany
+WECHSEL
+ Augsburg
+Kade3,0
+62'
+Seol4,5
+Kömür
+75'
+Ribeiro3,0
+Gregoritsch
+81'
+Ibrahimovic4,0
+Gouweleeuw
+82'
+Bah3,0
+ Bayern
+Gnabry
+67'
+Saibari3,0
+Brown
+67'
+Stanisic5,0
+Bischof
+87'
+Pavlovic3,0
+Karl
+87'
+Luis Diaz4,0
+RESERVEBANK
+ Augsburg
+Labrovic (Tor), Keitel, Schnitzer, Suso, Ogundu
+ Bayern
+Urbig (Tor), Boey, H. Ito, M.-J. Kim, Sapoko Ndiaye
+KARTEN
+ Augsburg
+Matsima (1. Gelbe Karte)
+42'
+Ribeiro (1. Gelbe Karte)
+43'
+Behrens (2. Gelbe Karte)
+62'
+ Bayern

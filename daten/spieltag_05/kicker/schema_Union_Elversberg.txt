@@ -1,0 +1,107 @@
+BUNDESLIGA
+Spieltag
+Schema
+Bundesliga 2026/27, 5. Spieltag
+Union
+16. Platz
+1
+:
+0
+0
+:
+0
+Elversberg
+9. Platz
+INFO
+SCHEMA
+ANALYSE
+BILDER
+TICKER
+AUFSTELLUNG
+SPIELDATEN
+DATEN-VERGLEICH
+DIREKTVERGLEICH
+TORE
+Burcu
+Rechtsschuss
+81'
+1
+:
+0
+AUFSTELLUNG
+ Union
+Rönnow2,5
+Haberer4,0
+van den Bosch2,0
+Uduokhai2,5
+Rothe3,5
+Schäfer3,0
+R. Khedira3,0
+Aebischer4,0
+Imeri3,5
+Jeong4,0
+Skarke3,5
+ Elversberg
+Kristof2,5
+Sirch3,5
+Pinckert3,0
+Rohr3,5
+La. Günther4,0
+Keidel4,0
+Poreba3,5
+L. Petkov4,5
+Darvich4,0
+Zimmerschied4,0
+Futkeu5,0
+TRAINER
+ Union
+Lustrinelli
+ Elversberg
+Wagner
+WECHSEL
+ Union
+Burcu2,5
+58'
+Imeri3,5
+Trimmel
+77'
+Aebischer4,0
+Burke
+77'
+Skarke3,5
+Gray
+78'
+Jeong4,0
+Kemlein
+90' +2
+Schäfer3,0
+ Elversberg
+Krattenmacher4,0
+59'
+Zimmerschied4,0
+Campbell
+70'
+Futkeu5,0
+Mokwa
+70'
+Darvich4,0
+Mickelson
+71'
+La. Günther4,0
+Schmahl
+86'
+Sirch3,5
+RESERVEBANK
+ Union
+Raab (Tor), Köhn, Querfeld, Ljubicic
+ Elversberg
+Boss (Tor), Le Joncour, Condé, Schnellbacher
+KARTEN
+ Union
+Haberer (1. Gelbe Karte)
+7'
+Skarke (1. Gelbe Karte)
+21'
+ Elversberg
+Krattenmacher (1. Gelbe Karte)
+90' +2
