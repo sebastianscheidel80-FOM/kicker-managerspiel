@@ -1,0 +1,109 @@
+BUNDESLIGA
+Spieltag
+Schema
+Bundesliga 2026/27, 6. Spieltag
+Leverkusen
+4. Platz
+2
+:
+1
+1
+:
+1
+Freiburg
+3. Platz
+INFO
+SCHEMA
+ANALYSE
+BILDER
+TICKER
+AUFSTELLUNG
+SPIELDATEN
+DATEN-VERGLEICH
+DIREKTVERGLEICH
+TORE
+0
+:
+1
+14'
+Scherhant
+Linksschuss, Treu
+Maza
+Rechtsschuss, Schick
+19'
+1
+:
+1
+Schick
+Rechtsschuss, Maza
+76'
+2
+:
+1
+AUFSTELLUNG
+ Leverkusen
+Flekken3,0
+Quansah3,0
+Tapsoba3,0
+Medina3,0
+Miguel4,0
+E. Fernandez3,0
+Aleix Garcia3,0
+Diaby4,0
+Maza1,5
+Moreira4,5
+Schick2,0
+ Freiburg
+Backhaus3,5
+Treu2,0
+Ginter3,5
+Lienhart3,5
+Makengo4,0
+M. Eggestein3,5
+Engelhardt4,5
+Beste4,0
+Scherhant3,0
+Goto4,5
+Matanovic3,5
+TRAINER
+ Leverkusen
+Martinez
+ Freiburg
+Schuster
+WECHSEL
+ Leverkusen
+Tella3,5
+59'
+Moreira4,5
+Tillman
+73'
+Diaby4,0
+Hofmann
+84'
+Maza1,5
+ Freiburg
+Kübler3,0
+64'
+Treu2,0
+Höler4,0
+64'
+Goto4,5
+Irié
+77'
+Beste4,0
+Osterhage
+77'
+Engelhardt4,5
+Grifo
+89'
+Scherhant3,0
+RESERVEBANK
+ Leverkusen
+Blaswich (Tor), Badé, Oermann, Vazquez, Andrich, Boniface
+ Freiburg
+F. Müller (Tor), Günter, Rosenfelder, R. Yamamoto
+KARTEN
+ Leverkusen
+ Freiburg
+Treu (1. Gelbe Karte)
+39'

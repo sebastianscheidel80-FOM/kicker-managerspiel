@@ -1,0 +1,117 @@
+BUNDESLIGA
+Spieltag
+Schema
+Bundesliga 2026/27, 6. Spieltag
+M’gladbach
+18. Platz
+1
+:
+2
+0
+:
+1
+Hoffenheim
+14. Platz
+INFO
+SCHEMA
+ANALYSE
+BILDER
+TICKER
+AUFSTELLUNG
+SPIELDATEN
+DATEN-VERGLEICH
+DIREKTVERGLEICH
+TORE
+0
+:
+1
+11'
+Conté
+Linksschuss, Prass
+Mohya
+Rechtsschuss, Neuhaus
+49'
+1
+:
+1
+1
+:
+2
+54'
+Prass
+Linksschuss, Hlozek
+AUFSTELLUNG
+ M’gladbach
+Nicolas2,5
+Sander4,5
+Diks4,0
+Chiarodia4,5
+Scally4,5
+Uno5,0
+Neuhaus4,0
+Ullrich4,5
+Bolin4,0
+Mohya3,0
+Lidberg4,0
+ Hoffenheim
+Baumann3,0
+Coufal4,5
+Hranac3,5
+Machida3,0
+M. Rots4,0
+Avdullahu4,0
+Conté2,0
+Prass1,5
+Asllani2,5
+Lemperle3,0
+Hlozek2,5
+TRAINER
+ M’gladbach
+Blessin
+ Hoffenheim
+Ilzer
+WECHSEL
+ M’gladbach
+Machino4,5
+51'
+Lidberg4,0
+Hashioka4,5
+60'
+Neuhaus4,0
+Hack
+78'
+Bolin4,0
+Danfa
+78'
+Chiarodia4,5
+Nguefack
+79'
+Uno5,0
+ Hoffenheim
+Daghim
+69'
+Asllani2,5
+Kramaric
+78'
+Hlozek2,5
+Kabak
+78'
+Lemperle3,0
+RESERVEBANK
+ M’gladbach
+Batz (Tor), Herold, Konoplia, Stöger
+ Hoffenheim
+L. Philipp (Tor), Gendrey, Lässig, Burger, Lenz, Moerstedt
+KARTEN
+ M’gladbach
+Diks (3. Gelbe Karte)
+45'
+Hack (1. Gelbe Karte)
+89'
+Machino (3. Gelbe Karte)
+89'
+ Hoffenheim
+Asllani (1. Gelbe Karte)
+45' +1
+Prass (1. Gelbe Karte)
+89'

@@ -1,0 +1,104 @@
+BUNDESLIGA
+Spieltag
+Schema
+Bundesliga 2026/27, 6. Spieltag
+Frankfurt
+11. Platz
+1
+:
+0
+0
+:
+0
+Köln
+12. Platz
+INFO
+SCHEMA
+ANALYSE
+EINZELKRITIK
+BILDER
+TICKER
+AUFSTELLUNG
+SPIELDATEN
+DATEN-VERGLEICH
+DIREKTVERGLEICH
+TORE
+Ebnoutalib
+Rechtsschuss, Aseko
+77'
+1
+:
+0
+AUFSTELLUNG
+ Frankfurt
+Atubolu3,0
+Collins5,5
+R. Koch3,0
+Brassier3,0
+Kosugi3,5
+M. Götze4,0
+Onyedika4,0
+Doan3,5
+Chaibi4,0
+Burkardt5,0
+Ebnoutalib2,5
+ Köln
+Schwäbe3,5
+Schmied3,5
+Simpson-Pusey3,5
+Lochoshvili4,0
+Sebulonsen4,5
+Johannesson5,0
+Krauß2,5
+Sosa4,0
+Bülter4,5
+Maina4,0
+S. El Mala4,5
+TRAINER
+ Frankfurt
+Hütter
+ Köln
+Wagner
+WECHSEL
+ Frankfurt
+Aseko
+71'
+M. Götze4,0
+Knauff
+71'
+Collins5,5
+Baum
+82'
+Burkardt5,0
+ Köln
+Okon-Engstler
+68'
+Johannesson5,0
+Moore
+68'
+Maina4,0
+Castro-Montes
+68'
+Schmied3,5
+Waldschmidt
+84'
+Sebulonsen4,5
+Heskey
+84'
+S. El Mala4,5
+RESERVEBANK
+ Frankfurt
+Kaua Santos (Tor), Chandler, Maluze, Amaimouni-Echghouyab, Arrhov, Uzun
+ Köln
+Zieler (Tor), Kotya-Fofana, Mensah, Thielmann
+KARTEN
+ Frankfurt
+M. Götze (2. Gelbe Karte)
+24'
+Brassier (1. Gelbe Karte)
+39'
+ Köln
+Johannesson (2. Gelbe Karte)
+45'
+Sosa (1. Gelbe Karte)
+90' +4

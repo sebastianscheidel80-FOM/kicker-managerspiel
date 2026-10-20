@@ -244,6 +244,21 @@ def test_kurzer_namensteil_ist_kein_alias():
     assert b.finde("aber", b.kader("Thomas"))[1] == "unbekannt"
 
 
+def test_nachname_hinten_tolerant():
+    # kicker schreibt „Fabio Vieira“ / „Kaua Santos“ mit Vornamen: der hintere Nachname allein muss
+    # tippfehlertolerant greifen (6. Spieltag: Wolfgang schrieb „Vieria“).
+    b = basis_bauen()
+    b.spieler["HSV:Fabio Vieira"] = Spieler("HSV:Fabio Vieira", "Fabio Vieira", "HSV", Position("MIT"), "Thomas")
+    b.aliase["HSV:Fabio Vieira"] = _aliase_fuer("Fabio Vieira", "Fabio Vieira", "Fabio Vieira")
+    b.aliase_tolerant["HSV:Fabio Vieira"] = _aliase_tolerant_fuer("Fabio Vieira", "Fabio Vieira", "Fabio Vieira")
+    sp, art, _ = b.finde("Vieria", b.kader("Thomas"))
+    assert (sp.name, art) == ("Fabio Vieira", "tolerant")
+    sp, art, _ = b.finde("Kaua Santo", b.kader("Thomas"))
+    assert (sp.name, art) == ("Kaua Santos", "tolerant")
+    # Vornamen bleiben außen vor: „Fabian“ ist kein Fabio Vieira
+    assert b.finde("Fabian", b.kader("Thomas"))[1] == "unbekannt"
+
+
 def test_schema_breites_layout_ohne_teamueberschriften():
     sp = schema_parsen((FIX / "schema_dortmund_paderborn_breit.txt").read_text(encoding="utf-8"))
     assert (sp.heim, sp.gast, sp.tore_heim, sp.tore_gast) == ("Dortmund", "Paderborn", 3, 0)

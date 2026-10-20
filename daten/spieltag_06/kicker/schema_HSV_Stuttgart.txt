@@ -1,0 +1,107 @@
+BUNDESLIGA
+Spieltag
+Schema
+Bundesliga 2026/27, 6. Spieltag
+HSV
+9. Platz
+1
+:
+0
+0
+:
+0
+Stuttgart
+13. Platz
+INFO
+SCHEMA
+ANALYSE
+BILDER
+TICKER
+AUFSTELLUNG
+SPIELDATEN
+DATEN-VERGLEICH
+DIREKTVERGLEICH
+TORE
+Muheim
+Linksschuss, El Ouahdi
+88'
+1
+:
+0
+AUFSTELLUNG
+ HSV
+Heuer Fernandes2,5
+Capaldo3,0
+Bornauw2,5
+Omari3,0
+Wolfe3,5
+Adeline3,0
+Nadir2,5
+Muheim2,5
+Lemke3,5
+Fabio Vieira3,0
+Poulsen3,0
+ Stuttgart
+Seimen2,5
+Vagnoman3,0
+Jeltsch3,0
+Chabot2,5
+Hendriks3,0
+Karazor3,0
+Stiller3,0
+El Khannouss3,5
+Undav3,5
+Leweling3,5
+Demirovic4,5
+TRAINER
+ HSV
+Polzin
+ Stuttgart
+Hoeneß
+WECHSEL
+ HSV
+Stange4,5
+61'
+Poulsen3,0
+El Ouahdi
+78'
+Lemke3,5
+Moffi
+78'
+Fabio Vieira3,0
+Grönbaek
+78'
+Adeline3,0
+Amoako
+84'
+Nadir2,5
+ Stuttgart
+Führich
+67'
+El Khannouss3,5
+Prömel
+67'
+Karazor3,0
+Sauer
+77'
+Leweling3,5
+Pejcinovic
+77'
+Demirovic4,5
+Assignon
+89'
+Hendriks3,0
+RESERVEBANK
+ HSV
+Tangvik (Tor), Nandja, Torunarigha, Rössing-Lelesiit
+ Stuttgart
+Bredlow (Tor), Jaquez, Stergiou, Spalt
+KARTEN
+ HSV
+Omari (1. Gelbe Karte)
+55'
+Capaldo (2. Gelbe Karte)
+82'
+Stange (1. Gelbe Karte)
+85'
+ Stuttgart

@@ -1,0 +1,103 @@
+BUNDESLIGA
+Spieltag
+Schema
+Bundesliga 2026/27, 6. Spieltag
+Union
+17. Platz
+0
+:
+0
+0
+:
+0
+Dortmund
+2. Platz
+INFO
+SCHEMA
+ANALYSE
+EINZELKRITIK
+BILDER
+TICKER
+AUFSTELLUNG
+SPIELDATEN
+DATEN-VERGLEICH
+DIREKTVERGLEICH
+TORE
+Fehlanzeige
+AUFSTELLUNG
+ Union
+Rönnow2,5
+Haberer3,0
+van den Bosch2,5
+Uduokhai2,5
+Rothe3,0
+Schäfer2,0
+R. Khedira3,5
+Jeong4,5
+Aebischer4,5
+Imeri4,5
+Skarke4,5
+ Dortmund
+Kobel2,5
+Gadou2,5
+Anton2,0
+N. Schlotterbeck2,5
+Ryerson3,5
+Bellingham3,5
+F. Nmecha4,0
+Svensson4,0
+Nwaneri4,5
+Beier4,5
+Guirassy5,0
+TRAINER
+ Union
+Lustrinelli
+ Dortmund
+Kovac
+WECHSEL
+ Union
+Latte Lath4,0
+46'
+Imeri4,5
+Gray
+70'
+Skarke4,5
+Trimmel
+76'
+Haberer3,0
+Kemlein
+76'
+Schäfer2,0
+Güther
+90' +3
+Jeong4,5
+ Dortmund
+Karetsas
+62'
+Beier4,5
+Fabio Silva3,5
+62'
+Nwaneri4,5
+Albert
+70'
+Karetsas
+RESERVEBANK
+ Union
+Raab (Tor), Köhn, Querfeld, Ljubicic
+ Dortmund
+A. Meyer (Tor), Bensebaini, Kaua Prates, Chukwuemeka, Sabitzer, J. Veerman
+KARTEN
+ Union
+Haberer (2. Gelbe Karte)
+33'
+Rothe (1. Gelbe Karte)
+35'
+Skarke (2. Gelbe Karte)
+63'
+ Dortmund
+Nwaneri (1. Gelbe Karte)
+1'
+Anton (1. Gelbe Karte)
+7'
+Guirassy (1. Gelbe Karte)
+14'

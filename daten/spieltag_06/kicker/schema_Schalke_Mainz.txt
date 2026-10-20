@@ -1,0 +1,105 @@
+BUNDESLIGA
+Spieltag
+Schema
+Bundesliga 2026/27, 6. Spieltag
+Schalke
+15. Platz
+0
+:
+1
+0
+:
+1
+Mainz
+5. Platz
+INFO
+SCHEMA
+ANALYSE
+BILDER
+TICKER
+AUFSTELLUNG
+SPIELDATEN
+DATEN-VERGLEICH
+DIREKTVERGLEICH
+TORE
+0
+:
+1
+24'
+P. Tietz
+Rechtsschuss, Caci
+AUFSTELLUNG
+ Schalke
+Karius1,0
+T. Becker4,0
+Katic4,5
+Kurucay3,5
+Gantenbein4,0
+El-Faouzi4,5
+Tanaka4,0
+Gosens4,5
+Karaman5,0
+Aouchiche5,0
+Dzeko5,0
+ Mainz
+Schwolow3,0
+da Costa3,0
+Posch3,0
+Potulski2,5
+Caci3,0
+Kai. Sano2,0
+Mwene3,5
+Amiri4,0
+J.-S. Lee3,5
+Becker2,5
+P. Tietz2,0
+TRAINER
+ Schalke
+Muslic
+ Mainz
+Fischer
+WECHSEL
+ Schalke
+Dina Ebimbe5,0
+60'
+Gantenbein4,0
+H.-C. Hwang4,0
+60'
+Dzeko5,0
+Wöber
+71'
+Katic4,5
+Adamu
+71'
+Aouchiche5,0
+V. Becker
+79'
+Gosens4,5
+ Mainz
+Nebel
+76'
+J.-S. Lee3,5
+Königsdörffer
+76'
+Becker2,5
+Martel
+86'
+Amiri4,0
+Maloney
+90' +1
+P. Tietz2,0
+Widmer
+90' +1
+Caci3,0
+RESERVEBANK
+ Schalke
+Ke. Müller (Tor), Ayhan, Schallenberg, Vozar
+ Mainz
+Kinzig (Tor), Gruber, Nakuzola, Hollerbach
+KARTEN
+ Schalke
+ Mainz
+Amiri (1. Gelbe Karte)
+42'
+Kai. Sano (1. Gelbe Karte)
+45'

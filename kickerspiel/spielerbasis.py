@@ -130,6 +130,11 @@ def _aliase_tolerant_fuer(kurz: str, kaderliste: str, auktion: str) -> set[str]:
     if len(toks) >= 2:
         for k in range(1, len(toks)):
             al.add(" ".join(toks[:k]))          # Nachname(n) ohne Vorname
+    # kicker-Kurzname mit zwei Wörtern („Fabio Vieira“, „Luis Diaz“, „Kaua Santos“): hier steht der
+    # Nachname hinten, also darf auch er allein tolerant greifen („Vieria“ → Fabio Vieira).
+    toks_kurz = normalisieren(kurz).split()
+    if len(toks_kurz) >= 2:
+        al.add(toks_kurz[-1])
     al.discard("")
     return {a for a in al if len(a) >= 3}
 

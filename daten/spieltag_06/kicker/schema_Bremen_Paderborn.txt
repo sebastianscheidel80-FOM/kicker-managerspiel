@@ -1,0 +1,120 @@
+BUNDESLIGA
+Spieltag
+Schema
+Bundesliga 2026/27, 6. Spieltag
+Bremen
+8. Platz
+2
+:
+2
+0
+:
+2
+Paderborn
+16. Platz
+INFO
+SCHEMA
+ANALYSE
+BILDER
+TICKER
+AUFSTELLUNG
+SPIELDATEN
+DATEN-VERGLEICH
+DIREKTVERGLEICH
+TORE
+0
+:
+1
+18'
+Marino
+Rechtsschuss, S. Tigges
+0
+:
+2
+30'
+S. Tigges
+Rechtsschuss
+Füllkrug
+Linksschuss, Dinkci
+59'
+1
+:
+2
+Füllkrug (Elfmeter)
+Rechtsschuss
+66'
+2
+:
+2
+AUFSTELLUNG
+ Bremen
+Hein3,0
+Arthur2,0
+Pieper3,0
+Friedl3,0
+Deman3,5
+Reis3,5
+Regeer3,5
+Chuki4,0
+Dinkci3,5
+Grüll4,0
+Füllkrug2,0
+ Paderborn
+Noll1,5
+ter Horst3,0
+Scheller2,5
+Hansen4,0
+Curda3,0
+Castaneda3,0
+Obermair3,5
+Ulrich4,0
+Vidovic4,0
+Marino3,0
+S. Tigges2,0
+TRAINER
+ Bremen
+Thioune
+ Paderborn
+Kettemann
+WECHSEL
+ Bremen
+Weiser2,5
+46'
+Chuki4,0
+Itten3,5
+63'
+Dinkci3,5
+Stalmach
+80'
+Reis3,5
+Erevbenagie
+88'
+Regeer3,5
+ Paderborn
+Philippe
+66'
+Marino3,0
+Baack
+66'
+Ulrich4,0
+Pieringer
+75'
+S. Tigges2,0
+Müller
+75'
+Vidovic4,0
+Sticker
+88'
+Hansen4,0
+RESERVEBANK
+ Bremen
+A. Schlager (Tor), Schmetgens, Stark, Wojcik, Soylu
+ Paderborn
+Schubert (Tor), Lippmann, S. Michel, Zeitler
+KARTEN
+ Bremen
+Regeer (1. Gelbe Karte)
+86'
+ Paderborn
+Marino (1. Gelbe Karte)
+4'

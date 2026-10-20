@@ -1,0 +1,159 @@
+BUNDESLIGA
+Spieltag
+Schema
+Bundesliga 2026/27, 6. Spieltag
+Elversberg
+6. Platz
+4
+:
+3
+3
+:
+1
+Augsburg
+10. Platz
+INFO
+SCHEMA
+ANALYSE
+BILDER
+TICKER
+AUFSTELLUNG
+SPIELDATEN
+DATEN-VERGLEICH
+DIREKTVERGLEICH
+TORE
+L. Petkov
+Rechtsschuss
+4'
+1
+:
+0
+La. Günther
+Rechtsschuss, Krattenmacher
+7'
+2
+:
+0
+Rohr
+Kopfball, Keidel
+28'
+3
+:
+0
+3
+:
+1
+45'
++9
+Rieder (Elfmeter)
+Linksschuss
+3
+:
+2
+76'
+Gregoritsch (Elfmeter)
+Linksschuss, Behrens
+Schmahl
+Rechtsschuss, L. Petkov
+89'
+4
+:
+2
+4
+:
+3
+90'
+Kömür
+Linksschuss, Behrens
+BESONDERE VORKOMMNISSE
+
+Dahmen hält Handelfmeter von L. Petkov (4.)
+Futkeu schießt Foulelfmeter an die Latte (90.+8)
+
+AUFSTELLUNG
+ Elversberg
+Kristof3,0
+Gyamerah3,5
+Pinckert4,5
+Rohr2,5
+La. Günther2,5
+Keidel3,0
+Poreba3,0
+L. Petkov2,0
+Darvich4,0
+Krattenmacher3,5
+Mokwa4,5
+ Augsburg
+Dahmen3,0
+Bah4,0
+Matsima5,0
+Brackelmann4,5
+M. Wolf4,0
+Massengo4,0
+Rieder3,0
+Behrens4,0
+Fellhauer4,5
+Ibrahimovic4,0
+Ribeiro5,0
+TRAINER
+ Elversberg
+Wagner
+ Augsburg
+Baum
+WECHSEL
+ Elversberg
+Sirch4,0
+40'
+Gyamerah3,5
+Schmahl3,0
+40'
+Darvich4,0
+Futkeu
+77'
+Mokwa4,5
+Adam
+77'
+Krattenmacher3,5
+Condé
+90' +3
+Keidel3,0
+ Augsburg
+Gregoritsch3,0
+46'
+Ribeiro5,0
+Kade4,0
+46'
+M. Wolf4,0
+Gouweleeuw3,5
+46'
+Bah4,0
+Kömür
+74'
+Ibrahimovic4,0
+Seol
+74'
+Fellhauer4,5
+RESERVEBANK
+ Elversberg
+Boss (Tor), Le Joncour, Mickelson, Schnellbacher
+ Augsburg
+Labrovic (Tor), Keitel, Schnitzer, Ogundu
+KARTEN
+ Elversberg
+Keidel (3. Gelbe Karte)
+54'
+Pinckert (1. Gelbe Karte)
+75'
+Kristof (2. Gelbe Karte)
+84'
+Schmahl (1. Gelbe Karte)
+90' +6
+ Augsburg
+Massengo (2. Gelbe Karte)
+30'
+Ribeiro (2. Gelbe Karte)
+30'
+Matsima (2. Gelbe Karte)
+52'
+Fröhling (1. Gelbe Karte)
+70'
