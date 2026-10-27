@@ -1,0 +1,114 @@
+BUNDESLIGA
+Spieltag
+Schema
+Bundesliga 2026/27, 7. Spieltag
+Augsburg
+9. Platz
+1
+:
+1
+0
+:
+0
+Union
+17. Platz
+INFO
+SCHEMA
+ANALYSE
+BILDER
+TICKER
+AUFSTELLUNG
+SPIELDATEN
+DATEN-VERGLEICH
+DIREKTVERGLEICH
+TORE
+Massengo
+Kopfball, Rieder
+71'
+1
+:
+0
+1
+:
+1
+74'
+Haberer
+Rechtsschuss, Gray
+AUFSTELLUNG
+ Augsburg
+Dahmen3,5
+Bah5,0
+Matsima4,0
+Brackelmann
+M. Wolf4,5
+Massengo3,0
+Rieder2,5
+Behrens4,5
+Kade4,0
+Ibrahimovic4,5
+Gregoritsch4,0
+ Union
+Rönnow3,0
+Haberer2,5
+van den Bosch4,5
+Uduokhai5,0
+Rothe4,0
+Schäfer4,5
+R. Khedira3,5
+Jeong4,0
+Aebischer3,5
+Burcu
+Skarke4,5
+TRAINER
+ Augsburg
+Baum
+ Union
+Lustrinelli
+WECHSEL
+ Augsburg
+Gouweleeuw3,5
+12'
+Brackelmann
+Kömür
+72'
+Ibrahimovic4,5
+Fellhauer
+72'
+M. Wolf4,5
+Ogundu
+89'
+Massengo3,0
+Ribeiro
+89'
+Kade4,0
+ Union
+Querfeld3,0
+25'
+Burcu
+Gray4,0
+46'
+Skarke4,5
+Burke
+76'
+Jeong4,0
+Kemlein
+90' +5
+Aebischer3,5
+RESERVEBANK
+ Augsburg
+Labrovic (Tor), Seol, Keitel, Schnitzer
+ Union
+Raab (Tor), Köhn, Trimmel, Latte Lath, Ljubicic
+KARTEN
+ Augsburg
+Bah
+63'
+ Union
+Uduokhai
+19'
+Haberer (3. Gelbe Karte)
+31'
+Querfeld (1. Gelbe Karte)
+36'
+Gray (1. Gelbe Karte)
+77'

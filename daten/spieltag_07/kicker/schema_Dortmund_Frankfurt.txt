@@ -1,0 +1,106 @@
+BUNDESLIGA
+Spieltag
+Schema
+Bundesliga 2026/27, 7. Spieltag
+Dortmund
+2. Platz
+1
+:
+0
+0
+:
+0
+Frankfurt
+14. Platz
+INFO
+SCHEMA
+ANALYSE
+EINZELKRITIK
+BILDER
+TICKER
+AUFSTELLUNG
+SPIELDATEN
+DATEN-VERGLEICH
+DIREKTVERGLEICH
+TORE
+Beier
+Rechtsschuss, Bellingham
+80'
+1
+:
+0
+AUFSTELLUNG
+ Dortmund
+Kobel2,5
+Anton3,5
+N. Schlotterbeck3,0
+Bensebaini2,0
+Ryerson3,5
+J. Veerman2,5
+Svensson4,0
+Sabitzer5,0
+F. Nmecha4,5
+Guirassy3,5
+Fabio Silva4,5
+ Frankfurt
+Atubolu2,5
+Collins4,5
+R. Koch3,5
+Brassier3,0
+Baum3,5
+Onyedika4,0
+Aseko3,0
+Doan5,0
+Chaibi3,5
+Ebnoutalib4,5
+Burkardt4,5
+TRAINER
+ Dortmund
+Kovac
+ Frankfurt
+Hütter
+WECHSEL
+ Dortmund
+Beier
+68'
+Svensson4,0
+Nwaneri
+68'
+Fabio Silva4,5
+Chukwuemeka
+69'
+Sabitzer5,0
+Bellingham
+79'
+F. Nmecha4,5
+Gadou
+90' +2
+Ryerson3,5
+ Frankfurt
+Knauff
+77'
+Burkardt4,5
+Uzun
+77'
+Ebnoutalib4,5
+Arrhov
+84'
+Chaibi3,5
+M. Götze
+84'
+Aseko3,0
+Amaimouni-Echghouyab
+87'
+Doan5,0
+RESERVEBANK
+ Dortmund
+A. Meyer (Tor), Mane, dos Santos, Inacio
+ Frankfurt
+Kaua Santos (Tor), Kosugi, Maluze, O. Höjlund
+KARTEN
+ Dortmund
+ Frankfurt
+Collins (1. Gelbe Karte)
+58'
+Chaibi (1. Gelbe Karte)
+63'

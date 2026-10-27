@@ -1,0 +1,227 @@
+KICKERSPIEL SAISON 2026-2027
+
+*****************************************************************
+
+GESAMTSTAND NACH DEM 7. SPIELTAG
+
+PUNKTE
+
+1. Andreas, 122,0 Punkte
+2. Wolfgang, 111,5 Punkte
+3. Thomas, 107,0 Punkte
+4. Sebastian, 105,0 Punkte
+5. Daniel, 94,5 Punkte
+6. Martin, 90,0 Punkte
+
+SPIELTAGSSIEGE
+
+1. Andreas, 2,0
+   Thomas, 2,0
+   Wolfgang, 2,0
+4. Daniel, 0,0
+   Martin, 0,0
+   Sebastian, 0,0
+
+*****************************************************************
+
+ERGEBNIS 7. SPIELTAG
+
+1. Wolfgang, 25,0 Punkte
+2. Martin, 19,5 Punkte
+3. Andreas, 19,0 Punkte
+4. Sebastian, 14,5 Punkte
+   Thomas, 14,5 Punkte
+6. Daniel, 12,5 Punkte
+
+ELF DES TAGES
+
+1. Andreas, 5,5 Punkte (2)
+   Wolfgang, 5,5 Punkte (2)
+3. Daniel, 3,0 Punkte (1)
+   Martin, 3,0 Punkte (1)
+   Thomas, 3,0 Punkte (1)
+6. Sebastian, 1,0 Punkte (0)
+
+GEGENTORE
+
+1. Wolfgang, 6,0 Punkte (1)
+2. Sebastian, 5,0 Punkte (3)
+3. Martin, 4,0 Punkte (6)
+4. Thomas, 3,0 Punkte (8)
+5. Andreas, 2,0 Punkte (9)
+6. Daniel, 1,0 Punkte (12)
+
+NOTE
+
+1. Thomas, 6,0 Punkte (3,23)
+2. Wolfgang, 5,0 Punkte (3,32)
+3. Martin, 4,0 Punkte (3,41)
+4. Daniel, 3,0 Punkte (3,68)
+5. Andreas, 1,5 Punkte (3,73)
+   Sebastian, 1,5 Punkte (3,73)
+
+VORLAGEN
+
+1. Andreas, 5,5 Punkte (4)
+   Sebastian, 5,5 Punkte (4)
+3. Martin, 4,0 Punkte (3)
+4. Daniel, 2,5 Punkte (1)
+   Wolfgang, 2,5 Punkte (1)
+6. Thomas, 1,0 Punkte (0)
+
+TORE
+
+1. Wolfgang, 6,0 Punkte (5)
+2. Andreas, 4,5 Punkte (2)
+   Martin, 4,5 Punkte (2)
+4. Daniel, 3,0 Punkte (1)
+5. Sebastian, 1,5 Punkte (0)
+   Thomas, 1,5 Punkte (0)
+
+
+MANAGER: WOLFGANG (Vickings)
+Ø-Note 3,32 · Gegentore 1 · Tore 5 · Vorlagen 1 · Elf des Tages 2  →  25,0 Punkte (Platz 1)
+--------------------------------------------------------------
+Pos Spieler             Elf Note  GegT  Vorl  Tore  Herkunft
+--- ------------------- --- ----  ----  ----  ----  --------
+TOR Nyland ↑                2,5   0                 für Vandevoordt (Bank 1)
+ABW Brown ↑             ja  2,5   1     1           für Baku (Bank 2)
+ABW Svensson                4,0   0                 
+ABW Schlotterbeck           3,0   0                 
+MIT Veerman                 2,5                     
+MIT El Aynaoui              3,5                     
+MIT Suzuki                  4,5                     
+MIT Nwaneri                 5,5*                    Strafnote, Kurzeinsatz
+MIT Lee                     3,5               1     
+STU Saibari                 3,0                     
+STU Füllkrug            ja  2,0               2     
+    gewichtet           2   3,32  1     1     5     TW-GegT ×2 · MIT-Vorl ×2 · STU-Tore ×2
+    Rangpunkte          5,5 5,0   6,0   2,5   6,0   Summe 25,0
+Protokoll:
+  TOR Vandevoordt: keine Note → Nyland rückt nach (Bank 1).
+  ABW Baku: keine Note → Brown rückt nach (Bank 2).
+  MIT Nwaneri: keine Note, kein Ersatz-MIT mit Note → Strafnote 5,5.
+    Ersatz 4 Fabio Vieira (MIT) hat keine Note – übersprungen.
+
+
+MANAGER: MARTIN (Hansa Fürze)
+Ø-Note 3,41 · Gegentore 6 · Tore 2 · Vorlagen 3 · Elf des Tages 1  →  19,5 Punkte (Platz 2)
+--------------------------------------------------------------
+Pos Spieler             Elf Note  GegT  Vorl  Tore  Herkunft
+--- ------------------- --- ----  ----  ----  ----  --------
+TOR Kobel                   2,5   0                 
+ABW Jeltsch                 4,5   3                 
+ABW Lienhart                3,0   3                 
+ABW Simpson-Pusey           3,5   0                 
+MIT Amiri                   4,0                     
+MIT Leweling ↑              3,0         1           für Grönbaek (Bank 3)
+MIT Burger                  3,0                     
+MIT Karl                    2,5                     
+MIT Reitz                   4,0                     
+STU Olise               ja  2,0         1     1     
+STU Nkunku                  5,5*                    Strafnote, nicht eingesetzt
+    gewichtet           1   3,41  6     3     2     TW-GegT ×2 · MIT-Vorl ×2 · STU-Tore ×2
+    Rangpunkte          3,0 4,0   4,0   4,0   4,5   Summe 19,5
+Protokoll:
+  MIT Grönbaek: keine Note → Leweling rückt nach (Bank 3).
+    Ersatz 2 Onyeka (MIT) hat keine Note – übersprungen.
+  STU Nkunku: nicht eingesetzt, kein Ersatz-STU mit Note oder Einsatz → Strafnote 5,5.
+    Ersatz 4 Lemperle (STU) nicht eingesetzt – übersprungen.
+
+
+MANAGER: ANDREAS (Fischköppe)
+Ø-Note 3,73 · Gegentore 9 · Tore 2 · Vorlagen 4 · Elf des Tages 2  →  19,0 Punkte (Platz 3)
+--------------------------------------------------------------
+Pos Spieler             Elf Note  GegT  Vorl  Tore  Herkunft
+--- ------------------- --- ----  ----  ----  ----  --------
+TOR Seimen                  4,5   3                 
+ABW Davies                  5,5*  1                 Strafnote, Kurzeinsatz
+ABW Upamecano           ja  1,5   1           1     
+ABW Stanisic ↑              3,5   1                 für Kim (Bank 2)
+MIT Doan                    5,0                     
+MIT Bellingham              5,5*        1           Strafnote, Kurzeinsatz
+MIT E. Fernandez            3,5                     
+MIT Kade                    4,0                     
+MIT Mohya               ja  1,0         1     1     
+STU Kane                    3,0                     
+STU Gregoritsch             4,0                     
+    gewichtet           2   3,73  9     4     2     TW-GegT ×2 · MIT-Vorl ×2 · STU-Tore ×2
+    Rangpunkte          5,5 1,5   2,0   5,5   4,5   Summe 19,0
+Protokoll:
+  Mehrere Ausfälle auf einer Position: Nachrücker werden in umgekehrter Aufstellungsreihenfolge vergeben (zuletzt genannter zuerst).
+  ABW Davies: keine Note, kein Ersatz-ABW mit Note → Strafnote 5,5.
+  ABW Kim: keine Note → Stanisic rückt nach (Bank 2).
+  MIT Bellingham: keine Note, kein Ersatz-MIT mit Note → Strafnote 5,5; Kurzeinsatz: 0 Tor(e), 1 Vorlage(n) zählen.
+    Ersatz 3 Seiwald (MIT) hat keine Note – übersprungen.
+
+
+MANAGER: SEBASTIAN (Great Licors)
+Ø-Note 3,73 · Gegentore 3 · Tore 0 · Vorlagen 4 · Elf des Tages 0  →  14,5 Punkte (Platz 4)
+--------------------------------------------------------------
+Pos Spieler             Elf Note  GegT  Vorl  Tore  Herkunft
+--- ------------------- --- ----  ----  ----  ----  --------
+TOR Urbig ↑                 2,5   1                 für Neuer (Bank 1)
+ABW Laimer                  3,5   1                 
+ABW Gadou ↑                 5,5*  0                 für Raum (Bank 2)
+ABW Ryerson                 3,5   0                 
+MIT Aleix Garcia            4,5                     
+MIT Uzun ↑                  5,5*                    für Pavlovic (Bank 3)
+MIT Maza                    4,0                     
+MIT El Khannouss            4,0                     
+MIT Gruda                   2,0         1           
+STU Diaby                   4,0                     
+STU Nusa                    2,0         2           
+    gewichtet           0   3,73  3     4     0     TW-GegT ×2 · MIT-Vorl ×2 · STU-Tore ×2
+    Rangpunkte          1,0 1,5   5,0   5,5   1,5   Summe 14,5
+Protokoll:
+  TOR Neuer: keine Note → Urbig rückt nach (Bank 1).
+  ABW Raum: nicht eingesetzt, kein Ersatz-ABW mit Note → Gadou rückt mit Kurzeinsatz nach (Bank 2), Note 5,5, kein Strafgegentor.
+  MIT Pavlovic: nicht eingesetzt, kein Ersatz-MIT mit Note → Uzun rückt mit Kurzeinsatz nach (Bank 3), Note 5,5, kein Strafgegentor.
+
+
+MANAGER: THOMAS (Hallodries)
+Ø-Note 3,23 · Gegentore 8 · Tore 0 · Vorlagen 0 · Elf des Tages 1  →  14,5 Punkte (Platz 4)
+--------------------------------------------------------------
+Pos Spieler             Elf Note  GegT  Vorl  Tore  Herkunft
+--- ------------------- --- ----  ----  ----  ----  --------
+TOR Atubolu                 2,5   1                 
+ABW Anton                   3,5   0                 
+ABW Quansah                 3,0   3                 
+ABW Medina                  3,5   3                 
+MIT Petkov                  3,0                     
+MIT Führich                 3,5                     
+MIT Khedira                 3,5                     
+MIT Moore                   3,5                     
+MIT Avdullahu           ja  2,0                     
+STU Schick                  4,5                     
+STU Hlozek                  3,0                     
+    gewichtet           1   3,23  8     0     0     TW-GegT ×2 · MIT-Vorl ×2 · STU-Tore ×2
+    Rangpunkte          3,0 6,0   3,0   1,0   1,5   Summe 14,5
+Protokoll:
+  Aufstellung übernommen: keine Mail gefunden, letzte gültige Aufstellung vom 6. Spieltag übernommen.
+
+
+MANAGER: DANIEL (Käsefüße)
+Ø-Note 3,68 · Gegentore 12 · Tore 1 · Vorlagen 1 · Elf des Tages 1  →  12,5 Punkte (Platz 6)
+--------------------------------------------------------------
+Pos Spieler             Elf Note  GegT  Vorl  Tore  Herkunft
+--- ------------------- --- ----  ----  ----  ----  --------
+TOR Flekken                 3,0   3                 
+ABW Mittelstädt             3,5   3                 
+ABW Miguel                  4,0   3                 
+ABW Bensebaini          ja  2,0   0                 
+MIT Stiller                 3,0                     
+MIT S. El Mala              3,0                     
+MIT F. Nmecha               4,5                     
+MIT Baumgartner             5,5*              1     Strafnote, Kurzeinsatz
+MIT Tillman                 4,0                     
+STU Guirassy                3,5                     
+STU Pejcinovic              4,5         1           
+    gewichtet           1   3,68  12    1     1     TW-GegT ×2 · MIT-Vorl ×2 · STU-Tore ×2
+    Rangpunkte          3,0 3,0   1,0   2,5   3,0   Summe 12,5
+Protokoll:
+  MIT Baumgartner: keine Note, kein Ersatz-MIT mit Note → Strafnote 5,5; Kurzeinsatz: 1 Tor(e), 0 Vorlage(n) zählen.
+    Ersatz 2 Grifo (MIT) hat keine Note – übersprungen.
+    Ersatz 3 Nebel (MIT) hat keine Note – übersprungen.
+  Warnung: Nur 3 Ersatzspieler statt 4
+  Warnung: Kein Ersatztorwart auf der Bank

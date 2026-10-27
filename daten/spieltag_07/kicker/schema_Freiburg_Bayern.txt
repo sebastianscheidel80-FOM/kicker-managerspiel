@@ -1,0 +1,126 @@
+BUNDESLIGA
+Spieltag
+Schema
+Bundesliga 2026/27, 7. Spieltag
+Freiburg
+3. Platz
+1
+:
+3
+0
+:
+2
+Bayern
+1. Platz
+INFO
+SCHEMA
+ANALYSE
+EINZELKRITIK
+BILDER
+TICKER
+AUFSTELLUNG
+SPIELDATEN
+DATEN-VERGLEICH
+DIREKTVERGLEICH
+TORE
+0
+:
+1
+16'
+Upamecano
+Rechtsschuss, Olise
+0
+:
+2
+43'
+Gnabry
+Rechtsschuss, Brown
+Bischof (Eigentor)
+Linksschuss, Makengo
+82'
+1
+:
+2
+1
+:
+3
+90'
++5
+Olise
+Linksschuss
+AUFSTELLUNG
+ Freiburg
+Backhaus3,5
+Treu3,5
+Ginter3,0
+Lienhart3,0
+Makengo3,5
+M. Eggestein4,0
+Osterhage4,5
+Beste4,5
+Y. Suzuki4,5
+Scherhant4,5
+Höler4,0
+ Bayern
+Urbig2,5
+Stanisic3,5
+Upamecano1,5
+Tah3,5
+Brown2,5
+Laimer3,5
+Bischof3,5
+Olise2,0
+Karl2,5
+Gnabry2,0
+Kane3,0
+TRAINER
+ Freiburg
+Schuster
+ Bayern
+Danks
+WECHSEL
+ Freiburg
+Matanovic3,0
+58'
+Höler4,0
+R. Yamamoto4,0
+58'
+Osterhage4,5
+Irié3,0
+64'
+Beste4,5
+Rosenfelder
+77'
+Lienhart3,0
+Grifo
+77'
+Scherhant4,5
+ Bayern
+Saibari3,0
+60'
+Gnabry2,0
+Boey3,5
+61'
+Stanisic3,5
+Davies
+73'
+Brown2,5
+H. Ito
+86'
+Karl2,5
+RESERVEBANK
+ Freiburg
+F. Müller (Tor), Günter, Kübler, Goto
+ Bayern
+Bärtl (Tor), Ulreich (Tor), Kiala, Santos, Binder
+KARTEN
+ Freiburg
+Höler (2. Gelbe Karte)
+25'
+Beste (1. Gelbe Karte)
+55'
+M. Eggestein (1. Gelbe Karte)
+85'
+ Bayern
+Tah (1. Gelbe Karte)
+65'

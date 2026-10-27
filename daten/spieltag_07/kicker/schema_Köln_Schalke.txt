@@ -1,0 +1,97 @@
+BUNDESLIGA
+Spieltag
+Schema
+Bundesliga 2026/27, 7. Spieltag
+Köln
+12. Platz
+0
+:
+0
+0
+:
+0
+Schalke
+16. Platz
+INFO
+SCHEMA
+ANALYSE
+BILDER
+TICKER
+AUFSTELLUNG
+SPIELDATEN
+DATEN-VERGLEICH
+DIREKTVERGLEICH
+TORE
+Fehlanzeige
+AUFSTELLUNG
+ Köln
+Schwäbe3,0
+Sebulonsen4,0
+Simpson-Pusey3,5
+Lochoshvili3,0
+Sosa4,0
+Johannesson3,5
+Krauß4,5
+Maina4,0
+Moore3,5
+Bülter4,0
+S. El Mala3,0
+ Schalke
+Karius2,5
+T. Becker3,5
+Katic3,0
+Kurucay3,0
+Dina Ebimbe4,5
+El-Faouzi3,5
+Tanaka2,5
+Gosens3,5
+Aouchiche4,5
+Adamu4,5
+H.-C. Hwang4,5
+TRAINER
+ Köln
+Wagner
+ Schalke
+Muslic
+WECHSEL
+ Köln
+Waldschmidt
+68'
+Moore3,5
+Okon-Engstler
+80'
+Krauß4,5
+Heskey
+80'
+S. El Mala3,0
+Thielmann
+90'
+Lochoshvili3,0
+Schmied
+90'
+Sosa4,0
+ Schalke
+Bachmann3,5
+43'
+El-Faouzi3,5
+V. Becker3,5
+43'
+Gosens3,5
+RESERVEBANK
+ Köln
+Zieler (Tor), Castro-Montes, Mensah, M. El Mala
+ Schalke
+Ke. Müller (Tor), Ayhan, Porath, Vozar, Dzeko, Lasme, Ndiaye
+KARTEN
+ Köln
+Krauß (2. Gelbe Karte)
+45' +2
+Lochoshvili (1. Gelbe Karte)
+81'
+ Schalke
+Dina Ebimbe (2. Gelbe Karte)
+71'
+V. Becker (1. Gelbe Karte)
+83'
+Kurucay (2. Gelbe Karte)
+89'

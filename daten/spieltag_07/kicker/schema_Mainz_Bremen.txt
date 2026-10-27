@@ -1,0 +1,130 @@
+BUNDESLIGA
+Spieltag
+Schema
+Bundesliga 2026/27, 7. Spieltag
+Mainz
+7. Platz
+2
+:
+3
+1
+:
+2
+Bremen
+6. Platz
+INFO
+SCHEMA
+ANALYSE
+BILDER
+TICKER
+AUFSTELLUNG
+SPIELDATEN
+DATEN-VERGLEICH
+DIREKTVERGLEICH
+TORE
+0
+:
+1
+7'
+Füllkrug (Elfmeter)
+Rechtsschuss, Arthur
+0
+:
+2
+25'
+Füllkrug (Elfmeter)
+Rechtsschuss, Grüll
+Caci
+Kopfball, Becker
+33'
+1
+:
+2
+1
+:
+3
+61'
+Reis
+Linksschuss, Grüll
+J.-S. Lee
+Kopfball, Caci
+63'
+2
+:
+3
+AUFSTELLUNG
+ Mainz
+Schwolow3,0
+da Costa4,5
+Posch4,5
+Potulski4,0
+Caci3,0
+Kai. Sano3,0
+Mwene4,0
+J.-S. Lee3,5
+Amiri4,0
+Becker3,5
+P. Tietz4,5
+ Bremen
+Hein3,0
+Arthur2,0
+Pieper2,0
+Friedl3,0
+Deman4,5
+Reis2,5
+Regeer3,5
+Chuki3,5
+Weiser2,5
+Grüll2,5
+Füllkrug2,0
+TRAINER
+ Mainz
+Fischer
+ Bremen
+Thioune
+WECHSEL
+ Mainz
+Widmer
+75'
+Caci3,0
+Königsdörffer
+75'
+J.-S. Lee3,5
+Hollerbach
+85'
+Becker3,5
+Nebel
+85'
+da Costa4,5
+Martel
+90' +1
+Kai. Sano3,0
+ Bremen
+Schmetgens3,0
+46'
+Deman4,5
+Wojcik3,0
+59'
+Weiser2,5
+Dinkci
+72'
+Chuki3,5
+Itten
+81'
+Füllkrug2,0
+RESERVEBANK
+ Mainz
+Kinzig (Tor), Gruber, Nakuzola, Maloney
+ Bremen
+A. Schlager (Tor), Lynen, Stalmach, Erevbenagie, Quetant
+KARTEN
+ Mainz
+Mwene (4. Gelbe Karte)
+69'
+Schwolow (2. Gelbe Karte)
+90' +4
+ Bremen
+Reis (2. Gelbe Karte)
+38'
+Grüll (2. Gelbe Karte)
+88'

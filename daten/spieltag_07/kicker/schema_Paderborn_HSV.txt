@@ -1,0 +1,111 @@
+BUNDESLIGA
+Spieltag
+Schema
+Bundesliga 2026/27, 7. Spieltag
+Paderborn
+13. Platz
+1
+:
+0
+0
+:
+0
+HSV
+11. Platz
+INFO
+SCHEMA
+ANALYSE
+BILDER
+TICKER
+AUFSTELLUNG
+SPIELDATEN
+DATEN-VERGLEICH
+DIREKTVERGLEICH
+TORE
+Philippe
+Linksschuss, Götze
+88'
+1
+:
+0
+AUFSTELLUNG
+ Paderborn
+Noll3,0
+ter Horst3,0
+Scheller2,5
+Hansen3,0
+Curda2,5
+Castaneda2,5
+Obermair2,5
+Ulrich4,0
+Vidovic4,5
+S. Tigges4,5
+Marino4,5
+ HSV
+Heuer Fernandes2,0
+Nandja4,0
+Bornauw3,5
+Omari5,0
+El Ouahdi4,0
+Adeline5,0
+Nadir4,0
+Muheim5,0
+Wolfe4,5
+Fabio Vieira
+Poulsen4,5
+TRAINER
+ Paderborn
+Kettemann
+ HSV
+Polzin
+WECHSEL
+ Paderborn
+Baack3,0
+46'
+Vidovic4,5
+Götze2,0
+62'
+ter Horst3,0
+Pieringer4,0
+62'
+S. Tigges4,5
+Philippe
+70'
+Ulrich4,0
+S. Michel
+79'
+Marino4,5
+ HSV
+Stange5,0
+13'
+Fabio Vieira
+Moffi4,5
+46'
+Poulsen4,5
+Grönbaek
+71'
+Nadir4,0
+Sambi Lokonga
+71'
+Muheim5,0
+Rössing-Lelesiit
+89'
+Stange
+RESERVEBANK
+ Paderborn
+Schubert (Tor), Müller, Sticker, Zeitler
+ HSV
+Tangvik (Tor), Bissi-Mouelle, Lemke, Amoako
+KARTEN
+ Paderborn
+ter Horst (2. Gelbe Karte)
+58'
+ HSV
+Nandja (2. Gelbe Karte)
+53'
+Sambi Lokonga (2. Gelbe Karte)
+87'
+Polzin (1. Gelbe Karte)
+89'
+Favé (1. Gelbe Karte)
+90' +4

@@ -1,0 +1,127 @@
+BUNDESLIGA
+Spieltag
+Schema
+Bundesliga 2026/27, 7. Spieltag
+Hoffenheim
+10. Platz
+3
+:
+0
+0
+:
+0
+Leverkusen
+4. Platz
+INFO
+SCHEMA
+ANALYSE
+BILDER
+TICKER
+AUFSTELLUNG
+SPIELDATEN
+DATEN-VERGLEICH
+DIREKTVERGLEICH
+TORE
+Kramaric (Elfmeter)
+Rechtsschuss, Asllani
+79'
+1
+:
+0
+Prass
+Linksschuss, Kramaric
+89'
+2
+:
+0
+Moerstedt
+Rechtsschuss, Kramaric
+90'
++6
+3
+:
+0
+AUFSTELLUNG
+ Hoffenheim
+Baumann3,0
+Coufal3,0
+Kabak2,5
+Machida2,5
+M. Rots3,0
+Avdullahu2,0
+Prass2,5
+Burger3,0
+Asllani2,5
+Hlozek3,0
+Daghim3,5
+ Leverkusen
+Flekken3,0
+Quansah3,0
+Tapsoba4,0
+Medina3,5
+Miguel4,0
+E. Fernandez3,5
+Aleix Garcia4,5
+Diaby4,0
+Maza4,0
+Tella4,0
+Schick4,5
+TRAINER
+ Hoffenheim
+Ilzer
+ Leverkusen
+Martinez
+WECHSEL
+ Hoffenheim
+Kramaric1,0
+65'
+Hlozek3,0
+Conté
+72'
+Burger3,0
+Hranac
+84'
+Asllani2,5
+Moerstedt
+84'
+Daghim3,5
+ Leverkusen
+Tillman4,0
+41'
+Diaby4,0
+Andrich3,5
+64'
+E. Fernandez3,5
+Moreira4,0
+64'
+Tella4,0
+Badé3,5
+64'
+Quansah3,0
+Hofmann
+85'
+Medina3,5
+RESERVEBANK
+ Hoffenheim
+L. Philipp (Tor), Abraha, Bernardo, Gendrey, Lenz
+ Leverkusen
+Blaswich (Tor), Oermann, Vazquez, Boniface
+KARTEN
+ Hoffenheim
+Avdullahu (2. Gelbe Karte)
+67'
+Daghim (1. Gelbe Karte)
+82'
+Prass
+90' +1
+ Leverkusen
+E. Fernandez (1. Gelbe Karte)
+40'
+Schick (1. Gelbe Karte)
+58'
+Medina (2. Gelbe Karte)
+75'
+Martinez (2. Gelbe Karte)
+90'
+Badé (1. Gelbe Karte)
+90' +4

@@ -1,0 +1,138 @@
+BUNDESLIGA
+Spieltag
+Schema
+Bundesliga 2026/27, 7. Spieltag
+Stuttgart
+15. Platz
+2
+:
+3
+1
+:
+1
+M’gladbach
+18. Platz
+INFO
+SCHEMA
+ANALYSE
+EINZELKRITIK
+BILDER
+TICKER
+AUFSTELLUNG
+SPIELDATEN
+DATEN-VERGLEICH
+DIREKTVERGLEICH
+TORE
+Demirovic
+Rechtsschuss, Pejcinovic
+5'
+1
+:
+0
+1
+:
+1
+38'
+Scally
+Rechtsschuss, Uno
+1
+:
+2
+51'
+Machino
+Linksschuss, Mohya
+1
+:
+3
+66'
+Mohya
+Kopfball, Scally
+Demirovic
+Kopfball, Leweling
+83'
+2
+:
+3
+AUFSTELLUNG
+ Stuttgart
+Seimen4,5
+Assignon5,0
+Jeltsch4,5
+Hendriks4,0
+Mittelstädt3,5
+Karazor5,0
+Stiller3,0
+Sauer4,5
+Führich3,5
+Pejcinovic4,5
+Demirovic2,5
+ M’gladbach
+Nicolas4,0
+Hashioka3,5
+Sander3,5
+Chiarodia3,5
+Scally2,0
+Uno4,0
+Neuhaus3,0
+Ullrich2,5
+Bolin3,5
+Mohya1,0
+Machino3,0
+TRAINER
+ Stuttgart
+Hoeneß
+ M’gladbach
+Blessin
+WECHSEL
+ Stuttgart
+Undav5,0
+55'
+Pejcinovic4,5
+Leweling3,0
+55'
+Sauer4,5
+El Khannouss4,0
+55'
+Assignon5,0
+Prömel3,5
+64'
+Karazor5,0
+Chabot
+90'
+Jeltsch4,5
+ M’gladbach
+Konoplia
+70'
+Scally2,0
+Hack
+70'
+Mohya1,0
+Herold
+76'
+Chiarodia3,5
+Nguefack
+84'
+Bolin3,5
+Schweers
+84'
+Machino3,0
+RESERVEBANK
+ Stuttgart
+Bredlow (Tor), Al-Dakhil, Stergiou, Spalt
+ M’gladbach
+Batz (Tor), Stöger, Danfa, Uwakhonye
+KARTEN
+ Stuttgart
+Sauer (1. Gelbe Karte)
+44'
+Karazor (1. Gelbe Karte)
+45'
+ M’gladbach
+Neuhaus (2. Gelbe Karte)
+45' +3
+Uno (2. Gelbe Karte)
+53'
+Scally (2. Gelbe Karte)
+54'
+Ullrich (2. Gelbe Karte)
+79'

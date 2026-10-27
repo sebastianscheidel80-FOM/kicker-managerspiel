@@ -1,0 +1,124 @@
+BUNDESLIGA
+Spieltag
+Schema
+Bundesliga 2026/27, 7. Spieltag
+Leipzig
+5. Platz
+4
+:
+0
+0
+:
+0
+Elversberg
+8. Platz
+INFO
+SCHEMA
+ANALYSE
+BILDER
+TICKER
+AUFSTELLUNG
+SPIELDATEN
+DATEN-VERGLEICH
+DIREKTVERGLEICH
+TORE
+Gomis
+Linksschuss, Nusa
+48'
+1
+:
+0
+Romulo
+Rechtsschuss, Nusa
+66'
+2
+:
+0
+Baumgartner
+Kopfball, Gruda
+84'
+3
+:
+0
+Romulo
+Linksschuss, Koné
+90'
++4
+4
+:
+0
+AUFSTELLUNG
+ Leipzig
+Nyland2,5
+Henrichs4,0
+Orban3,0
+Esteve3,5
+Finkgräfe4,5
+El Aynaoui3,5
+Reitz4,0
+Banzuzi3,5
+Maksimovic5,0
+Gomis2,5
+Nusa2,0
+ Elversberg
+Kristof4,5
+Gyamerah4,5
+Pinckert4,5
+Rohr4,0
+La. Günther3,5
+Keidel4,5
+Poreba5,0
+L. Petkov3,0
+Schmahl4,5
+Krattenmacher5,0
+Mokwa4,0
+TRAINER
+ Leipzig
+Demichelis
+ Elversberg
+Wagner
+WECHSEL
+ Leipzig
+Romulo2,0
+46'
+Maksimovic5,0
+Gruda2,0
+62'
+Reitz4,0
+Baumgartner
+72'
+Nusa2,0
+Seiwald
+72'
+Banzuzi3,5
+Koné
+87'
+Gomis2,5
+ Elversberg
+Adam5,0
+59'
+Krattenmacher5,0
+Sirch4,0
+59'
+Gyamerah4,5
+Onyeka
+71'
+Schmahl4,5
+Futkeu
+71'
+Mokwa4,0
+Campbell
+82'
+La. Günther3,5
+RESERVEBANK
+ Leipzig
+Vandevoordt (Tor), R. Baku, Lukeba, Raum
+ Elversberg
+Boss (Tor), Le Joncour, Mickelson, Condé
+KARTEN
+ Leipzig
+Reitz (1. Gelbe Karte)
+59'
+ Elversberg
+La. Günther (1. Gelbe Karte)
+74'
